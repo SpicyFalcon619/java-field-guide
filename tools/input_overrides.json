@@ -1,0 +1,56 @@
+{
+ "Ex02_ArrayInput.java": {
+  "inputs": [
+   [
+    "85",
+    "90",
+    "78"
+   ]
+  ]
+ },
+ "Ex04_Symmatric2dArrayWForEachLoop.java": {
+  "inputs": [
+   [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  ]
+ },
+ "Ex05_test.java": {
+  "inputs": [
+   [
+    "2",
+    "2",
+    "1",
+    "2",
+    "3",
+    "3",
+    "4",
+    "5"
+   ]
+  ]
+ },
+ "Ex04_ReadFileExample.java": {
+  "files": {
+   "example.txt": [
+    "Hello, this is written to the file!",
+    "This line is appended."
+   ]
+  }
+ },
+ "Ex06_ReadFile.java": {
+  "files": {
+   "example.txt": [
+    "Hello, this is written to the file!",
+    "This line is appended."
+   ]
+  }
+ }
+}

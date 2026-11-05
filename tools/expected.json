@@ -1,0 +1,706 @@
+{
+ "Java_Basics/01_basic.java": [
+  {
+   "line": 14,
+   "file": "Ex01_HelloWorld.java",
+   "inputs": [],
+   "output": "Hello, World!"
+  },
+  {
+   "line": 22,
+   "file": "Ex02_VariablesDataTypes.java",
+   "inputs": [],
+   "output": "Name: Noman\nAge: 20\nT/F: true"
+  },
+  {
+   "line": 38,
+   "file": "Ex03_UserInput.java",
+   "inputs": [
+    [
+     "Noman",
+     "35"
+    ]
+   ],
+   "output": "Hello Noman, you are 35 years old."
+  }
+ ],
+ "Java_Basics/02_conditional_logic.java": [
+  {
+   "line": 15,
+   "file": "Ex01_IfElseConditions.java",
+   "inputs": [],
+   "output": "Positive number"
+  },
+  {
+   "line": 31,
+   "file": "Ex02_NestedIfExample.java",
+   "inputs": [
+    [
+     "92"
+    ],
+    [
+     "75"
+    ],
+    [
+     "50"
+    ],
+    [
+     "30"
+    ]
+   ],
+   "output": "Enter your marks: 92\nGrade: A+\n\nEnter your marks: 75\nGrade: A\n\nEnter your marks: 50\nGrade: B\n\nEnter your marks: 30\nFail"
+  },
+  {
+   "line": 63,
+   "file": "Ex03_SwitchStatement.java",
+   "inputs": [
+    [
+     "2"
+    ]
+   ],
+   "output": "You chose Two"
+  },
+  {
+   "line": 94,
+   "file": "Ex04_BreakExample.java",
+   "inputs": [],
+   "output": "1\n2"
+  },
+  {
+   "line": 107,
+   "file": "Ex05_ContinueExample.java",
+   "inputs": [],
+   "output": "1\n2\n4\n5"
+  }
+ ],
+ "Java_Basics/03_loops.java": [
+  {
+   "line": 26,
+   "file": "Ex01_LoopsBasicExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 68,
+   "file": "Ex02_ForLoopBasicExample.java",
+   "inputs": [],
+   "output": "For loop: 1  \nFor loop: 2  \nFor loop: 3  \nFor loop: 4  \nFor loop: 5"
+  },
+  {
+   "line": 92,
+   "file": "Ex03_WhileLoopBasicExample.java",
+   "inputs": [],
+   "output": "While loop: 1  \nWhile loop: 2  \nWhile loop: 3  \nWhile loop: 4  \nWhile loop: 5"
+  },
+  {
+   "line": 118,
+   "file": "Ex04_DoWhileLoopBasicExample.java",
+   "inputs": [],
+   "output": "Do-while loop: 1  \nDo-while loop: 2  \nDo-while loop: 3  \nDo-while loop: 4  \nDo-while loop: 5"
+  },
+  {
+   "line": 144,
+   "file": "Ex05_ForEachLoopEnhancedForLoopBasic.java",
+   "inputs": [],
+   "output": "Mark: 85  \nMark: 90  \nMark: 78"
+  },
+  {
+   "line": 156,
+   "file": "Ex06_LimitationExampleModificationDoesnT.java",
+   "inputs": [],
+   "output": "1 2 3"
+  }
+ ],
+ "Java_Basics/04_array.java": [
+  {
+   "line": 14,
+   "file": "Ex01_OneDimensionalArray.java",
+   "inputs": [],
+   "output": "Element at index 0: 10\nElement at index 1: 20\nElement at index 2: 30\nElement at index 3: 40\nElement at index 4: 50"
+  },
+  {
+   "line": 26,
+   "file": "Ex02_ArrayInput.java",
+   "inputs": [
+    [
+     "85",
+     "90",
+     "78"
+    ]
+   ],
+   "output": "N :\n85\n90\n78"
+  },
+  {
+   "line": 52,
+   "file": "Ex03_Basic.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 71,
+   "file": "Ex04_Symmatric2dArrayWForEachLoop.java",
+   "inputs": [
+    [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9"
+    ]
+   ],
+   "output": null
+  },
+  {
+   "line": 100,
+   "file": "Ex05_test.java",
+   "inputs": [
+    [
+     "2",
+     "2",
+     "1",
+     "2",
+     "3",
+     "3",
+     "4",
+     "5"
+    ]
+   ],
+   "output": null
+  }
+ ],
+ "Java_Basics/05_methods.java": [
+  {
+   "line": 13,
+   "file": "Ex01_BasicMethodWithNoReturn.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 25,
+   "file": "Ex02_MethodWithParametersAndReturnType.java",
+   "inputs": [],
+   "output": "Sum: 12"
+  }
+ ],
+ "Java_Basics/06_strings.java": [],
+ "Classes_and_Objects/07_method_overloading.java": [
+  {
+   "line": 34,
+   "file": "Ex01_Calculator.java",
+   "inputs": [],
+   "output": "Sum 2 int: 15\nSum 3 int: 6\nSum 2 double: 10.0\nSum int+double: 7.5"
+  }
+ ],
+ "Classes_and_Objects/08_classes_objects.java": [
+  {
+   "line": 19,
+   "file": "Ex01_ClassObjectExample.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Classes_and_Objects/09_constructors.java": [
+  {
+   "line": 19,
+   "file": "Ex01_ExampleOfAConstructor.java",
+   "inputs": [],
+   "output": "Hi, I'm Noman and I'm 35 years old.\nHi, I'm Tortilla and I'm 100 years old."
+  },
+  {
+   "line": 57,
+   "file": "Ex02_ParameterizedConstructor.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Classes_and_Objects/10_this_keyword.java": [
+  {
+   "line": 23,
+   "file": "Ex01_BasicUseCaseOfThisKeyword.java",
+   "inputs": [],
+   "output": "Name: Noman\nAge: 35"
+  },
+  {
+   "line": 48,
+   "file": "Ex02_UsingThisToCallAnotherConstructor.java",
+   "inputs": [],
+   "output": "Name: Nothing, Age: 0\nName: Noman, Age: 35"
+  }
+ ],
+ "Classes_and_Objects/11_instance_initialization_block_iib.java": [
+  {
+   "line": 17,
+   "file": "Ex01_InstanceInitializationBlockIibSyntax.java",
+   "inputs": [],
+   "output": "IIB executed\nConstructor executed\n-------\nIIB executed\nConstructor executed"
+  }
+ ],
+ "Classes_and_Objects/12_variable_scope_lifetime.java": [
+  {
+   "line": 33,
+   "file": "Ex01_Person.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 47,
+   "file": "Ex02_Counter.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 69,
+   "file": "Ex03_VariableScopeLifetimeExample.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Classes_and_Objects/13_static_keyword.java": [
+  {
+   "line": 29,
+   "file": "Ex01_StaticVariable.java",
+   "inputs": [],
+   "output": "Count is: 1\nCount is: 2\nCount is: 3"
+  },
+  {
+   "line": 48,
+   "file": "Ex02_StaticMethod.java",
+   "inputs": [],
+   "output": "Sum = 8"
+  },
+  {
+   "line": 66,
+   "file": "Ex03_StaticBlock.java",
+   "inputs": [],
+   "output": "Static block is running!\nMain method is running!"
+  },
+  {
+   "line": 84,
+   "file": "Ex04_MultipleStaticBlock.java",
+   "inputs": [],
+   "output": "First static block\nSecond static block\nInside main method"
+  }
+ ],
+ "Classes_and_Objects/14_accessing_static_instance_members.java": [
+  {
+   "line": 26,
+   "file": "Ex01_StaticAccessExample.java",
+   "inputs": [],
+   "output": "Accessing staticVar directly: 100\nInside static method. staticVar = 100\nAccessing staticVar using class name: 100\nInside static method. staticVar = 100\nAccessing staticVar using object: 100\nInside static method. staticVar = 100\nAccessing instanceVar using object: 200\nInside instance method. instanceVar = 200"
+  },
+  {
+   "line": 65,
+   "file": "Ex02_StaticInstanceAccess.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Classes_and_Objects/15_example_of_static_iib_and_object_creation.java": [
+  {
+   "line": 14,
+   "file": "Ex01_ExampleStaticIibObjectCreationCode.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 110,
+   "file": "Ex02_BasicMethodOverriding.java",
+   "inputs": [],
+   "output": "Some animal sound\nWoof woof"
+  },
+  {
+   "line": 146,
+   "file": "Ex03_YetAnotherExampleWRuntimePolymorphism.java",
+   "inputs": [],
+   "output": "The vehicle is moving...\nThe car is moving!"
+  }
+ ],
+ "Inheritance_and_Polymorphism/16_inheritance.java": [
+  {
+   "line": 31,
+   "file": "Ex01_InheritanceBasicSyntax.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 51,
+   "file": "Ex02_UsingSuperToCallParentMethod.java",
+   "inputs": [],
+   "output": "Animal makes a sound\nDog barks"
+  },
+  {
+   "line": 74,
+   "file": "Ex03_UsingSuperToAccessParentVariable.java",
+   "inputs": [],
+   "output": "Child type: Cat\nParent type: Animal"
+  },
+  {
+   "line": 97,
+   "file": "Ex04_UsingSuperToCallParentConstructor.java",
+   "inputs": [],
+   "output": "Person constructor called\nStudent constructor called"
+  },
+  {
+   "line": 119,
+   "file": "Ex05_InheritanceBasicExample.java",
+   "inputs": [],
+   "output": "This animal eats food\nThe dog barks"
+  },
+  {
+   "line": 172,
+   "file": "Ex06_HierarchicalInheritanceExample.java",
+   "inputs": [],
+   "output": "This animal eats food.\nThe dog barks.\nThis animal eats food.\nThe cat meows."
+  },
+  {
+   "line": 232,
+   "file": "Ex07_MultilevelInheritanceExample.java",
+   "inputs": [],
+   "output": "This animal eats food.\nThe dog barks.\nThe puppy weeps."
+  },
+  {
+   "line": 297,
+   "file": "Ex08_MultipleInheritanceUsingInterface.java",
+   "inputs": [],
+   "output": "Method A from Interface A\nMethod B from Interface B"
+  }
+ ],
+ "Inheritance_and_Polymorphism/17_polymorphism.java": [
+  {
+   "line": 36,
+   "file": "Ex01_TestPolymorphism.java",
+   "inputs": [],
+   "output": "Animal makes a sound\nDog barks\nCat meows"
+  },
+  {
+   "line": 79,
+   "file": "Ex02_Calculator.java",
+   "inputs": [],
+   "output": "add(2, 3): 5\nadd(2, 3, 4): 9\nadd(2.5, 3.5): 6.0"
+  },
+  {
+   "line": 120,
+   "file": "Ex03_TypePromo1.java",
+   "inputs": [],
+   "output": "int"
+  },
+  {
+   "line": 137,
+   "file": "Ex04_TypePromo2.java",
+   "inputs": [],
+   "output": "long"
+  },
+  {
+   "line": 150,
+   "file": "Ex05_TypePromo3.java",
+   "inputs": [],
+   "output": "float \nJava picks float here because it\u2019s a narrower promotion from int."
+  },
+  {
+   "line": 167,
+   "file": "Ex06_BoxOverload.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 196,
+   "file": "Ex07_UpcastingExample.java",
+   "inputs": [],
+   "output": "Dog barks"
+  },
+  {
+   "line": 235,
+   "file": "Ex08_DowncastingExample.java",
+   "inputs": [],
+   "output": "Dog barks  \nDog wags tail\nDog wags tail"
+  },
+  {
+   "line": 276,
+   "file": "Ex09_InstanceofOperatorExample.java",
+   "inputs": [],
+   "output": "Dog barks  \nDog wags tail"
+  }
+ ],
+ "Encapsulation_and_Access/18_access_control.java": [
+  {
+   "line": 37,
+   "file": "Ex01_Person2.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 53,
+   "file": "Ex02_Person.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 74,
+   "file": "Ex03_Person.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 90,
+   "file": "Ex04_Person.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 100,
+   "file": "Ex05_AccessControlExample.java",
+   "inputs": [],
+   "output": "I am public\nPublic method called\nI am protected\nProtected method called\nI am package-private\nPackage-private method called"
+  }
+ ],
+ "Encapsulation_and_Access/19_encapsulation.java": [
+  {
+   "line": 21,
+   "file": "Ex01_BasicExampleOfEncapsulation.java",
+   "inputs": [],
+   "output": "Noman\n35\nTortilla\n100\nInvalid age!"
+  }
+ ],
+ "Encapsulation_and_Access/20_the_final_keyword_in_java.java": [
+  {
+   "line": 31,
+   "file": "Ex01_Example.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 58,
+   "file": "Ex02_FinalWithMethodsExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 81,
+   "file": "Ex03_ClassName.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 87,
+   "file": "Ex04_FinalWithClassExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 109,
+   "file": "Ex05_Example.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 135,
+   "file": "Ex06_ExampleWithAllFinalFeatures.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Working_with_Objects/21_call_by_value_vs_call_by_reference.java": [
+  {
+   "line": 26,
+   "file": "Ex01_CallByValueForPrimitivesExample.java",
+   "inputs": [],
+   "output": "Value of a: 50"
+  },
+  {
+   "line": 52,
+   "file": "Ex02_ExampleModifyingObjectFields.java",
+   "inputs": [],
+   "output": "Noman"
+  },
+  {
+   "line": 75,
+   "file": "Ex03_ExampleTryingToReassignTheObject.java",
+   "inputs": [],
+   "output": "Tortilla"
+  }
+ ],
+ "Working_with_Objects/22_copy_constructor.java": [
+  {
+   "line": 19,
+   "file": "Ex01_CopyConstructorExample.java",
+   "inputs": [],
+   "output": "Name: Noman, Age: 35"
+  }
+ ],
+ "Working_with_Objects/23_constructor_chaining.java": [
+  {
+   "line": 18,
+   "file": "Ex01_ConstructorChainingExample.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Working_with_Objects/24_passing_and_returning_object.java": [
+  {
+   "line": 23,
+   "file": "Ex01_PassingObjectsAsArgumentsExample.java",
+   "inputs": [],
+   "output": "Before: Noman\nAfter: Changed Name"
+  },
+  {
+   "line": 54,
+   "file": "Ex02_ReturningAnObjectFromAMethodExample.java",
+   "inputs": [],
+   "output": "ob1.a = 5  \nob2.a = 15"
+  },
+  {
+   "line": 88,
+   "file": "Ex03_UsingObjectsAsParametersExample.java",
+   "inputs": [],
+   "output": "ob1 == ob2: true\nob1 == ob3: false"
+  },
+  {
+   "line": 125,
+   "file": "Ex04_CopyConstructorConstructorOverloading.java",
+   "inputs": [],
+   "output": "Volume of mybox1 is 3000.0\nVolume of mybox2 is -1.0\nVolume of cube is 343.0\nVolume of clone is 3000.0"
+  }
+ ],
+ "Abstraction_and_Interfaces/25_abstraction_interface.java": [
+  {
+   "line": 35,
+   "file": "Ex01_AbstractClassExample.java",
+   "inputs": [],
+   "output": "Woof!\nSleeping..."
+  },
+  {
+   "line": 82,
+   "file": "Ex02_InterfaceExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 115,
+   "file": "Ex03_MultipleInheritanceRecapExample.java",
+   "inputs": [],
+   "output": "Method A from Interface A\nMethod B from Interface B"
+  },
+  {
+   "line": 157,
+   "file": "Ex04_UsingBothAbstractClassInterfaceChild.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Exceptions_and_Files/26_exception_handling.java": [
+  {
+   "line": 31,
+   "file": "Ex01_ExampleProgramWithoutExceptionHandling.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 61,
+   "file": "Ex02_TryCatchBlockExample.java",
+   "inputs": [],
+   "output": "Cannot divide by zero!\nError: java.lang.ArithmeticException: / by zero\nProgram continues..."
+  },
+  {
+   "line": 89,
+   "file": "Ex03_MultipleCatchBlocksExample.java",
+   "inputs": [],
+   "output": "Math error: / by zero\nProgram continues after exception handling."
+  },
+  {
+   "line": 116,
+   "file": "Ex04_UsingGetmessageExample.java",
+   "inputs": [],
+   "output": "Cannot divide by zero!\nError: / by zero\nProgram continues..."
+  },
+  {
+   "line": 138,
+   "file": "Ex05_FinallyBlockExample.java",
+   "inputs": [],
+   "output": "Array index out of range!\nFinally block is always executed."
+  },
+  {
+   "line": 157,
+   "file": "Ex06_ThrowKeywordExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 179,
+   "file": "Ex07_ThrowsKeywordExample.java",
+   "inputs": [],
+   "output": "File not found or unable to read the file."
+  },
+  {
+   "line": 225,
+   "file": "Ex08_UsingTheCustomExceptionInCode.java",
+   "inputs": [],
+   "output": "Custom Exception: You must be 18 or older."
+  },
+  {
+   "line": 251,
+   "file": "Ex08_UsingTheCustomExceptionInCode.java",
+   "inputs": [],
+   "output": "Custom Exception: You must be 18 or older."
+  },
+  {
+   "line": 283,
+   "file": "Ex09_RealWorldUseCaseBankApp.java",
+   "inputs": [],
+   "output": null
+  }
+ ],
+ "Exceptions_and_Files/27_file_handling.java": [
+  {
+   "line": 27,
+   "file": "Ex01_CreateFileExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 47,
+   "file": "Ex02_WriteFileExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 65,
+   "file": "Ex03_AppendFileExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 83,
+   "file": "Ex04_ReadFileExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 106,
+   "file": "Ex05_DeleteFileExample.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 121,
+   "file": "Ex06_ReadFile.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 143,
+   "file": "Ex07_WriteFile.java",
+   "inputs": [],
+   "output": null
+  },
+  {
+   "line": 164,
+   "file": "Ex08_AppendToFile.java",
+   "inputs": [],
+   "output": null
+  }
+ ]
+}

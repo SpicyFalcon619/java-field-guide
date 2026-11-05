@@ -1,0 +1,2594 @@
+{
+ "Abstraction_and_Interfaces/25_abstraction_interface.java": {
+  "capturedAt": "2026-11-05T13:06:36.360Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "36": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Woof!\nSleeping...\n",
+      "segments": [
+       [
+        53,
+        "Woof!\n",
+        0
+       ],
+       [
+        54,
+        "Sleeping...\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "82": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "116": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Method A from Interface A\nMethod B from Interface B\n",
+      "segments": [
+       [
+        137,
+        "Method A from Interface A\n",
+        0
+       ],
+       [
+        138,
+        "Method B from Interface B\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "158": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Tom\nAge: 1\nMeow\nWiwiwiwi..... wiwiwi\n",
+      "segments": [
+       [
+        198,
+        "Name: Tom\nAge: 1\n",
+        0
+       ],
+       [
+        200,
+        "Meow\n",
+        0
+       ],
+       [
+        201,
+        "Wiwiwiwi..... wiwiwi\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/07_method_overloading.java": {
+  "capturedAt": "2026-11-05T13:06:36.868Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "34": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Sum 2 int: 15\nSum 3 int: 6\nSum 2 double: 10.0\nSum int+double: 7.5\n",
+      "segments": [
+       [
+        54,
+        "Sum 2 int: 15\n",
+        0
+       ],
+       [
+        55,
+        "Sum 3 int: 6\n",
+        0
+       ],
+       [
+        56,
+        "Sum 2 double: 10.0\n",
+        0
+       ],
+       [
+        57,
+        "Sum int+double: 7.5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/08_classes_objects.java": {
+  "capturedAt": "2026-11-05T13:06:37.314Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "19": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hi, I'm Noman and I'm 35 years old.\n",
+      "segments": [
+       [
+        35,
+        "Hi, I'm Noman and I'm 35 years old.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/09_constructors.java": {
+  "capturedAt": "2026-11-05T13:06:37.818Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hi, I'm Noman and I'm 35 years old.\nHi, I'm Tortilla and I'm 100 years old.\n",
+      "segments": [
+       [
+        41,
+        "Hi, I'm Noman and I'm 35 years old.\n",
+        0
+       ],
+       [
+        42,
+        "Hi, I'm Tortilla and I'm 100 years old.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "58": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hi, I'm nothing and I'm 0 years old.\nHi, I'm Noman and I'm 35 years old.\n",
+      "segments": [
+       [
+        82,
+        "Hi, I'm nothing and I'm 0 years old.\n",
+        0
+       ],
+       [
+        83,
+        "Hi, I'm Noman and I'm 35 years old.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/10_this_keyword.java": {
+  "capturedAt": "2026-11-05T13:06:38.351Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "24": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Noman\nAge: 35\n",
+      "segments": [
+       [
+        42,
+        "Name: Noman\nAge: 35\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "49": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Nothing, Age: 0\nName: Noman, Age: 35\n",
+      "segments": [
+       [
+        74,
+        "Name: Nothing, Age: 0\n",
+        0
+       ],
+       [
+        75,
+        "Name: Noman, Age: 35\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/11_instance_initialization_block_iib.java": {
+  "capturedAt": "2026-11-05T13:06:38.826Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "17": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "IIB executed\nConstructor executed\n-------\nIIB executed\nConstructor executed\n",
+      "segments": [
+       [
+        29,
+        "IIB executed\nConstructor executed\n",
+        0
+       ],
+       [
+        30,
+        "-------\n",
+        0
+       ],
+       [
+        31,
+        "IIB executed\nConstructor executed\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/12_variable_scope_lifetime.java": {
+  "capturedAt": "2026-11-05T13:06:39.263Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "33": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "47": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "69": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "30\n",
+      "segments": [
+       [
+        75,
+        "30\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/13_static_keyword.java": {
+  "capturedAt": "2026-11-05T13:06:40.120Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "29": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Count is: 1\nCount is: 2\nCount is: 3\n",
+      "segments": [
+       [
+        40,
+        "Count is: 1\n",
+        0
+       ],
+       [
+        41,
+        "Count is: 2\n",
+        0
+       ],
+       [
+        42,
+        "Count is: 3\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "48": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Sum = 8\n",
+      "segments": [
+       [
+        57,
+        "Sum = 8\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "67": {
+    "mainClass": "MyClass2",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Static block is running!\nMain method is running!\n",
+      "segments": [
+       [
+        70,
+        "Static block is running!\n",
+        0
+       ],
+       [
+        74,
+        "Main method is running!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "84": {
+    "mainClass": "Demo",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "First static block\nSecond static block\nInside main method\n",
+      "segments": [
+       [
+        86,
+        "First static block\n",
+        0
+       ],
+       [
+        90,
+        "Second static block\n",
+        0
+       ],
+       [
+        94,
+        "Inside main method\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/14_accessing_static_instance_members.java": {
+  "capturedAt": "2026-11-05T13:06:40.640Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "26": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Accessing staticVar directly: 100\nInside static method. staticVar = 100\nAccessing staticVar using class name: 100\nInside static method. staticVar = 100\nAccessing staticVar using object: 100\nInside static method. staticVar = 100\nAccessing instanceVar using object: 200\nInside instance method. instanceVar = 200\n",
+      "segments": [
+       [
+        42,
+        "Accessing staticVar directly: 100\n",
+        0
+       ],
+       [
+        43,
+        "Inside static method. staticVar = 100\n",
+        0
+       ],
+       [
+        46,
+        "Accessing staticVar using class name: 100\n",
+        0
+       ],
+       [
+        47,
+        "Inside static method. staticVar = 100\n",
+        0
+       ],
+       [
+        51,
+        "Accessing staticVar using object: 100\n",
+        0
+       ],
+       [
+        52,
+        "Inside static method. staticVar = 100\n",
+        0
+       ],
+       [
+        55,
+        "Accessing instanceVar using object: 200\n",
+        0
+       ],
+       [
+        56,
+        "Inside instance method. instanceVar = 200\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "65": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Accessing instanceVar from static method: 42\n",
+      "segments": [
+       [
+        74,
+        "Accessing instanceVar from static method: 42\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Classes_and_Objects/15_example_of_static_iib_and_object_creation.java": {
+  "capturedAt": "2026-11-05T13:06:41.273Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "15": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "ExampleStaticIibObjectCreationCode method starts\nStatic block executed\nStatic method called\nStatic Count = 10\nCreating first object:\nIIB executed\nConstructor executed\nInstance method called\nInstance Count = 7\nStatic Count = 11\nCreating second object:\nIIB executed\nConstructor executed\nInstance method called\nInstance Count = 7\nStatic Count = 12\n",
+      "segments": [
+       [
+        59,
+        "ExampleStaticIibObjectCreationCode method starts\n",
+        0
+       ],
+       [
+        62,
+        "Static block executed\nStatic method called\nStatic Count = 10\n",
+        0
+       ],
+       [
+        64,
+        "Creating first object:\n",
+        0
+       ],
+       [
+        65,
+        "IIB executed\nConstructor executed\n",
+        0
+       ],
+       [
+        66,
+        "Instance method called\nInstance Count = 7\nStatic Count = 11\n",
+        0
+       ],
+       [
+        68,
+        "Creating second object:\n",
+        0
+       ],
+       [
+        69,
+        "IIB executed\nConstructor executed\n",
+        0
+       ],
+       [
+        70,
+        "Instance method called\nInstance Count = 7\nStatic Count = 12\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "110": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Some animal sound\nWoof woof\n",
+      "segments": [
+       [
+        129,
+        "Some animal sound\n",
+        0
+       ],
+       [
+        130,
+        "Woof woof\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "146": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The vehicle is moving...\nThe car is moving!\n",
+      "segments": [
+       [
+        164,
+        "The vehicle is moving...\n",
+        0
+       ],
+       [
+        165,
+        "The car is moving!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Encapsulation_and_Access/18_access_control.java": {
+  "capturedAt": "2026-11-05T13:06:41.741Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "37": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "53": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "74": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "90": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "100": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "I am public\nPublic method called\nI am protected\nProtected method called\nI am package-private\nPackage-private method called\n",
+      "segments": [
+       [
+        127,
+        "I am public\n",
+        0
+       ],
+       [
+        128,
+        "Public method called\n",
+        0
+       ],
+       [
+        135,
+        "I am protected\n",
+        0
+       ],
+       [
+        136,
+        "Protected method called\n",
+        0
+       ],
+       [
+        139,
+        "I am package-private\n",
+        0
+       ],
+       [
+        140,
+        "Package-private method called\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Encapsulation_and_Access/19_encapsulation.java": {
+  "capturedAt": "2026-11-05T13:06:42.202Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "22": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Noman\n35\nTortilla\n100\nInvalid age!\n",
+      "segments": [
+       [
+        62,
+        "Noman\n",
+        0
+       ],
+       [
+        63,
+        "35\n",
+        0
+       ],
+       [
+        68,
+        "Tortilla\n",
+        0
+       ],
+       [
+        69,
+        "100\n",
+        0
+       ],
+       [
+        72,
+        "Invalid age!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Encapsulation_and_Access/20_the_final_keyword_in_java.java": {
+  "capturedAt": "2026-11-05T13:06:42.797Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "31": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Max speed: 120\n",
+      "segments": [
+       [
+        37,
+        "Max speed: 120\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "59": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "81": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "88": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "109": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The number is: 50\n",
+      "segments": [
+       [
+        117,
+        "The number is: 50\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "136": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Max speed: 120\nCurrent speed: 100\n",
+      "segments": [
+       [
+        149,
+        "Max speed: 120\nCurrent speed: 100\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Exceptions_and_Files/26_exception_handling.java": {
+  "capturedAt": "2026-11-05T13:06:44.442Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "31": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Exception in thread \"main\" java.lang.ArithmeticException: / by zero\n\tat Main.main(Main.java:5)\n",
+      "segments": [
+       [
+        35,
+        "Exception in thread \"main\" java.lang.ArithmeticException: / by zero\n\tat Main.main(Main.java:5)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "status": "runtime-error"
+   },
+   "61": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Cannot divide by zero!\nError: java.lang.ArithmeticException: / by zero\nProgram continues...\n",
+      "segments": [
+       [
+        69,
+        "Cannot divide by zero!\nError: java.lang.ArithmeticException: / by zero\n",
+        0
+       ],
+       [
+        71,
+        "Program continues...\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "89": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Math error: / by zero\nProgram continues after exception handling.\n",
+      "segments": [
+       [
+        98,
+        "Math error: / by zero\n",
+        0
+       ],
+       [
+        105,
+        "Program continues after exception handling.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "116": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Cannot divide by zero!\nError: / by zero\nProgram continues...\n",
+      "segments": [
+       [
+        124,
+        "Cannot divide by zero!\nError: / by zero\n",
+        0
+       ],
+       [
+        126,
+        "Program continues...\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "138": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Array index out of range!\nFinally block is always executed.\n",
+      "segments": [
+       [
+        144,
+        "Array index out of range!\n",
+        0
+       ],
+       [
+        146,
+        "Finally block is always executed.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "157": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Exception in thread \"main\" java.lang.ArithmeticException: Access denied - You must be 18+\n\tat Main.main(Main.java:5)\n",
+      "segments": [
+       [
+        161,
+        "Exception in thread \"main\" java.lang.ArithmeticException: Access denied - You must be 18+\n\tat Main.main(Main.java:5)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "status": "runtime-error"
+   },
+   "179": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "File not found or unable to read the file.\n",
+      "segments": [
+       [
+        192,
+        "File not found or unable to read the file.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "225": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Custom Exception: You must be 18 or older.\n",
+      "segments": [
+       [
+        244,
+        "Custom Exception: You must be 18 or older.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "251": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Custom Exception: You must be 18 or older.\n",
+      "segments": [
+       [
+        270,
+        "Custom Exception: You must be 18 or older.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "283": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   }
+  }
+ },
+ "Exceptions_and_Files/27_file_handling.java": {
+  "capturedAt": "2026-11-05T13:06:45.889Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "27": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "File created: example.txt\n",
+      "segments": [
+       [
+        35,
+        "File created: example.txt\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "47": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Successfully wrote to the file.\n",
+      "segments": [
+       [
+        56,
+        "Successfully wrote to the file.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "65": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Successfully appended to the file.\n",
+      "segments": [
+       [
+        74,
+        "Successfully appended to the file.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "83": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, this is written to the file!\nThis line is appended.\n",
+      "segments": [
+       [
+        94,
+        "Hello, this is written to the file!\nThis line is appended.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "106": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "File could not be deleted.\n",
+      "segments": [
+       [
+        114,
+        "File could not be deleted.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "121": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, this is written to the file!\nThis line is appended.\n",
+      "segments": [
+       [
+        130,
+        "Hello, this is written to the file!\nThis line is appended.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "143": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Write successful!\n",
+      "segments": [
+       [
+        155,
+        "Write successful!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "164": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Append successful!\n",
+      "segments": [
+       [
+        175,
+        "Append successful!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Inheritance_and_Polymorphism/16_inheritance.java": {
+  "capturedAt": "2026-11-05T13:06:47.225Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "31": {
+    "mainClass": null,
+    "scenarios": [],
+    "status": "no-main"
+   },
+   "52": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Animal makes a sound\nDog barks\n",
+      "segments": [
+       [
+        68,
+        "Animal makes a sound\nDog barks\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "75": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Child type: Cat\nParent type: Animal\n",
+      "segments": [
+       [
+        91,
+        "Child type: Cat\nParent type: Animal\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "98": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Person constructor called\nStudent constructor called\n",
+      "segments": [
+       [
+        113,
+        "Person constructor called\nStudent constructor called\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "120": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This animal eats food\nThe dog barks\n",
+      "segments": [
+       [
+        138,
+        "This animal eats food\n",
+        0
+       ],
+       [
+        139,
+        "The dog barks\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "173": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This animal eats food.\nThe dog barks.\nThis animal eats food.\nThe cat meows.\n",
+      "segments": [
+       [
+        194,
+        "This animal eats food.\n",
+        0
+       ],
+       [
+        195,
+        "The dog barks.\n",
+        0
+       ],
+       [
+        198,
+        "This animal eats food.\n",
+        0
+       ],
+       [
+        199,
+        "The cat meows.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "233": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This animal eats food.\nThe dog barks.\nThe puppy weeps.\n",
+      "segments": [
+       [
+        254,
+        "This animal eats food.\n",
+        0
+       ],
+       [
+        255,
+        "The dog barks.\n",
+        0
+       ],
+       [
+        256,
+        "The puppy weeps.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "297": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Method A from Interface A\nMethod B from Interface B\n",
+      "segments": [
+       [
+        318,
+        "Method A from Interface A\n",
+        0
+       ],
+       [
+        319,
+        "Method B from Interface B\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Inheritance_and_Polymorphism/17_polymorphism.java": {
+  "capturedAt": "2026-11-05T13:06:48.857Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "37": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Animal makes a sound\nDog barks\nCat meows\n",
+      "segments": [
+       [
+        64,
+        "Animal makes a sound\n",
+        0
+       ],
+       [
+        65,
+        "Dog barks\n",
+        0
+       ],
+       [
+        66,
+        "Cat meows\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "79": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "add(2, 3): 5\nadd(2, 3, 4): 9\nadd(2.5, 3.5): 6.0\n",
+      "segments": [
+       [
+        96,
+        "add(2, 3): 5\n",
+        0
+       ],
+       [
+        97,
+        "add(2, 3, 4): 9\n",
+        0
+       ],
+       [
+        98,
+        "add(2.5, 3.5): 6.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "120": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "int\n",
+      "segments": [
+       [
+        131,
+        "int\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "137": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "long\n",
+      "segments": [
+       [
+        144,
+        "long\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "float\n",
+      "segments": [
+       [
+        161,
+        "float\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "167": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "int\n",
+      "segments": [
+       [
+        178,
+        "int\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "197": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog barks\n",
+      "segments": [
+       [
+        218,
+        "Dog barks\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "236": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog barks\nDog wags tail\nDog wags tail\n",
+      "segments": [
+       [
+        258,
+        "Dog barks\n",
+        0
+       ],
+       [
+        259,
+        "Dog wags tail\n",
+        0
+       ],
+       [
+        260,
+        "Dog wags tail\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "277": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog barks\nDog wags tail\n",
+      "segments": [
+       [
+        300,
+        "Dog barks\n",
+        0
+       ],
+       [
+        301,
+        "Dog wags tail\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/01_basic.java": {
+  "capturedAt": "2026-11-05T13:06:49.474Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "14": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, World!\n",
+      "segments": [
+       [
+        16,
+        "Hello, World!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "22": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Noman\nAge: 20\nT/F: true\n",
+      "segments": [
+       [
+        30,
+        "Name: Noman\n",
+        0
+       ],
+       [
+        31,
+        "Age: 20\n",
+        0
+       ],
+       [
+        32,
+        "T/F: true\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "38": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "Noman",
+       "35"
+      ],
+      "stdout": "Enter your name: Noman\nEnter your age: 35\nHello Noman, you are 35 years old.\n",
+      "segments": [
+       [
+        44,
+        "Enter your name: ",
+        0
+       ],
+       [
+        45,
+        "Noman\n",
+        0
+       ],
+       [
+        47,
+        "Enter your age: ",
+        0
+       ],
+       [
+        48,
+        "35\n",
+        0
+       ],
+       [
+        50,
+        "Hello Noman, you are 35 years old.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/02_conditional_logic.java": {
+  "capturedAt": "2026-11-05T13:06:50.569Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "15": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Positive number\n",
+      "segments": [
+       [
+        20,
+        "Positive number\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "31": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "Input 1",
+      "inputs": [
+       "92"
+      ],
+      "stdout": "Enter your marks: 92\nGrade: A+\n",
+      "segments": [
+       [
+        37,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        38,
+        "92\n",
+        0
+       ],
+       [
+        42,
+        "Grade: A+\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 2",
+      "inputs": [
+       "75"
+      ],
+      "stdout": "Enter your marks: 75\nGrade: A\n",
+      "segments": [
+       [
+        37,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        38,
+        "75\n",
+        0
+       ],
+       [
+        44,
+        "Grade: A\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 3",
+      "inputs": [
+       "50"
+      ],
+      "stdout": "Enter your marks: 50\nGrade: B\n",
+      "segments": [
+       [
+        37,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        38,
+        "50\n",
+        0
+       ],
+       [
+        48,
+        "Grade: B\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 4",
+      "inputs": [
+       "30"
+      ],
+      "stdout": "Enter your marks: 30\nFail\n",
+      "segments": [
+       [
+        37,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        38,
+        "30\n",
+        0
+       ],
+       [
+        50,
+        "Fail\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "63": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "2"
+      ],
+      "stdout": "Enter a number between 1 and 3: 2\nYou chose Two\n",
+      "segments": [
+       [
+        69,
+        "Enter a number between 1 and 3: ",
+        0
+       ],
+       [
+        70,
+        "2\n",
+        0
+       ],
+       [
+        77,
+        "You chose Two\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "94": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1\n2\n",
+      "segments": [
+       [
+        100,
+        "1\n2\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "107": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1\n2\n4\n5\n",
+      "segments": [
+       [
+        113,
+        "1\n2\n4\n5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/03_loops.java": {
+  "capturedAt": "2026-11-05T13:06:51.706Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "26": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "For loop: 1\nFor loop: 2\nFor loop: 3\nFor loop: 4\nFor loop: 5\nWhile loop: 1\nWhile loop: 2\nWhile loop: 3\nWhile loop: 4\nWhile loop: 5\nDo-while loop: 1\nDo-while loop: 2\nDo-while loop: 3\nDo-while loop: 4\nDo-while loop: 5\nMark: 85\nMark: 90\nMark: 78\n",
+      "segments": [
+       [
+        30,
+        "For loop: 1\nFor loop: 2\nFor loop: 3\nFor loop: 4\nFor loop: 5\n",
+        0
+       ],
+       [
+        36,
+        "While loop: 1\nWhile loop: 2\nWhile loop: 3\nWhile loop: 4\nWhile loop: 5\n",
+        0
+       ],
+       [
+        43,
+        "Do-while loop: 1\nDo-while loop: 2\nDo-while loop: 3\nDo-while loop: 4\nDo-while loop: 5\n",
+        0
+       ],
+       [
+        51,
+        "Mark: 85\nMark: 90\nMark: 78\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "68": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "For loop: 1\nFor loop: 2\nFor loop: 3\nFor loop: 4\nFor loop: 5\n",
+      "segments": [
+       [
+        71,
+        "For loop: 1\nFor loop: 2\nFor loop: 3\nFor loop: 4\nFor loop: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "92": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "While loop: 1\nWhile loop: 2\nWhile loop: 3\nWhile loop: 4\nWhile loop: 5\n",
+      "segments": [
+       [
+        96,
+        "While loop: 1\nWhile loop: 2\nWhile loop: 3\nWhile loop: 4\nWhile loop: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "118": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Do-while loop: 1\nDo-while loop: 2\nDo-while loop: 3\nDo-while loop: 4\nDo-while loop: 5\n",
+      "segments": [
+       [
+        122,
+        "Do-while loop: 1\nDo-while loop: 2\nDo-while loop: 3\nDo-while loop: 4\nDo-while loop: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "144": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Mark: 85\nMark: 90\nMark: 78\n",
+      "segments": [
+       [
+        149,
+        "Mark: 85\nMark: 90\nMark: 78\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "156": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1 2 3 ",
+      "segments": [
+       [
+        165,
+        "1 2 3 ",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/04_array.java": {
+  "capturedAt": "2026-11-05T13:06:52.823Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "14": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Element at index 0: 10\nElement at index 1: 20\nElement at index 2: 30\nElement at index 3: 40\nElement at index 4: 50\n",
+      "segments": [
+       [
+        19,
+        "Element at index 0: 10\nElement at index 1: 20\nElement at index 2: 30\nElement at index 3: 40\nElement at index 4: 50\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "26": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "85",
+       "90",
+       "78"
+      ],
+      "stdout": "Enter number 1: 85\nEnter number 2: 90\nEnter number 3: 78\nN :\n85\n90\n78\n",
+      "segments": [
+       [
+        34,
+        "Enter number 1: ",
+        0
+       ],
+       [
+        35,
+        "85\n",
+        0
+       ],
+       [
+        34,
+        "Enter number 2: ",
+        0
+       ],
+       [
+        35,
+        "90\n",
+        0
+       ],
+       [
+        34,
+        "Enter number 3: ",
+        0
+       ],
+       [
+        35,
+        "78\n",
+        0
+       ],
+       [
+        38,
+        "N :\n",
+        0
+       ],
+       [
+        41,
+        "85\n90\n78\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "52": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1 2 3 \n4 5 6 \n7 8 9 \n",
+      "segments": [
+       [
+        62,
+        "1 2 3 ",
+        0
+       ],
+       [
+        64,
+        "\n",
+        0
+       ],
+       [
+        62,
+        "4 5 6 ",
+        0
+       ],
+       [
+        64,
+        "\n",
+        0
+       ],
+       [
+        62,
+        "7 8 9 ",
+        0
+       ],
+       [
+        64,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "71": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ],
+      "stdout": "matrix[1][1]: 1\nmatrix[1][2]: 2\nmatrix[1][3]: 3\nmatrix[2][1]: 4\nmatrix[2][2]: 5\nmatrix[2][3]: 6\nmatrix[3][1]: 7\nmatrix[3][2]: 8\nmatrix[3][3]: 9\nMatrix: \n1 2 3 \n4 5 6 \n7 8 9 \n",
+      "segments": [
+       [
+        80,
+        "matrix[1][1]: ",
+        0
+       ],
+       [
+        81,
+        "1\n",
+        0
+       ],
+       [
+        80,
+        "matrix[1][2]: ",
+        0
+       ],
+       [
+        81,
+        "2\n",
+        0
+       ],
+       [
+        80,
+        "matrix[1][3]: ",
+        0
+       ],
+       [
+        81,
+        "3\n",
+        0
+       ],
+       [
+        80,
+        "matrix[2][1]: ",
+        0
+       ],
+       [
+        81,
+        "4\n",
+        0
+       ],
+       [
+        80,
+        "matrix[2][2]: ",
+        0
+       ],
+       [
+        81,
+        "5\n",
+        0
+       ],
+       [
+        80,
+        "matrix[2][3]: ",
+        0
+       ],
+       [
+        81,
+        "6\n",
+        0
+       ],
+       [
+        80,
+        "matrix[3][1]: ",
+        0
+       ],
+       [
+        81,
+        "7\n",
+        0
+       ],
+       [
+        80,
+        "matrix[3][2]: ",
+        0
+       ],
+       [
+        81,
+        "8\n",
+        0
+       ],
+       [
+        80,
+        "matrix[3][3]: ",
+        0
+       ],
+       [
+        81,
+        "9\n",
+        0
+       ],
+       [
+        85,
+        "Matrix: \n",
+        0
+       ],
+       [
+        89,
+        "1 2 3 ",
+        0
+       ],
+       [
+        91,
+        "\n",
+        0
+       ],
+       [
+        89,
+        "4 5 6 ",
+        0
+       ],
+       [
+        91,
+        "\n",
+        0
+       ],
+       [
+        89,
+        "7 8 9 ",
+        0
+       ],
+       [
+        91,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "100": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "2",
+       "2",
+       "1",
+       "2",
+       "3",
+       "3",
+       "4",
+       "5"
+      ],
+      "stdout": "Number of rows : 2\nNumber of columns for row 1 : 2\nEnter element a[1][1] : 1\nEnter element a[1][2] : 2\nNumber of columns for row 2 : 3\nEnter element a[2][1] : 3\nEnter element a[2][2] : 4\nEnter element a[2][3] : 5\n1 2 \n3 4 5 \n",
+      "segments": [
+       [
+        106,
+        "Number of rows : ",
+        0
+       ],
+       [
+        107,
+        "2\n",
+        0
+       ],
+       [
+        112,
+        "Number of columns for row 1 : ",
+        0
+       ],
+       [
+        113,
+        "2\n",
+        0
+       ],
+       [
+        116,
+        "Enter element a[1][1] : ",
+        0
+       ],
+       [
+        117,
+        "1\n",
+        0
+       ],
+       [
+        116,
+        "Enter element a[1][2] : ",
+        0
+       ],
+       [
+        117,
+        "2\n",
+        0
+       ],
+       [
+        112,
+        "Number of columns for row 2 : ",
+        0
+       ],
+       [
+        113,
+        "3\n",
+        0
+       ],
+       [
+        116,
+        "Enter element a[2][1] : ",
+        0
+       ],
+       [
+        117,
+        "3\n",
+        0
+       ],
+       [
+        116,
+        "Enter element a[2][2] : ",
+        0
+       ],
+       [
+        117,
+        "4\n",
+        0
+       ],
+       [
+        116,
+        "Enter element a[2][3] : ",
+        0
+       ],
+       [
+        117,
+        "5\n",
+        0
+       ],
+       [
+        123,
+        "1 2 ",
+        0
+       ],
+       [
+        125,
+        "\n",
+        0
+       ],
+       [
+        123,
+        "3 4 5 ",
+        0
+       ],
+       [
+        125,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/05_methods.java": {
+  "capturedAt": "2026-11-05T13:06:53.350Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "13": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello from a method!\n",
+      "segments": [
+       [
+        19,
+        "Hello from a method!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "25": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Sum: 12\n",
+      "segments": [
+       [
+        32,
+        "Sum: 12\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/06_strings.java": {
+  "capturedAt": "2026-11-05T13:06:53.351Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {}
+ },
+ "Working_with_Objects/21_call_by_value_vs_call_by_reference.java": {
+  "capturedAt": "2026-11-05T13:06:53.908Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "26": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Value of a: 50\n",
+      "segments": [
+       [
+        34,
+        "Value of a: 50\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "53": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Noman\n",
+      "segments": [
+       [
+        67,
+        "Noman\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "76": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Tortilla\n",
+      "segments": [
+       [
+        91,
+        "Tortilla\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Working_with_Objects/22_copy_constructor.java": {
+  "capturedAt": "2026-11-05T13:06:54.376Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Noman, Age: 35\nName: Noman, Age: 35\n",
+      "segments": [
+       [
+        46,
+        "Name: Noman, Age: 35\n",
+        0
+       ],
+       [
+        47,
+        "Name: Noman, Age: 35\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Working_with_Objects/23_constructor_chaining.java": {
+  "capturedAt": "2026-11-05T13:06:54.836Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "19": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Unknown, Age: 0\nName: Noman, Age: 0\nName: Tortilla, Age: 35\n",
+      "segments": [
+       [
+        50,
+        "Name: Unknown, Age: 0\n",
+        0
+       ],
+       [
+        51,
+        "Name: Noman, Age: 0\n",
+        0
+       ],
+       [
+        52,
+        "Name: Tortilla, Age: 35\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Working_with_Objects/24_passing_and_returning_object.java": {
+  "capturedAt": "2026-11-05T13:06:55.847Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "24": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Before: Noman\nAfter: Changed Name\n",
+      "segments": [
+       [
+        39,
+        "Before: Noman\n",
+        0
+       ],
+       [
+        43,
+        "After: Changed Name\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "54": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "ob1.a = 5\nob2.a = 15\n",
+      "segments": [
+       [
+        72,
+        "ob1.a = 5\n",
+        0
+       ],
+       [
+        73,
+        "ob2.a = 15\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "89": {
+    "mainClass": "UsingObjectsAsParametersExample",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "ob1 == ob2: true\nob1 == ob3: false\n",
+      "segments": [
+       [
+        109,
+        "ob1 == ob2: true\n",
+        0
+       ],
+       [
+        110,
+        "ob1 == ob3: false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "125": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Volume of mybox1 is 3000.0\nVolume of mybox2 is -1.0\nVolume of cube is 343.0\nVolume of clone is 3000.0\n",
+      "segments": [
+       [
+        177,
+        "Volume of mybox1 is 3000.0\n",
+        0
+       ],
+       [
+        181,
+        "Volume of mybox2 is -1.0\n",
+        0
+       ],
+       [
+        185,
+        "Volume of cube is 343.0\n",
+        0
+       ],
+       [
+        189,
+        "Volume of clone is 3000.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ }
+}
