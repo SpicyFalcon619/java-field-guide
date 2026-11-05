@@ -9,7 +9,8 @@
   It starts CheerpJ (a Java virtual machine written for the browser, https://cheerpj.com, free for personal and
   educational use), then, for each run, compiles the visitor's code and runs it through LiveRunner (public/java/live.jar).
 
-  Messages in:   { type: 'run', id, code }   { type: 'stdin', line }   { type: 'eof' }
+  Messages in:   { type: 'run', id, code } or { type: 'run', id, jar, mainClass } (a program compiled at build time)
+                 { type: 'prepare' } (start Java early)   { type: 'stdin', line }   { type: 'eof' }
   Messages out:  { type: 'status', phase, detail }   { type: 'out', stream, text }   { type: 'input-wait' }
                  { type: 'done', id, exit }   { type: 'fatal', message }
   stream: 0 = normal output, 1 = error stream, 2 = compiler message.
@@ -42,7 +43,7 @@
   let started = null
   function start() {
     if (!started) {
-      send({ type: 'status', phase: 'loading', detail: 'Starting Java in your browser. The first time takes a little while.' })
+      send({ type: 'status', phase: 'loading', detail: 'Starting Java in your browser. The first run takes about half a minute; after that it is quick.' })
       started = cheerpjInit({
         version: 17,
         natives: { Java_LiveRunner_emit, Java_LiveRunner_readLine },
@@ -51,34 +52,45 @@
     return started
   }
 
-  // ---- One run: compile, then run -------------------------------------------------------------------------
+  // ---- One run: compile and run, or run a program that was compiled when the site was built -----------------
   let runs = 0
-  async function run(id, code) {
+  async function run(message) {
     typed.length = 0
     waiting = null
     ended = false
     try {
       await start()
-      // The source file must be named after its public class.
-      const match = code.match(/public\s+(?:final\s+|abstract\s+|sealed\s+)*(?:class|interface|enum|record)\s+(\w+)/)
-      const name = match ? match[1] : 'Main'
       runs++
-      // /str only holds flat files, so each run's text goes in under its own name and LiveRunner saves it
-      // properly named inside a folder of its own.
-      const text = '/str/program' + runs + '.txt'
-      cheerpOSAddStringFile(text, code)
       send({ type: 'status', phase: 'running' })
-      const exit = await cheerpjRunMain('LiveRunner', '/app' + base + 'java/live.jar', text, name + '.java', '/files/run' + runs)
-      send({ type: 'done', id, exit })
+      const live = '/app' + base + 'java/live.jar'
+      let exit
+      if (message.jar) {
+        exit = await cheerpjRunMain('LiveRunner', live, '--jar', '/app' + base + message.jar, message.mainClass)
+      } else {
+        const code = String(message.code)
+        // The source file must be named after its public class.
+        const match = code.match(/public\s+(?:final\s+|abstract\s+|sealed\s+)*(?:class|interface|enum|record)\s+(\w+)/)
+        const name = match ? match[1] : 'Main'
+        // /str only holds flat files, so each run's text goes in under its own name and LiveRunner saves it
+        // properly named inside a folder of its own.
+        const text = '/str/program' + runs + '.txt'
+        cheerpOSAddStringFile(text, code)
+        exit = await cheerpjRunMain('LiveRunner', live, text, name + '.java', '/files/run' + runs)
+      }
+      send({ type: 'done', id: message.id, exit })
     } catch (error) {
       send({ type: 'fatal', message: String(error && error.message ? error.message : error) })
     }
   }
 
+  // Runs go one at a time: two programs sharing one Java machine would share its console and keyboard.
+  let chain = Promise.resolve()
+
   addEventListener('message', (event) => {
     if (event.source !== parent) return
     const message = event.data || {}
-    if (message.type === 'run') run(message.id, String(message.code))
+    if (message.type === 'run') chain = chain.then(() => run(message))
+    else if (message.type === 'prepare') start().catch(() => undefined)
     else if (message.type === 'stdin') {
       if (waiting) {
         const resolve = waiting

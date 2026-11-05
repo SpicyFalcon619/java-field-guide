@@ -19,6 +19,8 @@ interface LiveJavaProps {
   onCodeChange?: (code: string) => void
   /** Run as soon as the editor appears (the reader pressed Run on a lesson's block). */
   autoRun?: boolean
+  /** This code, compiled when the site was built. While the code is unedited it runs without the compiler. */
+  prebuilt?: { jar: string; mainClass: string }
   /** Lets a lesson's block go back to its plain code and sample output. */
   onClose?: () => void
 }
@@ -40,6 +42,7 @@ export default function LiveJava({
   label = 'Editable Java code',
   onCodeChange,
   autoRun = false,
+  prebuilt,
   onClose,
 }: LiveJavaProps) {
   const owner = useId()
@@ -88,6 +91,8 @@ export default function LiveJava({
   const edit = (next: string) => {
     setCode(next)
     onCodeChange?.(next)
+    // Edited code needs the compiler, which is slow the first time: start getting it ready while they type.
+    javaRunner.warmUp()
   }
 
   const run = useCallback(async () => {
@@ -100,7 +105,12 @@ export default function LiveJava({
     buffer.current = []
     total.current = 0
     try {
-      const result = await javaRunner.run({ code, owner, onOutput: (stream, text) => append(stream, text) })
+      const result = await javaRunner.run({
+        code,
+        owner,
+        onOutput: (stream, text) => append(stream, text),
+        prebuilt: prebuilt && code === initialCode ? prebuilt : undefined,
+      })
       flush()
       setOutcome(result)
     } catch (error) {
@@ -111,7 +121,7 @@ export default function LiveJava({
       flush()
       setRunning(false)
     }
-  }, [running, code, owner, append, flush])
+  }, [running, code, owner, prebuilt, initialCode, append, flush])
 
   // A block opened with Run starts straight away. The guard stops React's double effect from running it twice.
   const started = useRef(false)
@@ -149,7 +159,7 @@ export default function LiveJava({
 
   const busyElsewhere = !running && status.owner !== null && status.owner !== owner && (status.phase === 'running' || status.phase === 'waiting' || status.phase === 'compiling')
   const changed = code !== initialCode
-  const progress = running && (status.phase === 'loading' || status.phase === 'compiling') ? status.message : ''
+  const progress = running && (status.phase === 'loading' || status.phase === 'warming' || status.phase === 'compiling') ? status.message : ''
   const showOutput = chunks.length > 0 || note || outcome || waiting
 
   return (

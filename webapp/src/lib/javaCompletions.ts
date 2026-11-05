@@ -17,8 +17,10 @@ const TYPES = words(
 
 // Snippets: the label is what you type; Tab jumps between the filled-in fields.
 const SNIPPETS: Completion[] = [
-  snippetCompletion('public class ${Main} {\n\tpublic static void main(String[] args) {\n\t\t${}\n\t}\n}', { label: 'psvm', detail: 'a class with main', type: 'keyword', boost: 3 }),
+  // psvm and main add only the method, as in IntelliJ. The class around it has its own snippet, below.
+  snippetCompletion('public static void main(String[] args) {\n\t${}\n}', { label: 'psvm', detail: 'public static void main', type: 'keyword', boost: 4 }),
   snippetCompletion('public static void main(String[] args) {\n\t${}\n}', { label: 'main', detail: 'the main method', type: 'keyword', boost: 3 }),
+  snippetCompletion('public class ${Main} {\n\tpublic static void main(String[] args) {\n\t\t${}\n\t}\n}', { label: 'mainclass', detail: 'a whole class with main', type: 'keyword', boost: 3 }),
   snippetCompletion('System.out.println(${});', { label: 'sout', detail: 'print a line', type: 'function', boost: 3 }),
   snippetCompletion('System.out.print(${});', { label: 'soutp', detail: 'print without a new line', type: 'function', boost: 2 }),
   snippetCompletion('System.out.printf("${%d%n}", ${value});', { label: 'soutf', detail: 'print with a format', type: 'function', boost: 2 }),

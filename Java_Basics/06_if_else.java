@@ -104,7 +104,7 @@ public class Main {
 /// @input 50
 /// @input 30
 
-/// Use the "Typed input" menu on the sample output to see each of the four marks (or press "Run it" and type your
+/// Use the "Typed input" menu on the sample output to see each of the four marks (or press "Type your own input" and type your
 /// own), and trace the path through the code by hand. 92 goes
 /// into the first branch (60 or more) and then into the inner one (90 or more), so it earns an A+. 30 fails
 /// the first test, goes to the `else`, fails the inner test too, and prints Fail.

@@ -1,7 +1,8 @@
 import { createContext, lazy, Suspense, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { PencilLine, Play } from 'lucide-react'
+import { Keyboard, PencilLine, Play } from 'lucide-react'
 import { getTerm, TERM_PATTERN, termIdOf, termsIn } from '@/lib/glossary'
+import { javaRunner } from '@/lib/javaRunner'
 import { chunkTransformer, getHighlighter, SHIKI_THEME_BY_SITE_THEME } from '@/lib/highlighter'
 import type { BannerSection, LessonBlock, ProseNode } from '@/lib/lesson'
 import type { BlockRun, CapturedOutput } from '@/lib/outputs'
@@ -26,6 +27,9 @@ interface GuidedLessonProps {
   output?: CapturedOutput
   focusLine?: number
 }
+
+// A program that waits for typing: Scanner, System.in, a BufferedReader on the keyboard.
+const READS_INPUT = /\bScanner\b|System\s*\.\s*in\b|BufferedReader/
 
 // Words in prose that are really code: `backticked`, name(...) calls, __dunders__.
 const INLINE_CODE = /(`[^`]+`|(?<!\w)\.?[A-Za-z_][\w.]*\((?:[^()]|\([^()]*\))*\)|__\w+__)/g
@@ -259,6 +263,7 @@ function PartRun({
   scenario,
   onScenario,
   onLive,
+  reads,
 }: {
   run: BlockRun
   open: boolean
@@ -267,6 +272,8 @@ function PartRun({
   onScenario: (index: number) => void
   /** Open the block as an editor and, with `true`, run it at once. */
   onLive: (andRun: boolean) => void
+  /** The program reads typed input, so the reader may want to supply their own. */
+  reads: boolean
 }) {
   const current = run.scenarios[Math.min(scenario, run.scenarios.length - 1)]
   const broken = run.status === 'compile-error'
@@ -281,49 +288,62 @@ function PartRun({
   return (
     <>
       <div className="guide-part-bar">
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-expanded={open}
+            className={cn(
+              'flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border px-2.5 py-0.5 text-[13px] transition-colors',
+              open
+                ? 'border-[var(--color-code-accent-glow)] bg-[var(--color-code-accent-glow)]/20 text-[var(--color-code-accent-soft)]'
+                : 'border-[var(--color-code-border)] bg-[var(--color-code-surface)] text-[var(--color-code-ink-dim)] hover:border-[var(--color-code-border-strong)] hover:bg-[var(--color-code-surface-hover)] hover:text-[var(--color-code-ink)]',
+            )}
+          >
+            <Play className="h-3 w-3" aria-hidden /> {open ? (broken ? 'Hide the error' : 'Hide output') : broken ? 'Show the error' : 'Run'}
+          </button>
+          {open && run.scenarios.length > 1 && (
+            <label className="flex items-center gap-2 text-xs text-[var(--color-code-ink-faint)]">
+              Typed input
+              <select
+                value={Math.min(scenario, run.scenarios.length - 1)}
+                onChange={(event) => onScenario(Number(event.target.value))}
+                className="min-h-6 max-w-[16rem] cursor-pointer rounded-md border border-[var(--color-code-border)] bg-[var(--color-code-surface)] px-1.5 text-[13px] text-[var(--color-code-ink)]"
+              >
+                {run.scenarios.map((s, index) => (
+                  <option key={index} value={index}>
+                    {s.label || `Input ${index + 1}`}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+        </div>
         {run.status !== 'no-main' && (
-          <>
-            <button
-              type="button"
-              onClick={() => onLive(true)}
-              className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border border-[var(--color-code-accent-glow)] bg-[var(--color-code-accent-glow)]/20 px-2.5 py-0.5 text-[13px] text-[var(--color-code-accent-soft)] transition-colors hover:bg-[var(--color-code-accent-glow)]/35"
-              title="Run this program yourself, in your browser. If it asks for input, you type it."
-            >
-              <Play className="h-3 w-3" aria-hidden /> Run it
-            </button>
+          <div className="flex flex-wrap items-center gap-2">
+            {reads && (
+              <button
+                type="button"
+                onClick={() => onLive(true)}
+                onPointerEnter={() => javaRunner.prepare()}
+                onFocus={() => javaRunner.prepare()}
+                className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border border-[var(--color-code-border)] bg-[var(--color-code-surface)] px-2.5 py-0.5 text-[13px] text-[var(--color-code-ink-dim)] transition-colors hover:border-[var(--color-code-border-strong)] hover:bg-[var(--color-code-surface-hover)] hover:text-[var(--color-code-ink)]"
+                title="Runs the real program in your browser and lets you type the input yourself. The first run takes about half a minute."
+              >
+                <Keyboard className="h-3 w-3" aria-hidden /> Type your own input
+              </button>
+            )}
             <button
               type="button"
               onClick={() => onLive(false)}
+              onPointerEnter={() => javaRunner.prepare()}
+              onFocus={() => javaRunner.prepare()}
               className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border border-[var(--color-code-border)] bg-[var(--color-code-surface)] px-2.5 py-0.5 text-[13px] text-[var(--color-code-ink-dim)] transition-colors hover:border-[var(--color-code-border-strong)] hover:bg-[var(--color-code-surface-hover)] hover:text-[var(--color-code-ink)]"
-              title="Change the code, then run your version"
+              title="Change the code and run your own version, live in your browser"
             >
               <PencilLine className="h-3 w-3" aria-hidden /> Edit
             </button>
-          </>
-        )}
-        <button
-          type="button"
-          onClick={onToggle}
-          aria-expanded={open}
-          className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md px-2 py-0.5 text-[13px] text-[var(--color-code-ink-faint)] transition-colors hover:text-[var(--color-code-ink)]"
-        >
-          {open ? (broken ? 'Hide the error' : 'Hide output') : broken ? 'Show the error' : 'Show output'}
-        </button>
-        {open && run.scenarios.length > 1 && (
-          <label className="flex items-center gap-2 text-xs text-[var(--color-code-ink-faint)]">
-            Typed input
-            <select
-              value={Math.min(scenario, run.scenarios.length - 1)}
-              onChange={(event) => onScenario(Number(event.target.value))}
-              className="min-h-6 max-w-[16rem] cursor-pointer rounded-md border border-[var(--color-code-border)] bg-[var(--color-code-surface)] px-1.5 text-[13px] text-[var(--color-code-ink)]"
-            >
-              {run.scenarios.map((s, index) => (
-                <option key={index} value={index}>
-                  {s.label || `Input ${index + 1}`}
-                </option>
-              ))}
-            </select>
-          </label>
+          </div>
         )}
       </div>
       {open && (
@@ -454,6 +474,7 @@ export function GuidedLesson({ leading, blocks, code, filename, topics, output, 
                   initialCode={block.code}
                   firstLine={block.line}
                   autoRun={live.get(block.line)}
+                  prebuilt={run?.jar && run.mainClass ? { jar: run.jar, mainClass: run.mainClass } : undefined}
                   label={`Editable Java code, lesson line ${block.line}`}
                   onClose={() =>
                     setLive((current) => {
@@ -478,7 +499,12 @@ export function GuidedLesson({ leading, blocks, code, filename, topics, output, 
                     onToggle={() => togglePart(block.line)}
                     scenario={scenarios[block.line] ?? 0}
                     onScenario={(index) => setScenarios((current) => ({ ...current, [block.line]: index }))}
-                    onLive={(andRun) => setLive((current) => new Map(current).set(block.line, andRun))}
+                    reads={READS_INPUT.test(block.code)}
+                    onLive={(andRun) => {
+                      // Editing means compiling soon, and the compiler is slow to start, so begin warming it now.
+                      if (!andRun) javaRunner.warmUp()
+                      setLive((current) => new Map(current).set(block.line, andRun))
+                    }}
                   />
                 )}
               </>

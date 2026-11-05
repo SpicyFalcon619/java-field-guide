@@ -99,9 +99,9 @@ public class Main {
 ///   - Explanations are the paragraphs you are reading now. Code is always in a dark box beneath them.
 ///   - Every code block is a COMPLETE program. You can copy it into a file called `Main.java` and run it exactly
 ///     as it is.
-///   - The output under a block shows what it printed. Press "Run it" to run the program yourself, in your
-///     browser. If it asks you to type something, a box appears and you type the answer. Press "Edit" to change
-///     the code first. The "Typed input" menu on the sample output lets you pick which answer is shown.
+///   - The output under a block is exactly what the program printed. If it reads input, the "Typed input" menu
+///     picks which example answer is shown, and "Type your own input" runs it live in your browser so you can
+///     type it yourself. "Edit" lets you change the code and run your own version.
 ///   - Words with a dotted underline, like the ones you may have noticed above, are explained when you hover over
 ///     them or tap them. The Glossary in the menu lists every one of them in one place.
 ///   - Coloured notes appear throughout: WHY explains the reason behind something, MISTAKE shows a trap

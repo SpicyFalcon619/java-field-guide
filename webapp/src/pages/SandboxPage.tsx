@@ -1,5 +1,6 @@
-import { lazy, Suspense, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { javaRunner } from '@/lib/javaRunner'
 import { cn } from '@/lib/cn'
 
 // The editor, the Java runner and CheerpJ load only when this page is opened.
@@ -140,6 +141,12 @@ export function SandboxPage() {
   const [code, setCode] = useState(() => stored() ?? EXAMPLES[0].code)
   // Picking an example replaces the editor, so it is given a new identity to start fresh.
   const [version, setVersion] = useState(0)
+
+  // Someone on this page is here to run code, so start Java and warm the compiler now, while they read and type.
+  useEffect(() => {
+    javaRunner.prepare()
+    javaRunner.warmUp()
+  }, [])
 
   const remember = (next: string) => {
     setCode(next)

@@ -86,7 +86,7 @@ public final class LiveRunner {
         }
     }
 
-    /** args: the source file, then the folder to put the compiled classes in. Returns through the exit code. */
+    /** Compiles and runs a program, or runs one that was compiled earlier (--jar). The exit code says how it went. */
     public static void main(String[] args) throws Exception {
         PrintStream out = new PrintStream(new Sink(0), true, "UTF-8");
         PrintStream err = new PrintStream(new Sink(1), true, "UTF-8");
@@ -94,39 +94,54 @@ public final class LiveRunner {
         System.setErr(err);
         System.setIn(new Keyboard());
 
-        // args: the file holding the program's text, the name it must be saved under (it has to match the
-        // public class), and a folder to work in.
-        File workDir = new File(args[2]);
-        String outDir = new File(workDir, "classes").getPath();
-        new File(outDir).mkdirs();
-        File sourceFile = new File(workDir, args[1]);
-        Files.write(sourceFile.toPath(), Files.readAllBytes(new File(args[0]).toPath()));
-        String source = sourceFile.getPath();
+        Method main;
+        if (args[0].equals("--jar")) {
+            // Already compiled when the site was built: args are --jar, the jar's path and the main class.
+            // This skips the compiler, which is by far the slowest part of a first run in the browser.
+            URLClassLoader loader = new URLClassLoader(new URL[] { new File(args[1]).toURI().toURL() }, LiveRunner.class.getClassLoader());
+            try {
+                main = Class.forName(args[2], true, loader).getMethod("main", String[].class);
+                main.setAccessible(true);
+            } catch (ReflectiveOperationException | LinkageError e) {
+                emit(2, "Could not load the prepared program: " + e + "\n");
+                System.exit(2);
+                return;
+            }
+        } else {
+            // args: the file holding the program's text, the name it must be saved under (it has to match the
+            // public class), and a folder to work in.
+            File workDir = new File(args[2]);
+            String outDir = new File(workDir, "classes").getPath();
+            new File(outDir).mkdirs();
+            File sourceFile = new File(workDir, args[1]);
+            Files.write(sourceFile.toPath(), Files.readAllBytes(new File(args[0]).toPath()));
+            String source = sourceFile.getPath();
 
-        // 1. Compile, keeping the compiler's messages instead of letting them vanish into a console.
-        StringWriter messages = new StringWriter();
-        int code;
-        try {
-            Method compile = Class.forName("com.sun.tools.javac.Main").getMethod("compile", String[].class, PrintWriter.class);
-            code = (Integer) compile.invoke(null, new String[] { "-g", "-d", outDir, "-encoding", "UTF-8", "-Xlint:none", source }, new PrintWriter(messages, true));
-        } catch (ReflectiveOperationException | RuntimeException e) {
-            emit(2, "The compiler could not start: " + e + "\n");
-            System.exit(2);
-            return;
-        }
-        if (code != 0) {
-            emit(2, messages.toString().replace(workDir.getPath() + "/", ""));
-            System.exit(1);
-            return;
-        }
+            // 1. Compile, keeping the compiler's messages instead of letting them vanish into a console.
+            StringWriter messages = new StringWriter();
+            int code;
+            try {
+                Method compile = Class.forName("com.sun.tools.javac.Main").getMethod("compile", String[].class, PrintWriter.class);
+                code = (Integer) compile.invoke(null, new String[] { "-g", "-d", outDir, "-encoding", "UTF-8", "-Xlint:none", source }, new PrintWriter(messages, true));
+            } catch (ReflectiveOperationException | RuntimeException e) {
+                emit(2, "The compiler could not start: " + e + "\n");
+                System.exit(2);
+                return;
+            }
+            if (code != 0) {
+                emit(2, messages.toString().replace(workDir.getPath() + "/", ""));
+                System.exit(1);
+                return;
+            }
 
-        // 2. Load the result with a fresh class loader, so running an edited program never reuses an old class.
-        URLClassLoader loader = new URLClassLoader(new URL[] { new File(outDir).toURI().toURL() }, LiveRunner.class.getClassLoader());
-        Method main = findMain(outDir, loader);
-        if (main == null) {
-            emit(2, "No main method found. A program needs: public static void main(String[] args)\n");
-            System.exit(1);
-            return;
+            // 2. Load the result with a fresh class loader, so running an edited program never reuses an old class.
+            URLClassLoader loader = new URLClassLoader(new URL[] { new File(outDir).toURI().toURL() }, LiveRunner.class.getClassLoader());
+            main = findMain(outDir, loader);
+            if (main == null) {
+                emit(2, "No main method found. A program needs: public static void main(String[] args)\n");
+                System.exit(1);
+                return;
+            }
         }
 
         // 3. Run it.

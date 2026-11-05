@@ -1,6 +1,6 @@
 {
  "Abstraction_and_Interfaces/25_abstraction_interface.java": {
-  "capturedAt": "2026-11-05T14:31:35.929Z",
+  "capturedAt": "2026-11-05T15:00:38.688Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -24,6 +24,7 @@
       ]
      }
     ],
+    "jar": "classes/Abstraction_and_Interfaces/25_abstraction_interface/36.jar",
     "status": "ok"
    },
    "82": {
@@ -52,6 +53,7 @@
       ]
      }
     ],
+    "jar": "classes/Abstraction_and_Interfaces/25_abstraction_interface/116.jar",
     "status": "ok"
    },
    "158": {
@@ -80,12 +82,13 @@
       ]
      }
     ],
+    "jar": "classes/Abstraction_and_Interfaces/25_abstraction_interface/158.jar",
     "status": "ok"
    }
   }
  },
  "Classes_and_Objects/12_classes_and_objects.java": {
-  "capturedAt": "2026-11-05T14:31:36.829Z",
+  "capturedAt": "2026-11-05T15:00:40.370Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "52": {
@@ -104,6 +107,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/12_classes_and_objects/52.jar",
     "status": "ok"
    },
    "94": {
@@ -137,6 +141,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/12_classes_and_objects/94.jar",
     "status": "ok"
    },
    "130": {
@@ -170,6 +175,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/12_classes_and_objects/130.jar",
     "status": "ok"
    },
    "162": {
@@ -198,6 +204,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/12_classes_and_objects/162.jar",
     "status": "ok"
    },
    "188": {
@@ -217,12 +224,13 @@
      }
     ],
     "expectError": true,
+    "jar": "classes/Classes_and_Objects/12_classes_and_objects/188.jar",
     "status": "runtime-error"
    }
   }
  },
  "Classes_and_Objects/13_constructors.java": {
-  "capturedAt": "2026-11-05T14:31:37.735Z",
+  "capturedAt": "2026-11-05T15:00:41.959Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "33": {
@@ -246,6 +254,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/13_constructors/33.jar",
     "status": "ok"
    },
    "71": {
@@ -283,6 +292,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/13_constructors/127.jar",
     "status": "ok"
    },
    "163": {
@@ -311,12 +321,13 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/13_constructors/163.jar",
     "status": "ok"
    }
   }
  },
  "Classes_and_Objects/14_this_keyword.java": {
-  "capturedAt": "2026-11-05T14:31:38.642Z",
+  "capturedAt": "2026-11-05T15:00:43.469Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -335,6 +346,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/14_this_keyword/36.jar",
     "status": "ok"
    },
    "67": {
@@ -353,6 +365,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/14_this_keyword/67.jar",
     "status": "ok"
    },
    "93": {
@@ -376,6 +389,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/14_this_keyword/93.jar",
     "status": "ok"
    },
    "134": {
@@ -399,6 +413,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/14_this_keyword/134.jar",
     "status": "ok"
    },
    "180": {
@@ -411,7 +426,7 @@
   }
  },
  "Classes_and_Objects/15_method_overloading.java": {
-  "capturedAt": "2026-11-05T14:31:39.197Z",
+  "capturedAt": "2026-11-05T15:00:44.404Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "44": {
@@ -445,6 +460,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/15_method_overloading/44.jar",
     "status": "ok"
    },
    "86": {
@@ -490,12 +506,13 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/15_method_overloading/109.jar",
     "status": "ok"
    }
   }
  },
  "Classes_and_Objects/16_static_keyword.java": {
-  "capturedAt": "2026-11-05T14:31:40.680Z",
+  "capturedAt": "2026-11-05T15:00:46.876Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "35": {
@@ -524,6 +541,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/35.jar",
     "status": "ok"
    },
    "62": {
@@ -542,6 +560,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/62.jar",
     "status": "ok"
    },
    "89": {
@@ -595,6 +614,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/89.jar",
     "status": "ok"
    },
    "128": {
@@ -620,6 +640,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/141.jar",
     "status": "ok"
    },
    "168": {
@@ -643,6 +664,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/168.jar",
     "status": "ok"
    },
    "194": {
@@ -666,6 +688,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/194.jar",
     "status": "ok"
    },
    "208": {
@@ -694,12 +717,13 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/16_static_keyword/208.jar",
     "status": "ok"
    }
   }
  },
  "Classes_and_Objects/17_initialization_blocks.java": {
-  "capturedAt": "2026-11-05T14:31:41.264Z",
+  "capturedAt": "2026-11-05T15:00:47.828Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "28": {
@@ -728,6 +752,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/17_initialization_blocks/28.jar",
     "status": "ok"
    },
    "51": {
@@ -751,6 +776,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/17_initialization_blocks/51.jar",
     "status": "ok"
    },
    "77": {
@@ -804,12 +830,13 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/17_initialization_blocks/77.jar",
     "status": "ok"
    }
   }
  },
  "Classes_and_Objects/18_variable_scope_lifetime.java": {
-  "capturedAt": "2026-11-05T14:31:42.550Z",
+  "capturedAt": "2026-11-05T15:00:49.978Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "34": {
@@ -833,6 +860,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/18_variable_scope_lifetime/34.jar",
     "status": "ok"
    },
    "56": {
@@ -856,6 +884,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/18_variable_scope_lifetime/56.jar",
     "status": "ok"
    },
    "83": {
@@ -884,6 +913,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/18_variable_scope_lifetime/83.jar",
     "status": "ok"
    },
    "114": {
@@ -902,6 +932,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/18_variable_scope_lifetime/114.jar",
     "status": "ok"
    },
    "127": {
@@ -927,6 +958,7 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/18_variable_scope_lifetime/146.jar",
     "status": "ok"
    },
    "165": {
@@ -945,12 +977,13 @@
       ]
      }
     ],
+    "jar": "classes/Classes_and_Objects/18_variable_scope_lifetime/165.jar",
     "status": "ok"
    }
   }
  },
  "Encapsulation_and_Access/22_access_control.java": {
-  "capturedAt": "2026-11-05T14:31:43.615Z",
+  "capturedAt": "2026-11-05T15:00:51.725Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "57": {
@@ -969,6 +1002,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/22_access_control/57.jar",
     "status": "ok"
    },
    "78": {
@@ -994,6 +1028,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/22_access_control/95.jar",
     "status": "ok"
    },
    "126": {
@@ -1012,6 +1047,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/22_access_control/126.jar",
     "status": "ok"
    },
    "152": {
@@ -1030,6 +1066,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/22_access_control/152.jar",
     "status": "ok"
    },
    "170": {
@@ -1083,12 +1120,13 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/22_access_control/170.jar",
     "status": "ok"
    }
   }
  },
  "Encapsulation_and_Access/23_encapsulation.java": {
-  "capturedAt": "2026-11-05T14:31:44.380Z",
+  "capturedAt": "2026-11-05T15:00:53.050Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "34": {
@@ -1107,6 +1145,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/23_encapsulation/34.jar",
     "status": "ok"
    },
    "60": {
@@ -1150,6 +1189,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/23_encapsulation/60.jar",
     "status": "ok"
    },
    "129": {
@@ -1188,6 +1228,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/23_encapsulation/129.jar",
     "status": "ok"
    },
    "186": {
@@ -1200,7 +1241,7 @@
   }
  },
  "Encapsulation_and_Access/24_final_keyword.java": {
-  "capturedAt": "2026-11-05T14:31:46.033Z",
+  "capturedAt": "2026-11-05T15:00:56.320Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "32": {
@@ -1219,6 +1260,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/24_final_keyword/32.jar",
     "status": "ok"
    },
    "43": {
@@ -1244,6 +1286,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/24_final_keyword/60.jar",
     "status": "ok"
    },
    "83": {
@@ -1276,6 +1319,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/24_final_keyword/129.jar",
     "status": "ok"
    },
    "151": {
@@ -1301,6 +1345,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/24_final_keyword/170.jar",
     "status": "ok"
    },
    "191": {
@@ -1319,6 +1364,7 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/24_final_keyword/191.jar",
     "status": "ok"
    },
    "211": {
@@ -1337,12 +1383,13 @@
       ]
      }
     ],
+    "jar": "classes/Encapsulation_and_Access/24_final_keyword/211.jar",
     "status": "ok"
    }
   }
  },
  "Exceptions_and_Files/26_exception_handling.java": {
-  "capturedAt": "2026-11-05T14:31:47.541Z",
+  "capturedAt": "2026-11-05T15:00:59.388Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "31": {
@@ -1361,6 +1408,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/31.jar",
     "status": "runtime-error"
    },
    "61": {
@@ -1384,6 +1432,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/61.jar",
     "status": "ok"
    },
    "89": {
@@ -1407,6 +1456,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/89.jar",
     "status": "ok"
    },
    "116": {
@@ -1430,6 +1480,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/116.jar",
     "status": "ok"
    },
    "138": {
@@ -1453,6 +1504,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/138.jar",
     "status": "ok"
    },
    "157": {
@@ -1471,6 +1523,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/157.jar",
     "status": "runtime-error"
    },
    "179": {
@@ -1489,6 +1542,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/179.jar",
     "status": "ok"
    },
    "225": {
@@ -1507,6 +1561,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/225.jar",
     "status": "ok"
    },
    "251": {
@@ -1525,6 +1580,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/26_exception_handling/251.jar",
     "status": "ok"
    },
    "283": {
@@ -1535,7 +1591,7 @@
   }
  },
  "Exceptions_and_Files/27_file_handling.java": {
-  "capturedAt": "2026-11-05T14:31:48.900Z",
+  "capturedAt": "2026-11-05T15:01:02.271Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "27": {
@@ -1554,6 +1610,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/27.jar",
     "status": "ok"
    },
    "47": {
@@ -1572,6 +1629,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/47.jar",
     "status": "ok"
    },
    "65": {
@@ -1590,6 +1648,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/65.jar",
     "status": "ok"
    },
    "83": {
@@ -1608,6 +1667,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/83.jar",
     "status": "ok"
    },
    "106": {
@@ -1626,6 +1686,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/106.jar",
     "status": "ok"
    },
    "121": {
@@ -1644,6 +1705,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/121.jar",
     "status": "ok"
    },
    "143": {
@@ -1662,6 +1724,7 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/143.jar",
     "status": "ok"
    },
    "164": {
@@ -1680,12 +1743,13 @@
       ]
      }
     ],
+    "jar": "classes/Exceptions_and_Files/27_file_handling/164.jar",
     "status": "ok"
    }
   }
  },
  "Inheritance_and_Polymorphism/19_inheritance.java": {
-  "capturedAt": "2026-11-05T14:31:50.870Z",
+  "capturedAt": "2026-11-05T15:01:06.377Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "39": {
@@ -1709,6 +1773,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/39.jar",
     "status": "ok"
    },
    "81": {
@@ -1734,6 +1799,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/115.jar",
     "status": "ok"
    },
    "139": {
@@ -1752,6 +1818,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/139.jar",
     "status": "ok"
    },
    "170": {
@@ -1770,6 +1837,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/170.jar",
     "status": "ok"
    },
    "195": {
@@ -1795,6 +1863,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/219.jar",
     "status": "ok"
    },
    "262": {
@@ -1828,6 +1897,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/262.jar",
     "status": "ok"
    },
    "302": {
@@ -1856,6 +1926,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/302.jar",
     "status": "ok"
    },
    "346": {
@@ -1879,6 +1950,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/346.jar",
     "status": "ok"
    },
    "385": {
@@ -1907,6 +1979,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/385.jar",
     "status": "ok"
    },
    "406": {
@@ -1925,12 +1998,13 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/19_inheritance/406.jar",
     "status": "ok"
    }
   }
  },
  "Inheritance_and_Polymorphism/20_method_overriding.java": {
-  "capturedAt": "2026-11-05T14:31:51.898Z",
+  "capturedAt": "2026-11-05T15:01:08.256Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "33": {
@@ -1954,6 +2028,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/20_method_overriding/33.jar",
     "status": "ok"
    },
    "77": {
@@ -1972,6 +2047,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/20_method_overriding/77.jar",
     "status": "ok"
    },
    "99": {
@@ -2004,6 +2080,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/20_method_overriding/166.jar",
     "status": "ok"
    },
    "191": {
@@ -2027,12 +2104,13 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/20_method_overriding/191.jar",
     "status": "ok"
    }
   }
  },
  "Inheritance_and_Polymorphism/21_polymorphism.java": {
-  "capturedAt": "2026-11-05T14:31:53.703Z",
+  "capturedAt": "2026-11-05T15:01:12.138Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "43": {
@@ -2061,6 +2139,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/43.jar",
     "status": "ok"
    },
    "86": {
@@ -2084,6 +2163,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/86.jar",
     "status": "ok"
    },
    "149": {
@@ -2119,6 +2199,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/187.jar",
     "status": "ok"
    },
    "218": {
@@ -2138,6 +2219,7 @@
      }
     ],
     "expectError": true,
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/218.jar",
     "status": "runtime-error"
    },
    "249": {
@@ -2161,6 +2243,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/249.jar",
     "status": "ok"
    },
    "282": {
@@ -2184,6 +2267,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/282.jar",
     "status": "ok"
    },
    "317": {
@@ -2202,6 +2286,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/317.jar",
     "status": "ok"
    },
    "334": {
@@ -2220,6 +2305,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/334.jar",
     "status": "ok"
    },
    "347": {
@@ -2238,6 +2324,7 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/347.jar",
     "status": "ok"
    },
    "366": {
@@ -2256,12 +2343,13 @@
       ]
      }
     ],
+    "jar": "classes/Inheritance_and_Polymorphism/21_polymorphism/366.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/01_what_is_java.java": {
-  "capturedAt": "2026-11-05T14:31:54.080Z",
+  "capturedAt": "2026-11-05T15:01:12.925Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "75": {
@@ -2280,12 +2368,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/01_what_is_java/75.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/02_first_program.java": {
-  "capturedAt": "2026-11-05T14:31:55.484Z",
+  "capturedAt": "2026-11-05T15:01:15.638Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "18": {
@@ -2304,6 +2393,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/02_first_program/18.jar",
     "status": "ok"
    },
    "58": {
@@ -2332,6 +2422,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/02_first_program/58.jar",
     "status": "ok"
    },
    "72": {
@@ -2365,6 +2456,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/02_first_program/72.jar",
     "status": "ok"
    },
    "88": {
@@ -2388,6 +2480,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/02_first_program/88.jar",
     "status": "ok"
    },
    "108": {
@@ -2421,6 +2514,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/02_first_program/108.jar",
     "status": "ok"
    },
    "128": {
@@ -2444,6 +2538,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/02_first_program/128.jar",
     "status": "ok"
    },
    "151": {
@@ -2470,7 +2565,7 @@
   }
  },
  "Java_Basics/03_variables.java": {
-  "capturedAt": "2026-11-05T14:31:56.921Z",
+  "capturedAt": "2026-11-05T15:01:18.841Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "32": {
@@ -2499,6 +2594,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/32.jar",
     "status": "ok"
    },
    "62": {
@@ -2527,6 +2623,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/62.jar",
     "status": "ok"
    },
    "94": {
@@ -2560,6 +2657,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/94.jar",
     "status": "ok"
    },
    "133": {
@@ -2578,6 +2676,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/133.jar",
     "status": "ok"
    },
    "144": {
@@ -2625,6 +2724,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/184.jar",
     "status": "ok"
    },
    "212": {
@@ -2653,6 +2753,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/212.jar",
     "status": "ok"
    },
    "226": {
@@ -2676,12 +2777,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/03_variables/226.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/04_scanner_input.java": {
-  "capturedAt": "2026-11-05T14:31:58.226Z",
+  "capturedAt": "2026-11-05T15:01:22.153Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "28": {
@@ -2723,6 +2825,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/04_scanner_input/28.jar",
     "status": "ok"
    },
    "78": {
@@ -2771,6 +2874,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/04_scanner_input/119.jar",
     "status": "ok"
    },
    "141": {
@@ -2801,6 +2905,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/04_scanner_input/141.jar",
     "status": "ok"
    },
    "165": {
@@ -2837,6 +2942,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/04_scanner_input/165.jar",
     "status": "ok"
    },
    "187": {
@@ -2878,6 +2984,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/04_scanner_input/187.jar",
     "status": "ok"
    },
    "214": {
@@ -2909,12 +3016,13 @@
      }
     ],
     "expectError": true,
+    "jar": "classes/Java_Basics/04_scanner_input/214.jar",
     "status": "runtime-error"
    }
   }
  },
  "Java_Basics/05_operators.java": {
-  "capturedAt": "2026-11-05T14:31:59.929Z",
+  "capturedAt": "2026-11-05T15:01:27.364Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "30": {
@@ -2953,6 +3061,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/30.jar",
     "status": "ok"
    },
    "54": {
@@ -2996,6 +3105,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/54.jar",
     "status": "ok"
    },
    "74": {
@@ -3020,6 +3130,7 @@
      }
     ],
     "expectError": true,
+    "jar": "classes/Java_Basics/05_operators/74.jar",
     "status": "runtime-error"
    },
    "90": {
@@ -3053,6 +3164,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/90.jar",
     "status": "ok"
    },
    "110": {
@@ -3086,6 +3198,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/110.jar",
     "status": "ok"
    },
    "135": {
@@ -3109,6 +3222,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/135.jar",
     "status": "ok"
    },
    "157": {
@@ -3147,6 +3261,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/157.jar",
     "status": "ok"
    },
    "183": {
@@ -3180,6 +3295,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/183.jar",
     "status": "ok"
    },
    "203": {
@@ -3208,6 +3324,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/203.jar",
     "status": "ok"
    },
    "216": {
@@ -3236,12 +3353,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/05_operators/216.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/06_if_else.java": {
-  "capturedAt": "2026-11-05T14:32:01.433Z",
+  "capturedAt": "2026-11-05T15:01:30.124Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "30": {
@@ -3265,6 +3383,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/30.jar",
     "status": "ok"
    },
    "52": {
@@ -3283,6 +3402,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/52.jar",
     "status": "ok"
    },
    "77": {
@@ -3385,6 +3505,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/77.jar",
     "status": "ok"
    },
    "119": {
@@ -3408,6 +3529,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/119.jar",
     "status": "ok"
    },
    "147": {
@@ -3433,6 +3555,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/164.jar",
     "status": "ok"
    },
    "180": {
@@ -3451,6 +3574,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/180.jar",
     "status": "ok"
    },
    "200": {
@@ -3474,12 +3598,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/06_if_else/200.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/07_switch.java": {
-  "capturedAt": "2026-11-05T14:32:02.341Z",
+  "capturedAt": "2026-11-05T15:01:31.860Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "26": {
@@ -3534,6 +3659,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/07_switch/26.jar",
     "status": "ok"
    },
    "62": {
@@ -3562,6 +3688,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/07_switch/62.jar",
     "status": "ok"
    },
    "84": {
@@ -3580,6 +3707,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/07_switch/84.jar",
     "status": "ok"
    },
    "109": {
@@ -3598,6 +3726,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/07_switch/109.jar",
     "status": "ok"
    },
    "131": {
@@ -3616,12 +3745,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/07_switch/131.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/08_loops.java": {
-  "capturedAt": "2026-11-05T14:32:04.346Z",
+  "capturedAt": "2026-11-05T15:01:35.797Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -3640,6 +3770,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/36.jar",
     "status": "ok"
    },
    "62": {
@@ -3658,6 +3789,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/62.jar",
     "status": "ok"
    },
    "79": {
@@ -3681,6 +3813,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/79.jar",
     "status": "ok"
    },
    "101": {
@@ -3699,6 +3832,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/101.jar",
     "status": "ok"
    },
    "117": {
@@ -3717,6 +3851,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/117.jar",
     "status": "ok"
    },
    "136": {
@@ -3735,6 +3870,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/136.jar",
     "status": "ok"
    },
    "150": {
@@ -3753,6 +3889,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/150.jar",
     "status": "ok"
    },
    "180": {
@@ -3771,6 +3908,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/180.jar",
     "status": "ok"
    },
    "193": {
@@ -3789,6 +3927,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/193.jar",
     "status": "ok"
    },
    "211": {
@@ -3832,6 +3971,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/211.jar",
     "status": "ok"
    },
    "227": {
@@ -3885,6 +4025,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/227.jar",
     "status": "ok"
    },
    "242": {
@@ -3913,12 +4054,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/08_loops/242.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/09_arrays.java": {
-  "capturedAt": "2026-11-05T14:32:05.935Z",
+  "capturedAt": "2026-11-05T15:01:39.622Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "37": {
@@ -3937,6 +4079,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/37.jar",
     "status": "ok"
    },
    "59": {
@@ -3965,6 +4108,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/59.jar",
     "status": "ok"
    },
    "74": {
@@ -3993,6 +4137,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/74.jar",
     "status": "ok"
    },
    "92": {
@@ -4050,6 +4195,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/92.jar",
     "status": "ok"
    },
    "119": {
@@ -4078,6 +4224,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/119.jar",
     "status": "ok"
    },
    "142": {
@@ -4102,6 +4249,7 @@
      }
     ],
     "expectError": true,
+    "jar": "classes/Java_Basics/09_arrays/142.jar",
     "status": "runtime-error"
    },
    "164": {
@@ -4145,6 +4293,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/164.jar",
     "status": "ok"
    },
    "188": {
@@ -4293,6 +4442,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/188.jar",
     "status": "ok"
    },
    "222": {
@@ -4415,12 +4565,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/09_arrays/222.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/10_methods.java": {
-  "capturedAt": "2026-11-05T14:32:07.317Z",
+  "capturedAt": "2026-11-05T15:01:42.059Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "31": {
@@ -4439,6 +4590,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/10_methods/31.jar",
     "status": "ok"
    },
    "62": {
@@ -4457,6 +4609,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/10_methods/62.jar",
     "status": "ok"
    },
    "81": {
@@ -4495,6 +4648,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/10_methods/81.jar",
     "status": "ok"
    },
    "116": {
@@ -4518,6 +4672,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/10_methods/116.jar",
     "status": "ok"
    },
    "135": {
@@ -4569,12 +4724,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/10_methods/215.jar",
     "status": "ok"
    }
   }
  },
  "Java_Basics/11_strings.java": {
-  "capturedAt": "2026-11-05T14:32:08.856Z",
+  "capturedAt": "2026-11-05T15:01:44.989Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "21": {
@@ -4598,6 +4754,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/21.jar",
     "status": "ok"
    },
    "46": {
@@ -4646,6 +4803,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/46.jar",
     "status": "ok"
    },
    "67": {
@@ -4684,6 +4842,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/67.jar",
     "status": "ok"
    },
    "99": {
@@ -4712,6 +4871,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/99.jar",
     "status": "ok"
    },
    "118": {
@@ -4745,6 +4905,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/118.jar",
     "status": "ok"
    },
    "134": {
@@ -4773,6 +4934,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/134.jar",
     "status": "ok"
    },
    "155": {
@@ -4791,6 +4953,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/155.jar",
     "status": "ok"
    },
    "175": {
@@ -4819,6 +4982,7 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/175.jar",
     "status": "ok"
    },
    "201": {
@@ -4847,12 +5011,13 @@
       ]
      }
     ],
+    "jar": "classes/Java_Basics/11_strings/201.jar",
     "status": "ok"
    }
   }
  },
  "Working_with_Objects/21_call_by_value_vs_call_by_reference.java": {
-  "capturedAt": "2026-11-05T14:32:09.365Z",
+  "capturedAt": "2026-11-05T15:01:45.974Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "26": {
@@ -4871,6 +5036,7 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/21_call_by_value_vs_call_by_reference/26.jar",
     "status": "ok"
    },
    "53": {
@@ -4889,6 +5055,7 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/21_call_by_value_vs_call_by_reference/53.jar",
     "status": "ok"
    },
    "76": {
@@ -4907,12 +5074,13 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/21_call_by_value_vs_call_by_reference/76.jar",
     "status": "ok"
    }
   }
  },
  "Working_with_Objects/22_copy_constructor.java": {
-  "capturedAt": "2026-11-05T14:32:09.775Z",
+  "capturedAt": "2026-11-05T15:01:46.723Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "20": {
@@ -4936,12 +5104,13 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/22_copy_constructor/20.jar",
     "status": "ok"
    }
   }
  },
  "Working_with_Objects/23_constructor_chaining.java": {
-  "capturedAt": "2026-11-05T14:32:10.209Z",
+  "capturedAt": "2026-11-05T15:01:47.459Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "19": {
@@ -4970,12 +5139,13 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/23_constructor_chaining/19.jar",
     "status": "ok"
    }
   }
  },
  "Working_with_Objects/24_passing_and_returning_object.java": {
-  "capturedAt": "2026-11-05T14:32:11.088Z",
+  "capturedAt": "2026-11-05T15:01:49.055Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "24": {
@@ -4999,6 +5169,7 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/24.jar",
     "status": "ok"
    },
    "54": {
@@ -5022,6 +5193,7 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/54.jar",
     "status": "ok"
    },
    "89": {
@@ -5045,6 +5217,7 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/89.jar",
     "status": "ok"
    },
    "125": {
@@ -5078,6 +5251,7 @@
       ]
      }
     ],
+    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/125.jar",
     "status": "ok"
    }
   }

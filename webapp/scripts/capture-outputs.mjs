@@ -18,6 +18,9 @@ import { splitBlocks } from './lib/blocks.mjs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = join(__dirname, '..', '..')
 const outputPath = join(__dirname, '..', 'src', 'lib', 'output-cache.json')
+// Each block's compiled classes, as a small jar the site serves. A reader's "Run it" on an unedited block loads
+// this instead of compiling, which saves about half a minute on a first run in the browser.
+const publicRoot = join(__dirname, '..', 'public')
 const filter = process.argv[2]
 
 const EXCLUDED = new Set(['webapp', 'Test', 'tools', 'node_modules'])
@@ -117,11 +120,18 @@ async function captureBlock(lessonKey, index, block) {
   for (const file of block.files) writeFileSync(join(dir, file.name), file.content)
   const classes = join(dir, 'classes')
   mkdirSync(classes)
-  const compiled = await run('javac', ['-J-Xmx256m', '-J-XX:+UseSerialGC', '-J-XX:TieredStopAtLevel=1', '-g', '-encoding', 'UTF-8', '-Xlint:none', '-cp', runtimeDir, '-d', classes, join(dir, fileName)], { cwd: dir })
+  const compiled = await run('javac', ['-J-Xmx256m', '-J-XX:+UseSerialGC', '-J-XX:TieredStopAtLevel=1', '--release', '17', '-g', '-encoding', 'UTF-8', '-Xlint:none', '-cp', runtimeDir, '-d', classes, join(dir, fileName)], { cwd: dir })
   if (compiled.status !== 0) {
     const message = (compiled.stderr || compiled.stdout).replaceAll(dir, '').replace(/\r/g, '').trim()
     return { ...entry, status: 'compile-error', compile: message }
   }
+
+  // --release 17 above is what the browser's Java can load. The fixed date keeps the jar identical between runs.
+  const jarRel = `classes/${lessonKey.replace(/\.java$/, '')}/${block.line}.jar`
+  const jarPath = join(publicRoot, jarRel)
+  mkdirSync(dirname(jarPath), { recursive: true })
+  const packed = await run('jar', ['--create', '--file', jarPath, '--date=2000-01-01T00:00:00Z', '-C', classes, '.'], { cwd: dir })
+  if (packed.status === 0) entry.jar = jarRel
 
   const scenarios = block.inputs.length ? block.inputs : [{ label: '', lines: [] }]
   let worst = 'ok'
@@ -158,6 +168,8 @@ async function captureBlock(lessonKey, index, block) {
   return { ...entry, status: worst }
 }
 
+// A full run starts from no jars at all, so a deleted or renamed lesson leaves none behind.
+if (!filter) rmSync(join(publicRoot, 'classes'), { recursive: true, force: true })
 const cache = {}
 const counts = { 'launch-error': 0, ok: 0, 'runtime-error': 0, 'compile-error': 0, 'no-main': 0, gui: 0, timeout: 0 }
 const problems = []
@@ -169,6 +181,7 @@ for (const dir of contentDirs) {
     if (filter && !relPath.includes(filter)) continue
     const blocks = splitBlocks(readFileSync(file, 'utf8'))
     lessons++
+    rmSync(join(publicRoot, 'classes', relPath.replace(/\.java$/, '')), { recursive: true, force: true })
     const results = await Promise.all(blocks.map((block, i) => captureBlock(relPath, i, block)))
     const byLine = {}
     blocks.forEach((block, i) => {

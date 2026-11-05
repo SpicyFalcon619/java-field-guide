@@ -21,6 +21,8 @@ export interface Scenario {
 export interface BlockRun {
   status: BlockStatus
   mainClass: string | null
+  /** The block compiled when the site was built; path of its jar, relative to the site, for a run without the compiler. */
+  jar?: string
   compile?: string
   /** The lesson shows this block failing on purpose, to explain the error. */
   expectError?: boolean

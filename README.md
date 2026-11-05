@@ -57,7 +57,7 @@ npm run dev
 
 `npm run verify-outputs` compares the captured output with the output originally written down in Notion (`tools/expected.json`).
 
-2. **Live Java in the reader's browser.** "Run it" and "Edit" under a lesson block, and the Sandbox page, run real Java through CheerpJ. `webapp/public/runner.html` starts CheerpJ in a hidden frame; `webapp/java/LiveRunner.java` (compiled to `webapp/public/java/live.jar`) compiles the code, runs it, streams the output back and, when the program reads the keyboard, asks the page for a line, so `Scanner` programs wait for the reader to type. After editing `LiveRunner.java`, run `npm run build-runner` (needs a JDK) and commit the jar. Nothing the reader types leaves their browser. Swing windows are not supported there.
+2. **Live Java in the reader's browser.** "Type your own input" and "Edit" under a lesson block, and the Sandbox page, run real Java through CheerpJ. The sample output is shown instantly; the live run is the slower, optional extra (the first run in a visit takes about half a minute while the compiler warms up). `webapp/public/runner.html` starts CheerpJ in a hidden frame; `webapp/java/LiveRunner.java` (compiled to `webapp/public/java/live.jar`) compiles the code, runs it, streams the output back and, when the program reads the keyboard, asks the page for a line, so `Scanner` programs wait for the reader to type. After editing `LiveRunner.java`, run `npm run build-runner` (needs a JDK) and commit the jar. `npm run capture-outputs` also saves each block compiled as `webapp/public/classes/<lesson>/<line>.jar`, so a block the reader has not edited runs without the compiler; commit those too. Nothing the reader types leaves their browser. Swing windows are not supported there.
 
 ## Credits
 
