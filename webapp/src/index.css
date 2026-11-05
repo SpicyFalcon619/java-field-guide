@@ -862,8 +862,9 @@ samp,
   margin-top: 0.85rem;
 }
 .guide-prose p {
-  color: var(--color-ink);
-  opacity: 0.88;
+  /* Dimmed through the colour, not `opacity`: opacity would make the whole paragraph, and the glossary card
+     inside it, see-through and trap the card beneath the next paragraph. */
+  color: color-mix(in srgb, var(--color-ink) 88%, transparent);
 }
 .guide-sub {
   margin-top: 1.4rem !important;
