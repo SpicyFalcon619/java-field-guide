@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Java runner</title>
+<meta name="robots" content="noindex">
+<!--
+  The live Java runner. The field guide shows this page in a hidden frame and talks to it with postMessage.
+  It starts CheerpJ (a Java virtual machine written for the browser, https://cheerpj.com, free for personal and
+  educational use), then, for each run, compiles the visitor's code and runs it through LiveRunner (public/java/live.jar).
+
+  Messages in:   { type: 'run', id, code }   { type: 'stdin', line }   { type: 'eof' }
+  Messages out:  { type: 'status', phase, detail }   { type: 'out', stream, text }   { type: 'input-wait' }
+                 { type: 'done', id, exit }   { type: 'fatal', message }
+  stream: 0 = normal output, 1 = error stream, 2 = compiler message.
+-->
+<script src="https://cjrtnc.leaningtech.com/5.0/loader.js"></script>
+</head>
+<body>
+<script>
+  const send = (message) => parent.postMessage(message, location.origin)
+
+  // ---- The two native methods LiveRunner calls -----------------------------------------------------------
+  const typed = []
+  let waiting = null
+  let ended = false
+
+  function Java_LiveRunner_emit(lib, stream, text) {
+    send({ type: 'out', stream, text })
+  }
+  function Java_LiveRunner_readLine(lib) {
+    if (typed.length) return Promise.resolve(typed.shift())
+    if (ended) return Promise.resolve(null)
+    send({ type: 'input-wait' })
+    return new Promise((resolve) => {
+      waiting = resolve
+    })
+  }
+
+  // ---- Starting the Java virtual machine -----------------------------------------------------------------
+  const base = location.pathname.replace(/runner\.html$/, '')
+  let started = null
+  function start() {
+    if (!started) {
+      send({ type: 'status', phase: 'loading', detail: 'Starting Java in your browser. The first time takes a little while.' })
+      started = cheerpjInit({
+        version: 17,
+        natives: { Java_LiveRunner_emit, Java_LiveRunner_readLine },
+      })
+    }
+    return started
+  }
+
+  // ---- One run: compile, then run -------------------------------------------------------------------------
+  let runs = 0
+  async function run(id, code) {
+    typed.length = 0
+    waiting = null
+    ended = false
+    try {
+      await start()
+      // The source file must be named after its public class.
+      const match = code.match(/public\s+(?:final\s+|abstract\s+|sealed\s+)*(?:class|interface|enum|record)\s+(\w+)/)
+      const name = match ? match[1] : 'Main'
+      runs++
+      // /str only holds flat files, so each run's text goes in under its own name and LiveRunner saves it
+      // properly named inside a folder of its own.
+      const text = '/str/program' + runs + '.txt'
+      cheerpOSAddStringFile(text, code)
+      send({ type: 'status', phase: 'running' })
+      const exit = await cheerpjRunMain('LiveRunner', '/app' + base + 'java/live.jar', text, name + '.java', '/files/run' + runs)
+      send({ type: 'done', id, exit })
+    } catch (error) {
+      send({ type: 'fatal', message: String(error && error.message ? error.message : error) })
+    }
+  }
+
+  addEventListener('message', (event) => {
+    if (event.source !== parent) return
+    const message = event.data || {}
+    if (message.type === 'run') run(message.id, String(message.code))
+    else if (message.type === 'stdin') {
+      if (waiting) {
+        const resolve = waiting
+        waiting = null
+        resolve(String(message.line))
+      } else typed.push(String(message.line))
+    } else if (message.type === 'eof') {
+      ended = true
+      if (waiting) {
+        const resolve = waiting
+        waiting = null
+        resolve(null)
+      }
+    }
+  })
+
+  send({ type: 'ready' })
+</script>
+</body>
+</html>

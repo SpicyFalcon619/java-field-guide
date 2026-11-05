@@ -1,6 +1,6 @@
 {
  "Abstraction_and_Interfaces/25_abstraction_interface.java": {
-  "capturedAt": "2026-11-05T14:11:02.207Z",
+  "capturedAt": "2026-11-05T14:31:35.929Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -85,7 +85,7 @@
   }
  },
  "Classes_and_Objects/12_classes_and_objects.java": {
-  "capturedAt": "2026-11-05T14:11:03.352Z",
+  "capturedAt": "2026-11-05T14:31:36.829Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "52": {
@@ -222,7 +222,7 @@
   }
  },
  "Classes_and_Objects/13_constructors.java": {
-  "capturedAt": "2026-11-05T14:11:04.386Z",
+  "capturedAt": "2026-11-05T14:31:37.735Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "33": {
@@ -316,7 +316,7 @@
   }
  },
  "Classes_and_Objects/14_this_keyword.java": {
-  "capturedAt": "2026-11-05T14:11:05.373Z",
+  "capturedAt": "2026-11-05T14:31:38.642Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -411,7 +411,7 @@
   }
  },
  "Classes_and_Objects/15_method_overloading.java": {
-  "capturedAt": "2026-11-05T14:11:05.992Z",
+  "capturedAt": "2026-11-05T14:31:39.197Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "44": {
@@ -495,7 +495,7 @@
   }
  },
  "Classes_and_Objects/16_static_keyword.java": {
-  "capturedAt": "2026-11-05T14:11:07.412Z",
+  "capturedAt": "2026-11-05T14:31:40.680Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "35": {
@@ -699,7 +699,7 @@
   }
  },
  "Classes_and_Objects/17_initialization_blocks.java": {
-  "capturedAt": "2026-11-05T14:11:07.990Z",
+  "capturedAt": "2026-11-05T14:31:41.264Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "28": {
@@ -809,7 +809,7 @@
   }
  },
  "Classes_and_Objects/18_variable_scope_lifetime.java": {
-  "capturedAt": "2026-11-05T14:11:09.407Z",
+  "capturedAt": "2026-11-05T14:31:42.550Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "34": {
@@ -949,8 +949,400 @@
    }
   }
  },
+ "Encapsulation_and_Access/22_access_control.java": {
+  "capturedAt": "2026-11-05T14:31:43.615Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "57": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, Rafi\n",
+      "segments": [
+       [
+        68,
+        "Hello, Rafi\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "78": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:8: error: balance has private access in Account\n        a.balance = 1000000;\n         ^\n\\Main.java:9: error: balance has private access in Account\n        System.out.println(a.balance);\n                            ^\n2 errors"
+   },
+   "95": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi\n",
+      "segments": [
+       [
+        111,
+        "Rafi\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "126": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, Rex\nI am Rex\n",
+      "segments": [
+       [
+        143,
+        "Hello, Rex\nI am Rex\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "152": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, Mim\n",
+      "segments": [
+       [
+        162,
+        "Hello, Mim\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "170": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "I am public\nPublic method called\nI am private\nPrivate method called\nI am protected\nProtected method called\nI am package-private\nPackage-private method called\n",
+      "segments": [
+       [
+        196,
+        "I am public\n",
+        0
+       ],
+       [
+        197,
+        "Public method called\n",
+        0
+       ],
+       [
+        200,
+        "I am private\n",
+        0
+       ],
+       [
+        201,
+        "Private method called\n",
+        0
+       ],
+       [
+        204,
+        "I am protected\n",
+        0
+       ],
+       [
+        205,
+        "Protected method called\n",
+        0
+       ],
+       [
+        208,
+        "I am package-private\n",
+        0
+       ],
+       [
+        209,
+        "Package-private method called\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Encapsulation_and_Access/23_encapsulation.java": {
+  "capturedAt": "2026-11-05T14:31:44.380Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "34": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: [], age: -500\n",
+      "segments": [
+       [
+        45,
+        "Name: [], age: -500\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "60": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Noman\n35\nTortilla\n100\nInvalid age!\n100\n",
+      "segments": [
+       [
+        100,
+        "Noman\n",
+        0
+       ],
+       [
+        101,
+        "35\n",
+        0
+       ],
+       [
+        106,
+        "Tortilla\n",
+        0
+       ],
+       [
+        107,
+        "100\n",
+        0
+       ],
+       [
+        110,
+        "Invalid age!\n",
+        0
+       ],
+       [
+        111,
+        "100\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "129": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Deposited 200.0\nInsufficient funds.\nWithdrew 150.0\nDeposit must be positive.\nBalance: 550.0\n",
+      "segments": [
+       [
+        167,
+        "Deposited 200.0\n",
+        0
+       ],
+       [
+        168,
+        "Insufficient funds.\n",
+        0
+       ],
+       [
+        169,
+        "Withdrew 150.0\n",
+        0
+       ],
+       [
+        170,
+        "Deposit must be positive.\n",
+        0
+       ],
+       [
+        172,
+        "Balance: 550.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "186": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:4: error: balance has private access in BankAccount\n        acc.balance = 1000000;\n           ^\n1 error"
+   }
+  }
+ },
+ "Encapsulation_and_Access/24_final_keyword.java": {
+  "capturedAt": "2026-11-05T14:31:46.033Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "32": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Max speed: 120\n",
+      "segments": [
+       [
+        37,
+        "Max speed: 120\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "43": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:6: error: cannot assign a value to final variable MAX_SPEED\n        obj.MAX_SPEED = 150;\n           ^\n1 error"
+   },
+   "60": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "101 Rafi Ahmed\n",
+      "segments": [
+       [
+        74,
+        "101 Rafi Ahmed\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "83": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:8: error: cannot assign a value to final variable numbers\n        numbers = new int[5];              // not allowed: pointing at a different array\n        ^\n1 error"
+   },
+   "106": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:8: error: show() in Child2 cannot override show() in Parent2\n    public void show() {          // Error: Cannot override the final method\n                ^\n  overridden method is final\n1 error"
+   },
+   "129": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This is the final method\n",
+      "segments": [
+       [
+        140,
+        "This is the final method\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "151": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: cannot inherit from final Vehicle2\nclass Car extends Vehicle2 {\n                  ^\n1 error"
+   },
+   "170": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This is a vehicle\n",
+      "segments": [
+       [
+        173,
+        "This is a vehicle\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "191": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The number is: 50\n",
+      "segments": [
+       [
+        199,
+        "The number is: 50\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "211": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Max speed: 120\nCurrent speed: 100\n",
+      "segments": [
+       [
+        224,
+        "Max speed: 120\nCurrent speed: 100\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
  "Exceptions_and_Files/26_exception_handling.java": {
-  "capturedAt": "2026-11-05T14:11:12.778Z",
+  "capturedAt": "2026-11-05T14:31:47.541Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "31": {
@@ -1143,7 +1535,7 @@
   }
  },
  "Exceptions_and_Files/27_file_handling.java": {
-  "capturedAt": "2026-11-05T14:11:14.501Z",
+  "capturedAt": "2026-11-05T14:31:48.900Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "27": {
@@ -1292,8 +1684,584 @@
    }
   }
  },
+ "Inheritance_and_Polymorphism/19_inheritance.java": {
+  "capturedAt": "2026-11-05T14:31:50.870Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "39": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This animal eats food\nThe dog barks\n",
+      "segments": [
+       [
+        56,
+        "This animal eats food\n",
+        0
+       ],
+       [
+        57,
+        "The dog barks\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "81": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:9: error: secret has private access in Animal\n        System.out.println(secret);\n                           ^\n1 error"
+   },
+   "115": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Animal makes a sound\nDog barks\n",
+      "segments": [
+       [
+        131,
+        "Animal makes a sound\nDog barks\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "139": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Child type: Cat\nParent type: Animal\n",
+      "segments": [
+       [
+        155,
+        "Child type: Cat\nParent type: Animal\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "170": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Person constructor called\nStudent constructor called\n",
+      "segments": [
+       [
+        185,
+        "Person constructor called\nStudent constructor called\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "195": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:10: error: constructor Person in class Person cannot be applied to given types;\n    Student() {\n              ^\n  required: String\n  found:    no arguments\n  reason: actual and formal argument lists differ in length\n1 error"
+   },
+   "219": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi has roll 7\n",
+      "segments": [
+       [
+        242,
+        "Rafi has roll 7\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "262": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This animal eats food.\nThe dog barks.\nThis animal eats food.\nThe cat meows.\n",
+      "segments": [
+       [
+        283,
+        "This animal eats food.\n",
+        0
+       ],
+       [
+        284,
+        "The dog barks.\n",
+        0
+       ],
+       [
+        287,
+        "This animal eats food.\n",
+        0
+       ],
+       [
+        288,
+        "The cat meows.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "302": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This animal eats food.\nThe dog barks.\nThe puppy weeps.\n",
+      "segments": [
+       [
+        323,
+        "This animal eats food.\n",
+        0
+       ],
+       [
+        324,
+        "The dog barks.\n",
+        0
+       ],
+       [
+        325,
+        "The puppy weeps.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "346": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Method A from Interface A\nMethod B from Interface B\n",
+      "segments": [
+       [
+        367,
+        "Method A from Interface A\n",
+        0
+       ],
+       [
+        368,
+        "Method B from Interface B\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "385": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "true\nDog\ntrue\n",
+      "segments": [
+       [
+        391,
+        "true\n",
+        0
+       ],
+       [
+        392,
+        "Dog\n",
+        0
+       ],
+       [
+        393,
+        "true\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "406": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Engine started\nCar is moving\n",
+      "segments": [
+       [
+        423,
+        "Engine started\nCar is moving\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Inheritance_and_Polymorphism/20_method_overriding.java": {
+  "capturedAt": "2026-11-05T14:31:51.898Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "33": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Some animal sound\nWoof woof\n",
+      "segments": [
+       [
+        52,
+        "Some animal sound\n",
+        0
+       ],
+       [
+        53,
+        "Woof woof\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "77": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Some animal sound\n",
+      "segments": [
+       [
+        92,
+        "Some animal sound\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "99": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:8: error: method does not override or implement a method from a supertype\n    @Override\n    ^\n1 error"
+   },
+   "139": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:9: error: speak() in Dog cannot override speak() in Animal\n    void speak() {                // package-private is weaker than public\n         ^\n  attempting to assign weaker access privileges; was public\n1 error"
+   },
+   "166": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Doing the daily tasks\nAlso leading the team\n",
+      "segments": [
+       [
+        182,
+        "Doing the daily tasks\nAlso leading the team\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "191": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The vehicle is moving...\nThe car is moving!\n",
+      "segments": [
+       [
+        209,
+        "The vehicle is moving...\n",
+        0
+       ],
+       [
+        210,
+        "The car is moving!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Inheritance_and_Polymorphism/21_polymorphism.java": {
+  "capturedAt": "2026-11-05T14:31:53.703Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "43": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Animal makes a sound\nDog barks\nCat meows\n",
+      "segments": [
+       [
+        69,
+        "Animal makes a sound\n",
+        0
+       ],
+       [
+        70,
+        "Dog barks\n",
+        0
+       ],
+       [
+        71,
+        "Cat meows\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "86": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Woof\nMeow\nMoo\nWoof\nMeow\n",
+      "segments": [
+       [
+        122,
+        "Woof\nMeow\nMoo\nWoof\n",
+        0
+       ],
+       [
+        125,
+        "Meow\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "149": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:22: error: cannot find symbol\n        a.wagTail(); // Not allowed: reference type is Animal\n         ^\n  symbol:   method wagTail()\n  location: variable a of type Animal8\n1 error"
+   },
+   "187": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog barks\nDog wags tail\nDog wags tail\n",
+      "segments": [
+       [
+        209,
+        "Dog barks\n",
+        0
+       ],
+       [
+        210,
+        "Dog wags tail\n",
+        0
+       ],
+       [
+        211,
+        "Dog wags tail\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "218": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Exception in thread \"main\" java.lang.ClassCastException: class Cat cannot be cast to class Dog (Cat and Dog are in unnamed module of loader 'app')\n\tat Main.main(Main.java:16)\n",
+      "segments": [
+       [
+        233,
+        "Exception in thread \"main\" java.lang.ClassCastException: class Cat cannot be cast to class Dog (Cat and Dog are in unnamed module of loader 'app')\n\tat Main.main(Main.java:16)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "status": "runtime-error"
+   },
+   "249": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog barks\nDog wags tail\n",
+      "segments": [
+       [
+        272,
+        "Dog barks\n",
+        0
+       ],
+       [
+        273,
+        "Dog wags tail\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "282": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog wags tail\nNot a dog\n",
+      "segments": [
+       [
+        300,
+        "Dog wags tail\n",
+        0
+       ],
+       [
+        302,
+        "Not a dog\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "317": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "int\n",
+      "segments": [
+       [
+        328,
+        "int\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "334": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "long\n",
+      "segments": [
+       [
+        341,
+        "long\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "347": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "float\n",
+      "segments": [
+       [
+        358,
+        "float\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "366": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "int\n",
+      "segments": [
+       [
+        377,
+        "int\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
  "Java_Basics/01_what_is_java.java": {
-  "capturedAt": "2026-11-05T14:11:18.378Z",
+  "capturedAt": "2026-11-05T14:31:54.080Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "75": {
@@ -1317,7 +2285,7 @@
   }
  },
  "Java_Basics/02_first_program.java": {
-  "capturedAt": "2026-11-05T14:11:19.788Z",
+  "capturedAt": "2026-11-05T14:31:55.484Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "18": {
@@ -1502,7 +2470,7 @@
   }
  },
  "Java_Basics/03_variables.java": {
-  "capturedAt": "2026-11-05T14:11:21.316Z",
+  "capturedAt": "2026-11-05T14:31:56.921Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "32": {
@@ -1713,7 +2681,7 @@
   }
  },
  "Java_Basics/04_scanner_input.java": {
-  "capturedAt": "2026-11-05T14:11:22.715Z",
+  "capturedAt": "2026-11-05T14:31:58.226Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "28": {
@@ -1757,14 +2725,14 @@
     ],
     "status": "ok"
    },
-   "77": {
+   "78": {
     "mainClass": "Main",
     "scenarios": [],
     "expectError": true,
     "status": "compile-error",
     "compile": "\\Main.java:3: error: cannot find symbol\n        Scanner scan = new Scanner(System.in);\n        ^\n  symbol:   class Scanner\n  location: class Main\n\\Main.java:3: error: cannot find symbol\n        Scanner scan = new Scanner(System.in);\n                           ^\n  symbol:   class Scanner\n  location: class Main\n2 errors"
    },
-   "118": {
+   "119": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1776,27 +2744,27 @@
       "stdout": "First number: 10\nSecond number: 20\nSum = 30\n",
       "segments": [
        [
-        124,
+        125,
         "First number: ",
         0
        ],
        [
-        125,
+        126,
         "10\n",
         0
        ],
        [
-        126,
+        127,
         "Second number: ",
         0
        ],
        [
-        127,
+        128,
         "20\n",
         0
        ],
        [
-        129,
+        130,
         "Sum = 30\n",
         0
        ]
@@ -1805,7 +2773,7 @@
     ],
     "status": "ok"
    },
-   "140": {
+   "141": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1816,17 +2784,17 @@
       "stdout": "Enter radius: 2.5\nArea = 19.6349375\n",
       "segments": [
        [
-        146,
+        147,
         "Enter radius: ",
         0
        ],
        [
-        147,
+        148,
         "2.5\n",
         0
        ],
        [
-        150,
+        151,
         "Area = 19.6349375\n",
         0
        ]
@@ -1835,7 +2803,7 @@
     ],
     "status": "ok"
    },
-   "164": {
+   "165": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1847,22 +2815,22 @@
       "stdout": "Enter your age: 25\nEnter your name: Name = [], age = 25\n",
       "segments": [
        [
-        170,
+        171,
         "Enter your age: ",
         0
        ],
        [
-        171,
+        172,
         "25\n",
         0
        ],
        [
-        173,
+        174,
         "Enter your name: ",
         0
        ],
        [
-        176,
+        177,
         "Name = [], age = 25\n",
         0
        ]
@@ -1871,7 +2839,7 @@
     ],
     "status": "ok"
    },
-   "186": {
+   "187": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1883,27 +2851,27 @@
       "stdout": "Enter your age: 25\nEnter your name: Rafi\nName = [Rafi], age = 25\n",
       "segments": [
        [
-        192,
+        193,
         "Enter your age: ",
         0
        ],
        [
-        193,
+        194,
         "25\n",
         0
        ],
        [
-        196,
+        197,
         "Enter your name: ",
         0
        ],
        [
-        197,
+        198,
         "Rafi\n",
         0
        ],
        [
-        199,
+        200,
         "Name = [Rafi], age = 25\n",
         0
        ]
@@ -1912,7 +2880,7 @@
     ],
     "status": "ok"
    },
-   "213": {
+   "214": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1923,17 +2891,17 @@
       "stdout": "Enter a number: abc\nException in thread \"main\" java.util.InputMismatchException\n\tat Main.main(Main.java:8)\n",
       "segments": [
        [
-        219,
+        220,
         "Enter a number: ",
         0
        ],
        [
-        220,
+        221,
         "abc\n",
         0
        ],
        [
-        220,
+        221,
         "Exception in thread \"main\" java.util.InputMismatchException\n\tat Main.main(Main.java:8)\n",
         1
        ]
@@ -1946,7 +2914,7 @@
   }
  },
  "Java_Basics/05_operators.java": {
-  "capturedAt": "2026-11-05T14:11:25.114Z",
+  "capturedAt": "2026-11-05T14:31:59.929Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "30": {
@@ -2273,7 +3241,7 @@
   }
  },
  "Java_Basics/06_if_else.java": {
-  "capturedAt": "2026-11-05T14:11:27.240Z",
+  "capturedAt": "2026-11-05T14:32:01.433Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "30": {
@@ -2419,7 +3387,7 @@
     ],
     "status": "ok"
    },
-   "118": {
+   "119": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -2428,12 +3396,12 @@
       "stdout": "You may drive.\nnot a vowel\n",
       "segments": [
        [
-        124,
+        125,
         "You may drive.\n",
         0
        ],
        [
-        135,
+        136,
         "not a vowel\n",
         0
        ]
@@ -2442,14 +3410,14 @@
     ],
     "status": "ok"
    },
-   "146": {
+   "147": {
     "mainClass": "Main",
     "scenarios": [],
     "expectError": true,
     "status": "compile-error",
     "compile": "\\Main.java:4: error: incompatible types: int cannot be converted to boolean\n        if (x = 10) {\n              ^\n1 error"
    },
-   "163": {
+   "164": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -2458,7 +3426,7 @@
       "stdout": "You passed!\n",
       "segments": [
        [
-        168,
+        169,
         "You passed!\n",
         0
        ]
@@ -2467,7 +3435,7 @@
     ],
     "status": "ok"
    },
-   "179": {
+   "180": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -2476,7 +3444,7 @@
       "stdout": "Drink water.\n",
       "segments": [
        [
-        184,
+        185,
         "Drink water.\n",
         0
        ]
@@ -2485,7 +3453,7 @@
     ],
     "status": "ok"
    },
-   "199": {
+   "200": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -2494,12 +3462,12 @@
       "stdout": "Pass\nBigger: 12\n",
       "segments": [
        [
-        203,
+        204,
         "Pass\n",
         0
        ],
        [
-        207,
+        208,
         "Bigger: 12\n",
         0
        ]
@@ -2511,7 +3479,7 @@
   }
  },
  "Java_Basics/07_switch.java": {
-  "capturedAt": "2026-11-05T14:11:28.229Z",
+  "capturedAt": "2026-11-05T14:32:02.341Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "26": {
@@ -2653,7 +3621,7 @@
   }
  },
  "Java_Basics/08_loops.java": {
-  "capturedAt": "2026-11-05T14:11:30.703Z",
+  "capturedAt": "2026-11-05T14:32:04.346Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -2950,7 +3918,7 @@
   }
  },
  "Java_Basics/09_arrays.java": {
-  "capturedAt": "2026-11-05T14:11:32.626Z",
+  "capturedAt": "2026-11-05T14:32:05.935Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "37": {
@@ -3452,7 +4420,7 @@
   }
  },
  "Java_Basics/10_methods.java": {
-  "capturedAt": "2026-11-05T14:11:34.267Z",
+  "capturedAt": "2026-11-05T14:32:07.317Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "31": {
@@ -3606,7 +4574,7 @@
   }
  },
  "Java_Basics/11_strings.java": {
-  "capturedAt": "2026-11-05T14:11:36.045Z",
+  "capturedAt": "2026-11-05T14:32:08.856Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "21": {
@@ -3884,7 +4852,7 @@
   }
  },
  "Working_with_Objects/21_call_by_value_vs_call_by_reference.java": {
-  "capturedAt": "2026-11-05T14:11:36.653Z",
+  "capturedAt": "2026-11-05T14:32:09.365Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "26": {
@@ -3944,7 +4912,7 @@
   }
  },
  "Working_with_Objects/22_copy_constructor.java": {
-  "capturedAt": "2026-11-05T14:11:37.136Z",
+  "capturedAt": "2026-11-05T14:32:09.775Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "20": {
@@ -3973,7 +4941,7 @@
   }
  },
  "Working_with_Objects/23_constructor_chaining.java": {
-  "capturedAt": "2026-11-05T14:11:37.576Z",
+  "capturedAt": "2026-11-05T14:32:10.209Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "19": {
@@ -4007,7 +4975,7 @@
   }
  },
  "Working_with_Objects/24_passing_and_returning_object.java": {
-  "capturedAt": "2026-11-05T14:11:38.591Z",
+  "capturedAt": "2026-11-05T14:32:11.088Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "24": {
@@ -4105,974 +5073,6 @@
        [
         189,
         "Volume of clone is 3000.0\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   }
-  }
- },
- "Inheritance_and_Polymorphism/19_inheritance.java": {
-  "capturedAt": "2026-11-05T14:13:56.062Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "39": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "This animal eats food\nThe dog barks\n",
-      "segments": [
-       [
-        56,
-        "This animal eats food\n",
-        0
-       ],
-       [
-        57,
-        "The dog barks\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "81": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:9: error: secret has private access in Animal\n        System.out.println(secret);\n                           ^\n1 error"
-   },
-   "115": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Animal makes a sound\nDog barks\n",
-      "segments": [
-       [
-        131,
-        "Animal makes a sound\nDog barks\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "139": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Child type: Cat\nParent type: Animal\n",
-      "segments": [
-       [
-        155,
-        "Child type: Cat\nParent type: Animal\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "170": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Person constructor called\nStudent constructor called\n",
-      "segments": [
-       [
-        185,
-        "Person constructor called\nStudent constructor called\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "195": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:10: error: constructor Person in class Person cannot be applied to given types;\n    Student() {\n              ^\n  required: String\n  found:    no arguments\n  reason: actual and formal argument lists differ in length\n1 error"
-   },
-   "219": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Rafi has roll 7\n",
-      "segments": [
-       [
-        242,
-        "Rafi has roll 7\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "262": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "This animal eats food.\nThe dog barks.\nThis animal eats food.\nThe cat meows.\n",
-      "segments": [
-       [
-        283,
-        "This animal eats food.\n",
-        0
-       ],
-       [
-        284,
-        "The dog barks.\n",
-        0
-       ],
-       [
-        287,
-        "This animal eats food.\n",
-        0
-       ],
-       [
-        288,
-        "The cat meows.\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "302": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "This animal eats food.\nThe dog barks.\nThe puppy weeps.\n",
-      "segments": [
-       [
-        323,
-        "This animal eats food.\n",
-        0
-       ],
-       [
-        324,
-        "The dog barks.\n",
-        0
-       ],
-       [
-        325,
-        "The puppy weeps.\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "346": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Method A from Interface A\nMethod B from Interface B\n",
-      "segments": [
-       [
-        367,
-        "Method A from Interface A\n",
-        0
-       ],
-       [
-        368,
-        "Method B from Interface B\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "385": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "true\nDog\ntrue\n",
-      "segments": [
-       [
-        391,
-        "true\n",
-        0
-       ],
-       [
-        392,
-        "Dog\n",
-        0
-       ],
-       [
-        393,
-        "true\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "406": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Engine started\nCar is moving\n",
-      "segments": [
-       [
-        423,
-        "Engine started\nCar is moving\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   }
-  }
- },
- "Inheritance_and_Polymorphism/20_method_overriding.java": {
-  "capturedAt": "2026-11-05T14:13:57.048Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "33": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Some animal sound\nWoof woof\n",
-      "segments": [
-       [
-        52,
-        "Some animal sound\n",
-        0
-       ],
-       [
-        53,
-        "Woof woof\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "77": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Some animal sound\n",
-      "segments": [
-       [
-        92,
-        "Some animal sound\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "99": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:8: error: method does not override or implement a method from a supertype\n    @Override\n    ^\n1 error"
-   },
-   "139": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:9: error: speak() in Dog cannot override speak() in Animal\n    void speak() {                // package-private is weaker than public\n         ^\n  attempting to assign weaker access privileges; was public\n1 error"
-   },
-   "166": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Doing the daily tasks\nAlso leading the team\n",
-      "segments": [
-       [
-        182,
-        "Doing the daily tasks\nAlso leading the team\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "191": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "The vehicle is moving...\nThe car is moving!\n",
-      "segments": [
-       [
-        209,
-        "The vehicle is moving...\n",
-        0
-       ],
-       [
-        210,
-        "The car is moving!\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   }
-  }
- },
- "Inheritance_and_Polymorphism/21_polymorphism.java": {
-  "capturedAt": "2026-11-05T14:13:58.983Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "43": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Animal makes a sound\nDog barks\nCat meows\n",
-      "segments": [
-       [
-        69,
-        "Animal makes a sound\n",
-        0
-       ],
-       [
-        70,
-        "Dog barks\n",
-        0
-       ],
-       [
-        71,
-        "Cat meows\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "86": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Woof\nMeow\nMoo\nWoof\nMeow\n",
-      "segments": [
-       [
-        122,
-        "Woof\nMeow\nMoo\nWoof\n",
-        0
-       ],
-       [
-        125,
-        "Meow\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "149": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:22: error: cannot find symbol\n        a.wagTail(); // Not allowed: reference type is Animal\n         ^\n  symbol:   method wagTail()\n  location: variable a of type Animal8\n1 error"
-   },
-   "187": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Dog barks\nDog wags tail\nDog wags tail\n",
-      "segments": [
-       [
-        209,
-        "Dog barks\n",
-        0
-       ],
-       [
-        210,
-        "Dog wags tail\n",
-        0
-       ],
-       [
-        211,
-        "Dog wags tail\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "218": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Exception in thread \"main\" java.lang.ClassCastException: class Cat cannot be cast to class Dog (Cat and Dog are in unnamed module of loader 'app')\n\tat Main.main(Main.java:16)\n",
-      "segments": [
-       [
-        233,
-        "Exception in thread \"main\" java.lang.ClassCastException: class Cat cannot be cast to class Dog (Cat and Dog are in unnamed module of loader 'app')\n\tat Main.main(Main.java:16)\n",
-        1
-       ]
-      ]
-     }
-    ],
-    "expectError": true,
-    "status": "runtime-error"
-   },
-   "249": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Dog barks\nDog wags tail\n",
-      "segments": [
-       [
-        272,
-        "Dog barks\n",
-        0
-       ],
-       [
-        273,
-        "Dog wags tail\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "282": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Dog wags tail\nNot a dog\n",
-      "segments": [
-       [
-        300,
-        "Dog wags tail\n",
-        0
-       ],
-       [
-        302,
-        "Not a dog\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "317": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "int\n",
-      "segments": [
-       [
-        328,
-        "int\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "334": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "long\n",
-      "segments": [
-       [
-        341,
-        "long\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "347": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "float\n",
-      "segments": [
-       [
-        358,
-        "float\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "366": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "int\n",
-      "segments": [
-       [
-        377,
-        "int\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   }
-  }
- },
- "Encapsulation_and_Access/22_access_control.java": {
-  "capturedAt": "2026-11-05T14:15:24.896Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "57": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Hello, Rafi\n",
-      "segments": [
-       [
-        68,
-        "Hello, Rafi\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "78": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:8: error: balance has private access in Account\n        a.balance = 1000000;\n         ^\n\\Main.java:9: error: balance has private access in Account\n        System.out.println(a.balance);\n                            ^\n2 errors"
-   },
-   "95": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Rafi\n",
-      "segments": [
-       [
-        111,
-        "Rafi\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "126": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Hello, Rex\nI am Rex\n",
-      "segments": [
-       [
-        143,
-        "Hello, Rex\nI am Rex\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "152": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Hello, Mim\n",
-      "segments": [
-       [
-        162,
-        "Hello, Mim\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "170": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "I am public\nPublic method called\nI am private\nPrivate method called\nI am protected\nProtected method called\nI am package-private\nPackage-private method called\n",
-      "segments": [
-       [
-        196,
-        "I am public\n",
-        0
-       ],
-       [
-        197,
-        "Public method called\n",
-        0
-       ],
-       [
-        200,
-        "I am private\n",
-        0
-       ],
-       [
-        201,
-        "Private method called\n",
-        0
-       ],
-       [
-        204,
-        "I am protected\n",
-        0
-       ],
-       [
-        205,
-        "Protected method called\n",
-        0
-       ],
-       [
-        208,
-        "I am package-private\n",
-        0
-       ],
-       [
-        209,
-        "Package-private method called\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   }
-  }
- },
- "Encapsulation_and_Access/23_encapsulation.java": {
-  "capturedAt": "2026-11-05T14:15:25.837Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "34": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Name: [], age: -500\n",
-      "segments": [
-       [
-        45,
-        "Name: [], age: -500\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "60": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Noman\n35\nTortilla\n100\nInvalid age!\n100\n",
-      "segments": [
-       [
-        100,
-        "Noman\n",
-        0
-       ],
-       [
-        101,
-        "35\n",
-        0
-       ],
-       [
-        106,
-        "Tortilla\n",
-        0
-       ],
-       [
-        107,
-        "100\n",
-        0
-       ],
-       [
-        110,
-        "Invalid age!\n",
-        0
-       ],
-       [
-        111,
-        "100\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "129": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Deposited 200.0\nInsufficient funds.\nWithdrew 150.0\nDeposit must be positive.\nBalance: 550.0\n",
-      "segments": [
-       [
-        167,
-        "Deposited 200.0\n",
-        0
-       ],
-       [
-        168,
-        "Insufficient funds.\n",
-        0
-       ],
-       [
-        169,
-        "Withdrew 150.0\n",
-        0
-       ],
-       [
-        170,
-        "Deposit must be positive.\n",
-        0
-       ],
-       [
-        172,
-        "Balance: 550.0\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "186": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:4: error: balance has private access in BankAccount\n        acc.balance = 1000000;\n           ^\n1 error"
-   }
-  }
- },
- "Encapsulation_and_Access/24_final_keyword.java": {
-  "capturedAt": "2026-11-05T14:15:27.612Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "32": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Max speed: 120\n",
-      "segments": [
-       [
-        37,
-        "Max speed: 120\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "43": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:6: error: cannot assign a value to final variable MAX_SPEED\n        obj.MAX_SPEED = 150;\n           ^\n1 error"
-   },
-   "60": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "101 Rafi Ahmed\n",
-      "segments": [
-       [
-        74,
-        "101 Rafi Ahmed\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "83": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:8: error: cannot assign a value to final variable numbers\n        numbers = new int[5];              // not allowed: pointing at a different array\n        ^\n1 error"
-   },
-   "106": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:8: error: show() in Child2 cannot override show() in Parent2\n    public void show() {          // Error: Cannot override the final method\n                ^\n  overridden method is final\n1 error"
-   },
-   "129": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "This is the final method\n",
-      "segments": [
-       [
-        140,
-        "This is the final method\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "151": {
-    "mainClass": "Main",
-    "scenarios": [],
-    "expectError": true,
-    "status": "compile-error",
-    "compile": "\\Main.java:7: error: cannot inherit from final Vehicle2\nclass Car extends Vehicle2 {\n                  ^\n1 error"
-   },
-   "170": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "This is a vehicle\n",
-      "segments": [
-       [
-        173,
-        "This is a vehicle\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "191": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "The number is: 50\n",
-      "segments": [
-       [
-        199,
-        "The number is: 50\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "status": "ok"
-   },
-   "211": {
-    "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Max speed: 120\nCurrent speed: 100\n",
-      "segments": [
-       [
-        224,
-        "Max speed: 120\nCurrent speed: 100\n",
         0
        ]
       ]

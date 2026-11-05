@@ -1255,6 +1255,46 @@ samp,
   font-size: 0.75rem;
   color: var(--color-code-ink-faint);
 }
+/* What the reader typed into a running program, echoed in the output like a terminal would. */
+.live-typed {
+  color: var(--color-code-accent-soft);
+}
+.live-hint {
+  margin: 0;
+  padding: 0.5rem 0.875rem 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--color-code-ink-dim);
+}
+/* The line that appears when a running program asks for typing. */
+.live-stdin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem 0.75rem;
+}
+.live-stdin label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-code-accent-soft);
+}
+.live-stdin input {
+  flex: 1 1 12rem;
+  min-width: 0;
+  min-height: 1.75rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-code-accent-glow);
+  border-radius: 4px;
+  background: var(--color-code-surface);
+  color: var(--color-code-ink);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+.live-stdin input:focus-visible {
+  outline: 2px solid var(--color-code-accent-soft);
+  outline-offset: -1px;
+}
 
 .guide-breaks {
   white-space: pre-line;

@@ -31,6 +31,10 @@ A lesson is one `.java` file: explanation and code blocks, in the order the read
 - In prose: `- item` and `1. item` lines (indented three spaces) make lists; lines with a run of spaces in them (aligned columns, diagrams) stay preformatted; `/// --- Title -----` is a sub-heading; `` `backticks` `` and `name(...)` calls are shown as code.
 - **Typed input.** `/// @input Noman | 35` goes right after a block and says what is typed for its `Scanner` calls, one line per call separated by ` | `. Several `@input` lines are several example runs; `/// @input(Label): ...` names one. Give one token per line when a program reads several numbers, because each typed line is echoed when it is read.
 - **Files.** `/// @file example.txt: first line | second line` creates a file next to the program before it runs, so file-reading examples have something to read.
+- **A block that is meant to fail.** `/// @error` right after a block says it is a deliberate mistake (a compile error, or an exception). The capture then expects it to fail, shows the real message, and reports it if it unexpectedly runs fine. Use it to show beginners what an error looks like.
+- **Notes.** A paragraph that starts with `NOTE:`, `TIP:`, `WARNING:`, `IMPORTANT:`, `WHY:`, `MISTAKE:`, `ANALOGY:`, `JARGON:`, `REMEMBER:` or `TRY IT:` becomes a coloured callout.
+- **Glossary.** Terms live in `src/lib/glossary.ts`. The first time a lesson's explanation uses one, it gets a dotted underline and a popover. An entry's `lesson` must match that lesson's page title exactly. Add an entry whenever a lesson introduces a word a beginner might not know, and keep the lessons written for complete beginners: explain why, not only what.
+- **Live Run and Edit.** Readers can run any block (and the Sandbox) in their browser, so every block must be a complete program. A block that reads input should prompt with `System.out.print`, as readers will see the prompt and type into a box.
 
 ## After adding or editing a lesson: capture its output
 

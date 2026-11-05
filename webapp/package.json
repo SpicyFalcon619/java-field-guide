@@ -9,12 +9,14 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "capture-outputs": "node scripts/capture-outputs.mjs",
+    "build-runner": "node scripts/build-live-runner.mjs",
     "build-notebooks": "node scripts/build-notebooks.mjs",
     "verify-outputs": "node scripts/verify-outputs.mjs"
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.20.4",
     "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-java": "^6.0.2",
     "@codemirror/language": "^6.13.1",
     "@codemirror/state": "^6.7.6",
     "@codemirror/view": "^6.43.15",

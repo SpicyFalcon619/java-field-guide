@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { BarChart3, BookOpen, Check, ChevronRight, Compass, FileSpreadsheet, Star } from 'lucide-react'
+import { BarChart3, BookOpen, Check, ChevronRight, Compass, FileSpreadsheet, Star, Terminal } from 'lucide-react'
 import { ancestorSlugs, flattenNavItems, navGroups, orderedEntries, parseBasecampLabel } from '@/lib/roadmap'
 import { getSnippetById } from '@/lib/content'
 import { allLessons, nextUpLesson, overallProgress } from '@/lib/progress'
@@ -214,6 +214,7 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
       <div className="flex flex-col md:hidden">
         {[
           { to: '/explore', label: 'Explore', note: 'Browse everything', icon: Compass },
+          { to: '/sandbox', label: 'Sandbox', note: 'Write and run your own Java', icon: Terminal },
           { to: '/me', label: 'Progress', note: 'What you have finished', icon: BarChart3 },
           { to: '/glossary', label: 'Glossary', note: 'What every word means', icon: BookOpen },
         ].map(({ to, label, note, icon: Icon }) => (

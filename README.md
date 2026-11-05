@@ -51,9 +51,13 @@ npm install
 npm run dev
 ```
 
-The site never runs Java to show a lesson. `npm run capture-outputs` compiles and runs every block with a real JDK (it needs `java` and `javac` on your PATH) and stores what each printed in `webapp/src/lib/output-cache.json`. Run it after adding or editing a lesson, and commit the result.
+### Two ways code runs
+
+1. **Sample output** under every block is captured at build time. `npm run capture-outputs` compiles and runs every block with a real JDK (it needs `java` and `javac` on your PATH) and stores what each printed in `webapp/src/lib/output-cache.json`. Run it after adding or editing a lesson, and commit the result.
 
 `npm run verify-outputs` compares the captured output with the output originally written down in Notion (`tools/expected.json`).
+
+2. **Live Java in the reader's browser.** "Run it" and "Edit" under a lesson block, and the Sandbox page, run real Java through CheerpJ. `webapp/public/runner.html` starts CheerpJ in a hidden frame; `webapp/java/LiveRunner.java` (compiled to `webapp/public/java/live.jar`) compiles the code, runs it, streams the output back and, when the program reads the keyboard, asks the page for a line, so `Scanner` programs wait for the reader to type. After editing `LiveRunner.java`, run `npm run build-runner` (needs a JDK) and commit the jar. Nothing the reader types leaves their browser. Swing windows are not supported there.
 
 ## Credits
 

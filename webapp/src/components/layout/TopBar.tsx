@@ -16,6 +16,7 @@ function GithubMark(props: SVGProps<SVGSVGElement>) {
 
 const NAV = [
   { to: '/explore', label: 'Explore' },
+  { to: '/sandbox', label: 'Sandbox' },
   { to: '/me', label: 'Progress' },
   { to: '/glossary', label: 'Glossary' },
 ]

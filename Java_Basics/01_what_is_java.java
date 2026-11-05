@@ -91,7 +91,7 @@ public class Main {
 /// words.
 ///
 /// REMEMBER: You do not need to install anything to follow this guide. Every program on these pages was really
-/// compiled and run, and the Run button under each one shows exactly what it printed.
+/// compiled and run, and the output shown under each one is exactly what it printed.
 
 /// ### Topic 5: How to read this guide ###
 /// Every lesson is built the same way, so you always know where you are.
@@ -99,8 +99,9 @@ public class Main {
 ///   - Explanations are the paragraphs you are reading now. Code is always in a dark box beneath them.
 ///   - Every code block is a COMPLETE program. You can copy it into a file called `Main.java` and run it exactly
 ///     as it is.
-///   - The Run button under a block shows what it printed. When a program asks you to type something, a
-///     "Typed input" menu lets you pick what was typed.
+///   - The output under a block shows what it printed. Press "Run it" to run the program yourself, in your
+///     browser. If it asks you to type something, a box appears and you type the answer. Press "Edit" to change
+///     the code first. The "Typed input" menu on the sample output lets you pick which answer is shown.
 ///   - Words with a dotted underline, like the ones you may have noticed above, are explained when you hover over
 ///     them or tap them. The Glossary in the menu lists every one of them in one place.
 ///   - Coloured notes appear throughout: WHY explains the reason behind something, MISTAKE shows a trap

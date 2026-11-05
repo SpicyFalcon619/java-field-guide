@@ -1,16 +1,19 @@
-import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { createContext, lazy, Suspense, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { Play } from 'lucide-react'
+import { PencilLine, Play } from 'lucide-react'
 import { getTerm, TERM_PATTERN, termIdOf, termsIn } from '@/lib/glossary'
 import { chunkTransformer, getHighlighter, SHIKI_THEME_BY_SITE_THEME } from '@/lib/highlighter'
 import type { BannerSection, LessonBlock, ProseNode } from '@/lib/lesson'
-import { blockHasResult, type BlockRun, type CapturedOutput } from '@/lib/outputs'
+import type { BlockRun, CapturedOutput } from '@/lib/outputs'
 import type { Topic } from '@/types'
 import { useTheme } from '@/hooks/useTheme'
 import { CopyButton } from '@/components/code/CopyButton'
 import { FontSizeControl } from '@/components/code/FontSizeControl'
 import { CaptureDialogButton } from '@/components/code/CaptureDialog'
 import { cn } from '@/lib/cn'
+
+// The editor, the Java runner and CheerpJ load only when a reader presses Run or Edit on a block.
+const LiveJava = lazy(() => import('@/components/code/LiveJava'))
 
 interface GuidedLessonProps {
   /** Shown at the left of the toolbar (the lesson's view switcher). */
@@ -255,12 +258,15 @@ function PartRun({
   onToggle,
   scenario,
   onScenario,
+  onLive,
 }: {
   run: BlockRun
   open: boolean
   onToggle: () => void
   scenario: number
   onScenario: (index: number) => void
+  /** Open the block as an editor and, with `true`, run it at once. */
+  onLive: (andRun: boolean) => void
 }) {
   const current = run.scenarios[Math.min(scenario, run.scenarios.length - 1)]
   const broken = run.status === 'compile-error'
@@ -275,18 +281,33 @@ function PartRun({
   return (
     <>
       <div className="guide-part-bar">
+        {run.status !== 'no-main' && (
+          <>
+            <button
+              type="button"
+              onClick={() => onLive(true)}
+              className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border border-[var(--color-code-accent-glow)] bg-[var(--color-code-accent-glow)]/20 px-2.5 py-0.5 text-[13px] text-[var(--color-code-accent-soft)] transition-colors hover:bg-[var(--color-code-accent-glow)]/35"
+              title="Run this program yourself, in your browser. If it asks for input, you type it."
+            >
+              <Play className="h-3 w-3" aria-hidden /> Run it
+            </button>
+            <button
+              type="button"
+              onClick={() => onLive(false)}
+              className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border border-[var(--color-code-border)] bg-[var(--color-code-surface)] px-2.5 py-0.5 text-[13px] text-[var(--color-code-ink-dim)] transition-colors hover:border-[var(--color-code-border-strong)] hover:bg-[var(--color-code-surface-hover)] hover:text-[var(--color-code-ink)]"
+              title="Change the code, then run your version"
+            >
+              <PencilLine className="h-3 w-3" aria-hidden /> Edit
+            </button>
+          </>
+        )}
         <button
           type="button"
           onClick={onToggle}
           aria-expanded={open}
-          className={cn(
-            'flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border px-2.5 py-0.5 text-[13px] transition-colors',
-            open
-              ? 'border-[var(--color-code-accent-glow)] bg-[var(--color-code-accent-glow)]/20 text-[var(--color-code-accent-soft)]'
-              : 'border-[var(--color-code-border)] bg-[var(--color-code-surface)] text-[var(--color-code-ink-dim)] hover:border-[var(--color-code-border-strong)] hover:bg-[var(--color-code-surface-hover)] hover:text-[var(--color-code-ink)]',
-          )}
+          className="flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md px-2 py-0.5 text-[13px] text-[var(--color-code-ink-faint)] transition-colors hover:text-[var(--color-code-ink)]"
         >
-          <Play className="h-3 w-3" aria-hidden /> {open ? 'Hide output' : broken ? 'Show the error' : 'Run'}
+          {open ? (broken ? 'Hide the error' : 'Hide output') : broken ? 'Show the error' : 'Show output'}
         </button>
         {open && run.scenarios.length > 1 && (
           <label className="flex items-center gap-2 text-xs text-[var(--color-code-ink-faint)]">
@@ -307,6 +328,7 @@ function PartRun({
       </div>
       {open && (
         <div className="guide-part-out" role="region" aria-label="Output of this block">
+          {!broken && pieces.length > 0 && <p className="live-meta live-caption">Sample output</p>}
           {broken ? (
             <pre tabIndex={0} className="live-err">{run.compile}</pre>
           ) : pieces.length ? (
@@ -329,11 +351,14 @@ function PartRun({
 export function GuidedLesson({ leading, blocks, code, filename, topics, output, focusLine }: GuidedLessonProps) {
   const [siteTheme] = useTheme()
   const [chunks, setChunks] = useState<Record<number, string>>({})
-  const [openParts, setOpenParts] = useState<Set<number>>(() => new Set())
+  // The sample output under a block is open unless the reader hid it.
+  const [hiddenParts, setHiddenParts] = useState<Set<number>>(() => new Set())
+  // Blocks the reader opened as a live editor, and whether pressing Run on them started the program at once.
+  const [live, setLive] = useState<Map<number, boolean>>(() => new Map())
   const [scenarios, setScenarios] = useState<Record<number, number>>({})
 
   const togglePart = (line: number) =>
-    setOpenParts((current) => {
+    setHiddenParts((current) => {
       const next = new Set(current)
       if (!next.delete(line)) next.add(line)
       return next
@@ -416,25 +441,47 @@ export function GuidedLesson({ leading, blocks, code, filename, topics, output, 
         )
       case 'code': {
         const run = output?.runs.blocks[String(block.line)]
+        const editing = live.has(block.line)
         return (
           <div
             key={`c${block.line}`}
             className="guide-code code-font"
             style={{ ['--line-start' as string]: block.line - 1 }}
           >
-            {chunks[block.line] ? (
-              <div className="overflow-x-auto py-2.5" tabIndex={0} role="group" aria-label="Code, scrollable" dangerouslySetInnerHTML={{ __html: chunks[block.line] }} />
+            {editing ? (
+              <Suspense fallback={<p className="guide-part-none">Opening the editor...</p>}>
+                <LiveJava
+                  initialCode={block.code}
+                  firstLine={block.line}
+                  autoRun={live.get(block.line)}
+                  label={`Editable Java code, lesson line ${block.line}`}
+                  onClose={() =>
+                    setLive((current) => {
+                      const next = new Map(current)
+                      next.delete(block.line)
+                      return next
+                    })
+                  }
+                />
+              </Suspense>
             ) : (
-              <pre className="overflow-x-auto px-4 py-2.5 font-mono text-[var(--color-code-ink-dim)]" tabIndex={0}>{block.code}</pre>
-            )}
-            {blockHasResult(run) && (
-              <PartRun
-                run={run}
-                open={openParts.has(block.line)}
-                onToggle={() => togglePart(block.line)}
-                scenario={scenarios[block.line] ?? 0}
-                onScenario={(index) => setScenarios((current) => ({ ...current, [block.line]: index }))}
-              />
+              <>
+                {chunks[block.line] ? (
+                  <div className="overflow-x-auto py-2.5" tabIndex={0} role="group" aria-label="Code, scrollable" dangerouslySetInnerHTML={{ __html: chunks[block.line] }} />
+                ) : (
+                  <pre className="overflow-x-auto px-4 py-2.5 font-mono text-[var(--color-code-ink-dim)]" tabIndex={0}>{block.code}</pre>
+                )}
+                {run && run.status !== 'no-main' && (
+                  <PartRun
+                    run={run}
+                    open={!hiddenParts.has(block.line)}
+                    onToggle={() => togglePart(block.line)}
+                    scenario={scenarios[block.line] ?? 0}
+                    onScenario={(index) => setScenarios((current) => ({ ...current, [block.line]: index }))}
+                    onLive={(andRun) => setLive((current) => new Map(current).set(block.line, andRun))}
+                  />
+                )}
+              </>
             )}
           </div>
         )

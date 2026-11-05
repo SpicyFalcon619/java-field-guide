@@ -22,6 +22,7 @@ import { cn } from '@/lib/cn'
 // it out of the initial bundle that Home/CategoryPage load.
 // The assistant panel is also loaded on demand: most visits never open it.
 const AssistantPanel = lazy(() => import('@/components/ai/AssistantPanel').then((m) => ({ default: m.AssistantPanel })))
+const SandboxPage = lazy(() => import('@/pages/SandboxPage').then((m) => ({ default: m.SandboxPage })))
 const GlossaryPage = lazy(() => import('@/pages/GlossaryPage').then((m) => ({ default: m.GlossaryPage })))
 const SnippetPage = lazy(() => import('@/pages/SnippetPage').then((m) => ({ default: m.SnippetPage })))
 
@@ -121,6 +122,7 @@ function App() {
                 <Route path="/explore" element={<ExplorePage />} />
                 <Route path="/me" element={<ProgressPage />} />
                 <Route path="/s/:id" element={<SnippetPage />} />
+                <Route path="/sandbox" element={<SandboxPage />} />
                 <Route path="/glossary" element={<GlossaryPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

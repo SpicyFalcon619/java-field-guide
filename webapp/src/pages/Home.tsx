@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, MessageSquareText, Search } from 'lucide-react'
+import { ArrowRight, MessageSquareText, Search, Terminal } from 'lucide-react'
 import { getSnippetById } from '@/lib/content'
 import { trailOrder } from '@/lib/roadmap'
 import { allLessons, nextUpLesson, overallProgress } from '@/lib/progress'
@@ -50,6 +50,10 @@ export function Home({ onOpenSearch }: { onOpenSearch: () => void }) {
             {returning ? 'Keep reading' : 'Start learning'}
             <ArrowRight className="h-4 w-4" />
           </Link>
+          <Link to="/sandbox" className={quietLink}>
+            <Terminal className="h-3.5 w-3.5" />
+            Try Java yourself
+          </Link>
           <button onClick={onOpenSearch} className={`${quietLink} max-sm:hidden`}>
             <Search className="h-3.5 w-3.5" />
             Find a concept <kbd className="hidden font-sans text-[var(--color-ink-faint)] sm:inline">({isMac ? '⌘K' : 'Ctrl+K'})</kbd>
@@ -78,7 +82,11 @@ export function Home({ onOpenSearch }: { onOpenSearch: () => void }) {
       </section>
 
       <p className="mt-16 text-sm text-[var(--color-ink-faint)]">
-        {allLessons.length} stops, last updated {formatDate(__BUILD_DATE__)}. Everything you tick off stays in this browser only.
+        {allLessons.length} stops, last updated {formatDate(__BUILD_DATE__)}. Everything you tick off stays in this browser only. Java runs in your browser with{' '}
+        <a href="https://cheerpj.com" target="_blank" rel="noreferrer" className="text-[var(--color-ink-dim)] underline decoration-[var(--color-border-strong)] underline-offset-4 hover:text-[var(--color-ink)]">
+          CheerpJ
+        </a>
+        .
       </p>
     </div>
   )

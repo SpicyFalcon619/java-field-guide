@@ -43,8 +43,9 @@ public class Main {
 }
 /// @input Noman | 35
 
-/// The "Typed input" menu under the block shows what the person typed. When you run it yourself, you type the
-/// name, press Enter, type the age, and press Enter again.
+/// The sample output under the block shows one example of what was typed. Press "Run it" to try it yourself: the
+/// program prints "Enter your name:", then a box appears under the output. Type the name, press Enter, type the
+/// age, and press Enter again.
 
 /// ### Topic 3: What does `import java.util.Scanner;` mean? ###
 /// This is the line that confuses almost everyone, so let us take it slowly.

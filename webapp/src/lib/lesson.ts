@@ -282,7 +282,8 @@ export function parseLesson(source: string): LessonBlock[] {
     const topic = line.trim().match(TOPIC_RULE)
     if (topic) {
       flushCode()
-      const label = topic[1].trim()
+      // Headings are plain text, so `code` marks around a word would show as stray backticks.
+      const label = topic[1].trim().replace(/`/g, '')
       const numbered = label.match(/^(Topic\s+\d+):\s*(.*)$/)
       blocks.push(
         numbered
