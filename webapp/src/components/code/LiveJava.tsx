@@ -28,7 +28,7 @@ interface LiveJavaProps {
 // A page of output is plenty; a runaway loop printing forever must not freeze the tab.
 const OUTPUT_LIMIT = 100_000
 
-const reads = (code: string) => /\bScanner\b|System\s*\.\s*in\b|BufferedReader/.test(code)
+const reads = (code: string) => /System\s*\.\s*in\b/.test(code)
 
 const button =
   'flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border px-2.5 py-0.5 text-[13px] transition-colors disabled:cursor-not-allowed disabled:opacity-50'

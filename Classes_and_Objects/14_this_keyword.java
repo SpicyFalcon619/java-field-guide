@@ -123,8 +123,9 @@ public class Main {
 /// `new Student5()` ran the no-argument constructor, which immediately passed the work to the other constructor
 /// with the values "Nothing" and 0. All the real setup lives in one place.
 ///
-/// MISTAKE: `this(...)` must be the very FIRST statement in the constructor, and it can only be used inside a
-/// constructor. Put it on a later line, and the compiler refuses. Constructor chaining gets its own lesson later.
+/// MISTAKE: `this(...)` belongs on the very FIRST line of the constructor (Java 25 allows some lines before it, but first
+/// is always correct), and it can only be used inside a
+/// constructor. Put it on a later line, and most compilers refuse. Constructor chaining gets its own lesson later.
 
 /// ### Topic 4: Returning this, to chain method calls ###
 /// If a method ends with `return this;`, it hands the same object back to the caller. That lets you call another

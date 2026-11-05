@@ -27,8 +27,11 @@ const BASECAMP_CATEGORY_MAP: Record<string, string[]> = {
     'working-with-objects',
     'abstraction-and-interfaces',
     'exceptions-and-files',
+    'collections-and-sorting',
+    'threads-and-gui',
   ],
   'basecamp-1': ['lab'],
+  'basecamp-2': ['beyond-the-course'],
 }
 
 function countChecklist(items: ChecklistItem[]): { done: number; total: number } {

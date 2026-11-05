@@ -29,8 +29,8 @@ interface GuidedLessonProps {
   focusLine?: number
 }
 
-// A program that waits for typing: Scanner, System.in, a BufferedReader on the keyboard.
-const READS_INPUT = /\bScanner\b|System\s*\.\s*in\b|BufferedReader/
+// A program that waits for typing on the keyboard: it reads System.in (Scanner, BufferedReader).
+const READS_INPUT = /System\s*\.\s*in\b/
 
 // Words in prose that are really code: `backticked`, name(...) calls, __dunders__.
 const INLINE_CODE = /(`[^`]+`|(?<!\w)\.?[A-Za-z_][\w.]*\((?:[^()]|\([^()]*\))*\)|__\w+__)/g
@@ -276,6 +276,17 @@ function PartRun({
   /** The program reads typed input, so the reader may want to supply their own. */
   reads: boolean
 }) {
+  // A program that opens a window cannot run inside the page, so it gets a note instead of buttons that would fail.
+  if (run.status === 'gui') {
+    return (
+      <div className="guide-part-out" role="note">
+        <p className="live-hint">
+          This program opens a window, so it cannot run inside the page. Copy it into your IDE (or save it as Main.java, then run{' '}
+          <code>javac Main.java</code> and <code>java Main</code>) to see it on your own screen.
+        </p>
+      </div>
+    )
+  }
   const current = run.scenarios[Math.min(scenario, run.scenarios.length - 1)]
   const broken = run.status === 'compile-error'
   // Output and error text interleave in the order they happened; the error stream is drawn as an error.

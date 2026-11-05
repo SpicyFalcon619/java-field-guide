@@ -113,7 +113,6 @@ async function captureBlock(lessonKey, index, block) {
   mkdirSync(dir, { recursive: true })
   const entry = { mainClass: block.mainClass ?? null, scenarios: [], expectError: block.expectError || undefined }
   if (!block.mainClass) return { ...entry, status: 'no-main' }
-  if (GUI.test(block.code)) return { ...entry, status: 'gui' }
 
   const fileName = `${block.fileClass}.java`
   writeFileSync(join(dir, fileName), block.code)
@@ -125,6 +124,9 @@ async function captureBlock(lessonKey, index, block) {
     const message = (compiled.stderr || compiled.stdout).replaceAll(dir, '').replace(/\r/g, '').trim()
     return { ...entry, status: 'compile-error', compile: message }
   }
+
+  // A program that opens a window is compiled (to catch mistakes) but never run: there is no screen here.
+  if (GUI.test(block.code)) return { ...entry, status: 'gui' }
 
   // --release 17 above is what the browser's Java can load. The fixed date keeps the jar identical between runs.
   const jarRel = `classes/${lessonKey.replace(/\.java$/, '')}/${block.line}.jar`

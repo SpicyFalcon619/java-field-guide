@@ -14,7 +14,7 @@ A field guide to Java and object oriented programming, built around the two cour
   - [x] Loops
   - [x] Arrays
   - [x] Methods
-  - [ ] Strings
+  - [x] Strings
   - [x] Scope of a variable, pass by value and by reference
 - [x] **Classes 4-5: Class and object**
   - [x] Classes, objects and members
@@ -30,11 +30,11 @@ A field guide to Java and object oriented programming, built around the two cour
 - [x] **Classes 15-16: Exceptions**
   - [x] try, catch, finally, throw and throws
   - [x] Checked and unchecked, user defined exceptions
-- [ ] **Classes 17-18: GUI and event handling**
+- [x] **Classes 17-18: GUI and event handling**
 - [x] **Classes 19-20: Input and output, files**
-- [ ] **Class 21: Collections framework, ArrayList**
-- [ ] **Class 22: Comparable, Comparator, sorting**
-- [ ] **Class 23: Threads**
+- [x] **Class 21: Collections framework, ArrayList**
+- [x] **Class 22: Comparable, Comparator, sorting**
+- [x] **Class 23: Threads**
 
 ---
 
@@ -53,3 +53,16 @@ A field guide to Java and object oriented programming, built around the two cour
 - [ ] **Lab 10: Threads**
 - [ ] **Lab 11: Game development with GUI graphics**
 - [ ] **Lab 12: Final exam**
+
+---
+
+## BASECAMP 2: Beyond the course, how Java is really written
+*Not in the course outline, but in almost every real Java project: enums, inner classes, lambdas, streams, records and the modern language features. Written for the same beginner audience.*
+
+- [ ] **Enums**
+- [ ] **Inner and anonymous classes**
+- [ ] **Lambdas and functional interfaces**
+- [ ] **Streams**
+- [ ] **Records, var, text blocks and pattern matching**
+- [ ] **Dates, times and random numbers**
+

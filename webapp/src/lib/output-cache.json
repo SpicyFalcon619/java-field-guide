@@ -1,9 +1,9 @@
 {
- "Abstraction_and_Interfaces/25_abstraction_interface.java": {
-  "capturedAt": "2026-11-05T15:00:38.688Z",
+ "Abstraction_and_Interfaces/30_abstract_classes.java": {
+  "capturedAt": "2026-11-05T15:20:44.151Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
-   "36": {
+   "44": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -12,27 +12,106 @@
       "stdout": "Woof!\nSleeping...\n",
       "segments": [
        [
-        53,
+        61,
         "Woof!\n",
         0
        ],
        [
-        54,
+        62,
         "Sleeping...\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Abstraction_and_Interfaces/25_abstraction_interface/36.jar",
+    "jar": "classes/Abstraction_and_Interfaces/30_abstract_classes/44.jar",
     "status": "ok"
    },
-   "82": {
-    "mainClass": null,
+   "80": {
+    "mainClass": "Main",
     "scenarios": [],
-    "status": "no-main"
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: Animal is abstract; cannot be instantiated\n        Animal a = new Animal();\n                   ^\n1 error"
    },
-   "116": {
+   "95": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "A shape with area 12.56\nA shape with area 12.0\n",
+      "segments": [
+       [
+        133,
+        "A shape with area 12.56\nA shape with area 12.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Abstraction_and_Interfaces/30_abstract_classes/95.jar",
+    "status": "ok"
+   },
+   "146": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:6: error: Car is not abstract and does not override abstract method stop() in Vehicle\nclass Car extends Vehicle {\n^\n1 error"
+   }
+  }
+ },
+ "Abstraction_and_Interfaces/31_interfaces.java": {
+  "capturedAt": "2026-11-05T15:20:46.380Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "33": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Drawing a circle\n",
+      "segments": [
+       [
+        46,
+        "Drawing a circle\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Abstraction_and_Interfaces/31_interfaces/33.jar",
+    "status": "ok"
+   },
+   "57": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:6: error: draw() in Circle cannot implement draw() in Drawable\n    void draw() {\n         ^\n  attempting to assign weaker access privileges; was public\n1 error"
+   },
+   "80": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Playing a song\nPlaying a video\nStarting the game\n",
+      "segments": [
+       [
+        110,
+        "Playing a song\nPlaying a video\nStarting the game\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Abstraction_and_Interfaces/31_interfaces/80.jar",
+    "status": "ok"
+   },
+   "138": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -41,22 +120,22 @@
       "stdout": "Method A from Interface A\nMethod B from Interface B\n",
       "segments": [
        [
-        137,
+        159,
         "Method A from Interface A\n",
         0
        ],
        [
-        138,
+        160,
         "Method B from Interface B\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Abstraction_and_Interfaces/25_abstraction_interface/116.jar",
+    "jar": "classes/Abstraction_and_Interfaces/31_interfaces/138.jar",
     "status": "ok"
    },
-   "158": {
+   "181": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -65,30 +144,83 @@
       "stdout": "Name: Tom\nAge: 1\nMeow\nWiwiwiwi..... wiwiwi\n",
       "segments": [
        [
-        198,
+        216,
         "Name: Tom\nAge: 1\n",
         0
        ],
        [
-        200,
+        217,
         "Meow\n",
         0
        ],
        [
-        201,
+        218,
         "Wiwiwiwi..... wiwiwi\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Abstraction_and_Interfaces/25_abstraction_interface/158.jar",
+    "jar": "classes/Abstraction_and_Interfaces/31_interfaces/181.jar",
+    "status": "ok"
+   },
+   "230": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, Rafi!\nA Greeter says hello.\nHello,\n",
+      "segments": [
+       [
+        253,
+        "Hello, Rafi!\n",
+        0
+       ],
+       [
+        254,
+        "A Greeter says hello.\n",
+        0
+       ],
+       [
+        255,
+        "Hello,\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Abstraction_and_Interfaces/31_interfaces/230.jar",
+    "status": "ok"
+   },
+   "267": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "7\n12\n",
+      "segments": [
+       [
+        276,
+        "7\n",
+        0
+       ],
+       [
+        277,
+        "12\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Abstraction_and_Interfaces/31_interfaces/267.jar",
     "status": "ok"
    }
   }
  },
  "Classes_and_Objects/12_classes_and_objects.java": {
-  "capturedAt": "2026-11-05T15:00:40.370Z",
+  "capturedAt": "2026-11-05T15:20:47.944Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "52": {
@@ -230,7 +362,7 @@
   }
  },
  "Classes_and_Objects/13_constructors.java": {
-  "capturedAt": "2026-11-05T15:00:41.959Z",
+  "capturedAt": "2026-11-05T15:20:49.408Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "33": {
@@ -327,7 +459,7 @@
   }
  },
  "Classes_and_Objects/14_this_keyword.java": {
-  "capturedAt": "2026-11-05T15:00:43.469Z",
+  "capturedAt": "2026-11-05T15:20:50.910Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -426,7 +558,7 @@
   }
  },
  "Classes_and_Objects/15_method_overloading.java": {
-  "capturedAt": "2026-11-05T15:00:44.404Z",
+  "capturedAt": "2026-11-05T15:20:51.818Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "44": {
@@ -512,7 +644,7 @@
   }
  },
  "Classes_and_Objects/16_static_keyword.java": {
-  "capturedAt": "2026-11-05T15:00:46.876Z",
+  "capturedAt": "2026-11-05T15:20:54.170Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "35": {
@@ -723,7 +855,7 @@
   }
  },
  "Classes_and_Objects/17_initialization_blocks.java": {
-  "capturedAt": "2026-11-05T15:00:47.828Z",
+  "capturedAt": "2026-11-05T15:20:55.144Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "28": {
@@ -836,7 +968,7 @@
   }
  },
  "Classes_and_Objects/18_variable_scope_lifetime.java": {
-  "capturedAt": "2026-11-05T15:00:49.978Z",
+  "capturedAt": "2026-11-05T15:20:57.245Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "34": {
@@ -982,8 +1114,165 @@
    }
   }
  },
- "Encapsulation_and_Access/22_access_control.java": {
-  "capturedAt": "2026-11-05T15:00:51.725Z",
+ "Encapsulation_and_Access/22_packages.java": {
+  "capturedAt": "2026-11-05T15:20:59.334Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "37": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Rafi, Mim]\n",
+      "segments": [
+       [
+        42,
+        "[Rafi, Mim]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Encapsulation_and_Access/22_packages/37.jar",
+    "status": "ok"
+   },
+   "55": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Rafi, Mim]\n",
+      "segments": [
+       [
+        62,
+        "[Rafi, Mim]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Encapsulation_and_Access/22_packages/55.jar",
+    "status": "ok"
+   },
+   "73": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[10, 20, 30]\n[3, 1, 2]\n",
+      "segments": [
+       [
+        83,
+        "[10, 20, 30]\n",
+        0
+       ],
+       [
+        84,
+        "[3, 1, 2]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Encapsulation_and_Access/22_packages/73.jar",
+    "status": "ok"
+   },
+   "93": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:3: error: cannot find symbol\n        ArrayList<String> names = new ArrayList<>();\n        ^\n  symbol:   class ArrayList\n  location: class Main\n\\Main.java:3: error: cannot find symbol\n        ArrayList<String> names = new ArrayList<>();\n                                      ^\n  symbol:   class ArrayList\n  location: class Main\n2 errors"
+   },
+   "109": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "7.0\n124\nJAVA.LANG IS ALREADY IMPORTED\n",
+      "segments": [
+       [
+        111,
+        "7.0\n",
+        0
+       ],
+       [
+        112,
+        "124\n",
+        0
+       ],
+       [
+        113,
+        "JAVA.LANG IS ALREADY IMPORTED\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Encapsulation_and_Access/22_packages/109.jar",
+    "status": "ok"
+   },
+   "122": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "java.util.Date\njava.sql.Date\n",
+      "segments": [
+       [
+        128,
+        "java.util.Date\n",
+        0
+       ],
+       [
+        129,
+        "java.sql.Date\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Encapsulation_and_Access/22_packages/122.jar",
+    "status": "ok"
+   },
+   "175": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "28.274333882308138\n9\n12.0\n",
+      "segments": [
+       [
+        180,
+        "28.274333882308138\n",
+        0
+       ],
+       [
+        181,
+        "9\n",
+        0
+       ],
+       [
+        182,
+        "12.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Encapsulation_and_Access/22_packages/175.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Encapsulation_and_Access/23_access_control.java": {
+  "capturedAt": "2026-11-05T15:21:01.097Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "57": {
@@ -1002,7 +1291,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/22_access_control/57.jar",
+    "jar": "classes/Encapsulation_and_Access/23_access_control/57.jar",
     "status": "ok"
    },
    "78": {
@@ -1028,7 +1317,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/22_access_control/95.jar",
+    "jar": "classes/Encapsulation_and_Access/23_access_control/95.jar",
     "status": "ok"
    },
    "126": {
@@ -1047,7 +1336,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/22_access_control/126.jar",
+    "jar": "classes/Encapsulation_and_Access/23_access_control/126.jar",
     "status": "ok"
    },
    "152": {
@@ -1066,7 +1355,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/22_access_control/152.jar",
+    "jar": "classes/Encapsulation_and_Access/23_access_control/152.jar",
     "status": "ok"
    },
    "170": {
@@ -1120,13 +1409,13 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/22_access_control/170.jar",
+    "jar": "classes/Encapsulation_and_Access/23_access_control/170.jar",
     "status": "ok"
    }
   }
  },
- "Encapsulation_and_Access/23_encapsulation.java": {
-  "capturedAt": "2026-11-05T15:00:53.050Z",
+ "Encapsulation_and_Access/24_encapsulation.java": {
+  "capturedAt": "2026-11-05T15:21:02.314Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "34": {
@@ -1145,7 +1434,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/23_encapsulation/34.jar",
+    "jar": "classes/Encapsulation_and_Access/24_encapsulation/34.jar",
     "status": "ok"
    },
    "60": {
@@ -1189,7 +1478,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/23_encapsulation/60.jar",
+    "jar": "classes/Encapsulation_and_Access/24_encapsulation/60.jar",
     "status": "ok"
    },
    "129": {
@@ -1228,7 +1517,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/23_encapsulation/129.jar",
+    "jar": "classes/Encapsulation_and_Access/24_encapsulation/129.jar",
     "status": "ok"
    },
    "186": {
@@ -1240,8 +1529,8 @@
    }
   }
  },
- "Encapsulation_and_Access/24_final_keyword.java": {
-  "capturedAt": "2026-11-05T15:00:56.320Z",
+ "Encapsulation_and_Access/25_final_keyword.java": {
+  "capturedAt": "2026-11-05T15:21:05.041Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "32": {
@@ -1260,7 +1549,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/24_final_keyword/32.jar",
+    "jar": "classes/Encapsulation_and_Access/25_final_keyword/32.jar",
     "status": "ok"
    },
    "43": {
@@ -1286,7 +1575,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/24_final_keyword/60.jar",
+    "jar": "classes/Encapsulation_and_Access/25_final_keyword/60.jar",
     "status": "ok"
    },
    "83": {
@@ -1319,7 +1608,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/24_final_keyword/129.jar",
+    "jar": "classes/Encapsulation_and_Access/25_final_keyword/129.jar",
     "status": "ok"
    },
    "151": {
@@ -1345,7 +1634,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/24_final_keyword/170.jar",
+    "jar": "classes/Encapsulation_and_Access/25_final_keyword/170.jar",
     "status": "ok"
    },
    "191": {
@@ -1364,7 +1653,7 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/24_final_keyword/191.jar",
+    "jar": "classes/Encapsulation_and_Access/25_final_keyword/191.jar",
     "status": "ok"
    },
    "211": {
@@ -1383,13 +1672,13 @@
       ]
      }
     ],
-    "jar": "classes/Encapsulation_and_Access/24_final_keyword/211.jar",
+    "jar": "classes/Encapsulation_and_Access/25_final_keyword/211.jar",
     "status": "ok"
    }
   }
  },
- "Exceptions_and_Files/26_exception_handling.java": {
-  "capturedAt": "2026-11-05T15:00:59.388Z",
+ "Exceptions_and_Files/32_exception_handling.java": {
+  "capturedAt": "2026-11-05T15:21:07.080Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "31": {
@@ -1408,10 +1697,11 @@
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/31.jar",
+    "expectError": true,
+    "jar": "classes/Exceptions_and_Files/32_exception_handling/31.jar",
     "status": "runtime-error"
    },
-   "61": {
+   "60": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1420,22 +1710,22 @@
       "stdout": "Cannot divide by zero!\nError: java.lang.ArithmeticException: / by zero\nProgram continues...\n",
       "segments": [
        [
-        69,
+        68,
         "Cannot divide by zero!\nError: java.lang.ArithmeticException: / by zero\n",
         0
        ],
        [
-        71,
+        70,
         "Program continues...\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/61.jar",
+    "jar": "classes/Exceptions_and_Files/32_exception_handling/60.jar",
     "status": "ok"
    },
-   "89": {
+   "86": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1444,46 +1734,29 @@
       "stdout": "Math error: / by zero\nProgram continues after exception handling.\n",
       "segments": [
        [
-        98,
+        93,
         "Math error: / by zero\n",
         0
        ],
        [
-        105,
+        99,
         "Program continues after exception handling.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/89.jar",
+    "jar": "classes/Exceptions_and_Files/32_exception_handling/86.jar",
     "status": "ok"
    },
-   "116": {
+   "111": {
     "mainClass": "Main",
-    "scenarios": [
-     {
-      "label": "",
-      "inputs": [],
-      "stdout": "Cannot divide by zero!\nError: / by zero\nProgram continues...\n",
-      "segments": [
-       [
-        124,
-        "Cannot divide by zero!\nError: / by zero\n",
-        0
-       ],
-       [
-        126,
-        "Program continues...\n",
-        0
-       ]
-      ]
-     }
-    ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/116.jar",
-    "status": "ok"
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: exception ArithmeticException has already been caught\n        } catch (ArithmeticException e) {\n          ^\n1 error"
    },
-   "138": {
+   "131": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1492,22 +1765,59 @@
       "stdout": "Array index out of range!\nFinally block is always executed.\n",
       "segments": [
        [
-        144,
+        137,
         "Array index out of range!\n",
         0
        ],
        [
-        146,
+        139,
         "Finally block is always executed.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/138.jar",
+    "jar": "classes/Exceptions_and_Files/32_exception_handling/131.jar",
     "status": "ok"
    },
-   "157": {
+   "146": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "cleaning up for n = 5\n20\ncleaning up for n = 0\n-1\n",
+      "segments": [
+       [
+        158,
+        "cleaning up for n = 5\n20\n",
+        0
+       ],
+       [
+        159,
+        "cleaning up for n = 0\n-1\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Exceptions_and_Files/32_exception_handling/146.jar",
+    "status": "ok"
+   },
+   "194": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:5: error: unreported exception FileNotFoundException; must be caught or declared to be thrown\n        FileReader file = new FileReader(\"somefile.txt\");\n                          ^\n1 error"
+   }
+  }
+ },
+ "Exceptions_and_Files/33_throw_throws_custom_exceptions.java": {
+  "capturedAt": "2026-11-05T15:21:08.920Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "21": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1516,17 +1826,47 @@
       "stdout": "Exception in thread \"main\" java.lang.ArithmeticException: Access denied - You must be 18+\n\tat Main.main(Main.java:5)\n",
       "segments": [
        [
-        161,
+        25,
         "Exception in thread \"main\" java.lang.ArithmeticException: Access denied - You must be 18+\n\tat Main.main(Main.java:5)\n",
         1
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/157.jar",
+    "expectError": true,
+    "jar": "classes/Exceptions_and_Files/33_throw_throws_custom_exceptions/21.jar",
     "status": "runtime-error"
    },
-   "179": {
+   "43": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Age set to 25\nProblem: Age must be between 0 and 150, but was -5\nCarrying on.\n",
+      "segments": [
+       [
+        53,
+        "Age set to 25\n",
+        0
+       ],
+       [
+        57,
+        "Problem: Age must be between 0 and 150, but was -5\n",
+        0
+       ],
+       [
+        59,
+        "Carrying on.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Exceptions_and_Files/33_throw_throws_custom_exceptions/43.jar",
+    "status": "ok"
+   },
+   "77": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1535,17 +1875,17 @@
       "stdout": "File not found or unable to read the file.\n",
       "segments": [
        [
-        192,
+        90,
         "File not found or unable to read the file.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/179.jar",
+    "jar": "classes/Exceptions_and_Files/33_throw_throws_custom_exceptions/77.jar",
     "status": "ok"
    },
-   "225": {
+   "110": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1554,47 +1894,72 @@
       "stdout": "Custom Exception: You must be 18 or older.\n",
       "segments": [
        [
-        244,
+        129,
         "Custom Exception: You must be 18 or older.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/225.jar",
+    "jar": "classes/Exceptions_and_Files/33_throw_throws_custom_exceptions/110.jar",
     "status": "ok"
    },
-   "251": {
+   "147": {
     "mainClass": "Main",
     "scenarios": [
      {
       "label": "",
       "inputs": [],
-      "stdout": "Custom Exception: You must be 18 or older.\n",
+      "stdout": "Balance: 700.0\nNot enough balance! You have 700.0 but asked for 900.0\n",
       "segments": [
        [
-        270,
-        "Custom Exception: You must be 18 or older.\n",
+        169,
+        "Balance: 700.0\n",
+        0
+       ],
+       [
+        173,
+        "Not enough balance! You have 700.0 but asked for 900.0\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/26_exception_handling/251.jar",
+    "jar": "classes/Exceptions_and_Files/33_throw_throws_custom_exceptions/147.jar",
     "status": "ok"
    },
-   "283": {
-    "mainClass": null,
-    "scenarios": [],
-    "status": "no-main"
+   "187": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Pass\nException in thread \"main\" InvalidMarksException: Marks must be between 0 and 100, but were 120\n\tat Main.grade(Main.java:9)\n\tat Main.main(Main.java:15)\n",
+      "segments": [
+       [
+        200,
+        "Pass\n",
+        0
+       ],
+       [
+        195,
+        "Exception in thread \"main\" InvalidMarksException: Marks must be between 0 and 100, but were 120\n\tat Main.grade(Main.java:9)\n\tat Main.main(Main.java:15)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "jar": "classes/Exceptions_and_Files/33_throw_throws_custom_exceptions/187.jar",
+    "status": "runtime-error"
    }
   }
  },
- "Exceptions_and_Files/27_file_handling.java": {
-  "capturedAt": "2026-11-05T15:01:02.271Z",
+ "Exceptions_and_Files/34_file_handling.java": {
+  "capturedAt": "2026-11-05T15:21:12.383Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
-   "27": {
+   "34": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1603,17 +1968,17 @@
       "stdout": "File created: example.txt\n",
       "segments": [
        [
-        35,
+        42,
         "File created: example.txt\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/27.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/34.jar",
     "status": "ok"
    },
-   "47": {
+   "58": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1622,17 +1987,17 @@
       "stdout": "Successfully wrote to the file.\n",
       "segments": [
        [
-        56,
+        67,
         "Successfully wrote to the file.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/47.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/58.jar",
     "status": "ok"
    },
-   "65": {
+   "80": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1641,17 +2006,17 @@
       "stdout": "Successfully appended to the file.\n",
       "segments": [
        [
-        74,
+        89,
         "Successfully appended to the file.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/65.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/80.jar",
     "status": "ok"
    },
-   "83": {
+   "105": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1660,36 +2025,55 @@
       "stdout": "Hello, this is written to the file!\nThis line is appended.\n",
       "segments": [
        [
-        94,
+        116,
         "Hello, this is written to the file!\nThis line is appended.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/83.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/105.jar",
     "status": "ok"
    },
-   "106": {
+   "128": {
     "mainClass": "Main",
     "scenarios": [
      {
       "label": "",
       "inputs": [],
-      "stdout": "File could not be deleted.\n",
+      "stdout": "File not found.\n",
       "segments": [
        [
-        114,
-        "File could not be deleted.\n",
+        138,
+        "File not found.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/106.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/128.jar",
     "status": "ok"
    },
-   "121": {
+   "145": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Deleted file: example.txt\n",
+      "segments": [
+       [
+        151,
+        "Deleted file: example.txt\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Exceptions_and_Files/34_file_handling/145.jar",
+    "status": "ok"
+   },
+   "167": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1698,17 +2082,17 @@
       "stdout": "Hello, this is written to the file!\nThis line is appended.\n",
       "segments": [
        [
-        130,
+        176,
         "Hello, this is written to the file!\nThis line is appended.\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/121.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/167.jar",
     "status": "ok"
    },
-   "143": {
+   "189": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1717,17 +2101,17 @@
       "stdout": "Write successful!\n",
       "segments": [
        [
-        155,
+        201,
         "Write successful!\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/143.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/189.jar",
     "status": "ok"
    },
-   "164": {
+   "213": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -1736,20 +2120,58 @@
       "stdout": "Append successful!\n",
       "segments": [
        [
-        175,
+        224,
         "Append successful!\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Exceptions_and_Files/27_file_handling/164.jar",
+    "jar": "classes/Exceptions_and_Files/34_file_handling/213.jar",
+    "status": "ok"
+   },
+   "245": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Written, and closed automatically.\n",
+      "segments": [
+       [
+        251,
+        "Written, and closed automatically.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Exceptions_and_Files/34_file_handling/245.jar",
+    "status": "ok"
+   },
+   "260": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1: buy milk\n2: call mum\n3: finish the Java lab\n",
+      "segments": [
+       [
+        269,
+        "1: buy milk\n2: call mum\n3: finish the Java lab\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Exceptions_and_Files/34_file_handling/260.jar",
     "status": "ok"
    }
   }
  },
  "Inheritance_and_Polymorphism/19_inheritance.java": {
-  "capturedAt": "2026-11-05T15:01:06.377Z",
+  "capturedAt": "2026-11-05T15:21:15.880Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "39": {
@@ -2004,7 +2426,7 @@
   }
  },
  "Inheritance_and_Polymorphism/20_method_overriding.java": {
-  "capturedAt": "2026-11-05T15:01:08.256Z",
+  "capturedAt": "2026-11-05T15:21:17.598Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "33": {
@@ -2110,7 +2532,7 @@
   }
  },
  "Inheritance_and_Polymorphism/21_polymorphism.java": {
-  "capturedAt": "2026-11-05T15:01:12.138Z",
+  "capturedAt": "2026-11-05T15:21:20.834Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "43": {
@@ -2349,7 +2771,7 @@
   }
  },
  "Java_Basics/01_what_is_java.java": {
-  "capturedAt": "2026-11-05T15:01:12.925Z",
+  "capturedAt": "2026-11-05T15:21:21.587Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "75": {
@@ -2374,7 +2796,7 @@
   }
  },
  "Java_Basics/02_first_program.java": {
-  "capturedAt": "2026-11-05T15:01:15.638Z",
+  "capturedAt": "2026-11-05T15:21:23.970Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "18": {
@@ -2565,7 +2987,7 @@
   }
  },
  "Java_Basics/03_variables.java": {
-  "capturedAt": "2026-11-05T15:01:18.841Z",
+  "capturedAt": "2026-11-05T15:21:26.514Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "32": {
@@ -2783,7 +3205,7 @@
   }
  },
  "Java_Basics/04_scanner_input.java": {
-  "capturedAt": "2026-11-05T15:01:22.153Z",
+  "capturedAt": "2026-11-05T15:21:28.758Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "28": {
@@ -3022,7 +3444,7 @@
   }
  },
  "Java_Basics/05_operators.java": {
-  "capturedAt": "2026-11-05T15:01:27.364Z",
+  "capturedAt": "2026-11-05T15:21:31.894Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "30": {
@@ -3359,7 +3781,7 @@
   }
  },
  "Java_Basics/06_if_else.java": {
-  "capturedAt": "2026-11-05T15:01:30.124Z",
+  "capturedAt": "2026-11-05T15:21:34.600Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "30": {
@@ -3604,7 +4026,7 @@
   }
  },
  "Java_Basics/07_switch.java": {
-  "capturedAt": "2026-11-05T15:01:31.860Z",
+  "capturedAt": "2026-11-05T15:21:36.452Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "26": {
@@ -3751,7 +4173,7 @@
   }
  },
  "Java_Basics/08_loops.java": {
-  "capturedAt": "2026-11-05T15:01:35.797Z",
+  "capturedAt": "2026-11-05T15:21:40.577Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "36": {
@@ -4060,7 +4482,7 @@
   }
  },
  "Java_Basics/09_arrays.java": {
-  "capturedAt": "2026-11-05T15:01:39.622Z",
+  "capturedAt": "2026-11-05T15:21:43.742Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "37": {
@@ -4571,7 +4993,7 @@
   }
  },
  "Java_Basics/10_methods.java": {
-  "capturedAt": "2026-11-05T15:01:42.059Z",
+  "capturedAt": "2026-11-05T15:21:46.201Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "31": {
@@ -4730,7 +5152,7 @@
   }
  },
  "Java_Basics/11_strings.java": {
-  "capturedAt": "2026-11-05T15:01:44.989Z",
+  "capturedAt": "2026-11-05T15:21:48.847Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
    "21": {
@@ -5016,11 +5438,11 @@
    }
   }
  },
- "Working_with_Objects/21_call_by_value_vs_call_by_reference.java": {
-  "capturedAt": "2026-11-05T15:01:45.974Z",
+ "Working_with_Objects/26_call_by_value_reference.java": {
+  "capturedAt": "2026-11-05T15:21:51.016Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
-   "26": {
+   "42": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5029,17 +5451,17 @@
       "stdout": "Value of a: 50\n",
       "segments": [
        [
-        34,
+        50,
         "Value of a: 50\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/21_call_by_value_vs_call_by_reference/26.jar",
+    "jar": "classes/Working_with_Objects/26_call_by_value_reference/42.jar",
     "status": "ok"
    },
-   "53": {
+   "71": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5048,17 +5470,17 @@
       "stdout": "Noman\n",
       "segments": [
        [
-        67,
+        86,
         "Noman\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/21_call_by_value_vs_call_by_reference/53.jar",
+    "jar": "classes/Working_with_Objects/26_call_by_value_reference/71.jar",
     "status": "ok"
    },
-   "76": {
+   "95": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5067,53 +5489,192 @@
       "stdout": "Tortilla\n",
       "segments": [
        [
-        91,
+        111,
         "Tortilla\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/21_call_by_value_vs_call_by_reference/76.jar",
+    "jar": "classes/Working_with_Objects/26_call_by_value_reference/95.jar",
     "status": "ok"
-   }
-  }
- },
- "Working_with_Objects/22_copy_constructor.java": {
-  "capturedAt": "2026-11-05T15:01:46.723Z",
-  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
-  "blocks": {
-   "20": {
+   },
+   "127": {
     "mainClass": "Main",
     "scenarios": [
      {
       "label": "",
       "inputs": [],
-      "stdout": "Name: Noman, Age: 35\nName: Noman, Age: 35\n",
+      "stdout": "inside swap: a = 2, b = 1\nin main:     x = 1, y = 2\n",
       "segments": [
        [
-        46,
-        "Name: Noman, Age: 35\n",
+        138,
+        "inside swap: a = 2, b = 1\n",
         0
        ],
        [
-        47,
-        "Name: Noman, Age: 35\n",
+        139,
+        "in main:     x = 1, y = 2\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/22_copy_constructor/20.jar",
+    "jar": "classes/Working_with_Objects/26_call_by_value_reference/127.jar",
+    "status": "ok"
+   },
+   "147": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "first = 2, second = 1\n",
+      "segments": [
+       [
+        168,
+        "first = 2, second = 1\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/26_call_by_value_reference/147.jar",
+    "status": "ok"
+   },
+   "179": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "2 4 6\nhello\n",
+      "segments": [
+       [
+        193,
+        "2 4 6\n",
+        0
+       ],
+       [
+        197,
+        "hello\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/26_call_by_value_reference/179.jar",
     "status": "ok"
    }
   }
  },
- "Working_with_Objects/23_constructor_chaining.java": {
-  "capturedAt": "2026-11-05T15:01:47.459Z",
+ "Working_with_Objects/27_copy_constructor.java": {
+  "capturedAt": "2026-11-05T15:21:52.559Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
-   "19": {
+   "18": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Tortilla\nTortilla\n",
+      "segments": [
+       [
+        34,
+        "Tortilla\n",
+        0
+       ],
+       [
+        35,
+        "Tortilla\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/27_copy_constructor/18.jar",
+    "status": "ok"
+   },
+   "50": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Noman, Age: 35\nName: Tortilla, Age: 35\n",
+      "segments": [
+       [
+        78,
+        "Name: Noman, Age: 35\n",
+        0
+       ],
+       [
+        79,
+        "Name: Tortilla, Age: 35\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/27_copy_constructor/50.jar",
+    "status": "ok"
+   },
+   "97": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Leeds\nLeeds\n",
+      "segments": [
+       [
+        127,
+        "Leeds\n",
+        0
+       ],
+       [
+        128,
+        "Leeds\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/27_copy_constructor/97.jar",
+    "status": "ok"
+   },
+   "141": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dhaka\nLeeds\n",
+      "segments": [
+       [
+        175,
+        "Dhaka\n",
+        0
+       ],
+       [
+        176,
+        "Leeds\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/27_copy_constructor/141.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Working_with_Objects/28_constructor_chaining.java": {
+  "capturedAt": "2026-11-05T15:21:54.235Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "26": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5122,33 +5683,90 @@
       "stdout": "Name: Unknown, Age: 0\nName: Noman, Age: 0\nName: Tortilla, Age: 35\n",
       "segments": [
        [
-        50,
+        57,
         "Name: Unknown, Age: 0\n",
         0
        ],
        [
-        51,
+        58,
         "Name: Noman, Age: 0\n",
         0
        ],
        [
-        52,
+        59,
         "Name: Tortilla, Age: 35\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/23_constructor_chaining/19.jar",
+    "jar": "classes/Working_with_Objects/28_constructor_chaining/26.jar",
+    "status": "ok"
+   },
+   "70": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "two-argument constructor: a = 1, b = 2\none-argument constructor finished\nno-argument constructor finished\n",
+      "segments": [
+       [
+        88,
+        "two-argument constructor: a = 1, b = 2\none-argument constructor finished\nno-argument constructor finished\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/28_constructor_chaining/70.jar",
+    "status": "ok"
+   },
+   "102": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:6: error: flexible constructors is not supported in -source 17\n        this(\"Unknown\");          // not the first statement\n            ^\n  (use -source 25 or higher to enable flexible constructors)\n1 error"
+   },
+   "125": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: recursive constructor invocation\n        this();\n        ^\n1 error"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Person(Rafi)\nEmployee(name, salary): 30000\nEmployee(name) finished\nRafi earns 30000\n",
+      "segments": [
+       [
+        176,
+        "Person(Rafi)\nEmployee(name, salary): 30000\nEmployee(name) finished\n",
+        0
+       ],
+       [
+        177,
+        "Rafi earns 30000\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/28_constructor_chaining/150.jar",
     "status": "ok"
    }
   }
  },
- "Working_with_Objects/24_passing_and_returning_object.java": {
-  "capturedAt": "2026-11-05T15:01:49.055Z",
+ "Working_with_Objects/29_passing_returning_objects.java": {
+  "capturedAt": "2026-11-05T15:21:56.372Z",
   "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
   "blocks": {
-   "24": {
+   "23": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5157,22 +5775,22 @@
       "stdout": "Before: Noman\nAfter: Changed Name\n",
       "segments": [
        [
-        39,
+        38,
         "Before: Noman\n",
         0
        ],
        [
-        43,
+        40,
         "After: Changed Name\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/24.jar",
+    "jar": "classes/Working_with_Objects/29_passing_returning_objects/23.jar",
     "status": "ok"
    },
-   "54": {
+   "53": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5181,23 +5799,23 @@
       "stdout": "ob1.a = 5\nob2.a = 15\n",
       "segments": [
        [
-        72,
+        71,
         "ob1.a = 5\n",
         0
        ],
        [
-        73,
+        72,
         "ob2.a = 15\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/54.jar",
+    "jar": "classes/Working_with_Objects/29_passing_returning_objects/53.jar",
     "status": "ok"
    },
-   "89": {
-    "mainClass": "UsingObjectsAsParametersExample",
+   "92": {
+    "mainClass": "Main",
     "scenarios": [
      {
       "label": "",
@@ -5205,22 +5823,46 @@
       "stdout": "ob1 == ob2: true\nob1 == ob3: false\n",
       "segments": [
        [
-        109,
+        112,
         "ob1 == ob2: true\n",
         0
        ],
        [
-        110,
+        113,
         "ob1 == ob3: false\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/89.jar",
+    "jar": "classes/Working_with_Objects/29_passing_returning_objects/92.jar",
     "status": "ok"
    },
-   "125": {
+   "124": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "false\ntrue\n",
+      "segments": [
+       [
+        128,
+        "false\n",
+        0
+       ],
+       [
+        129,
+        "true\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/29_passing_returning_objects/124.jar",
+    "status": "ok"
+   },
+   "155": {
     "mainClass": "Main",
     "scenarios": [
      {
@@ -5229,30 +5871,1276 @@
       "stdout": "Volume of mybox1 is 3000.0\nVolume of mybox2 is -1.0\nVolume of cube is 343.0\nVolume of clone is 3000.0\n",
       "segments": [
        [
-        177,
+        206,
         "Volume of mybox1 is 3000.0\n",
         0
        ],
        [
-        181,
+        210,
         "Volume of mybox2 is -1.0\n",
         0
        ],
        [
-        185,
+        214,
         "Volume of cube is 343.0\n",
         0
        ],
        [
-        189,
+        218,
         "Volume of clone is 3000.0\n",
         0
        ]
       ]
      }
     ],
-    "jar": "classes/Working_with_Objects/24_passing_and_returning_object/125.jar",
+    "jar": "classes/Working_with_Objects/29_passing_returning_objects/155.jar",
     "status": "ok"
+   },
+   "230": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Mim leads with 65\nMim now has 0\n",
+      "segments": [
+       [
+        261,
+        "Mim leads with 65\n",
+        0
+       ],
+       [
+        263,
+        "Mim now has 0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Working_with_Objects/29_passing_returning_objects/230.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Collections_and_Sorting/35_arraylist.java": {
+  "capturedAt": "2026-11-05T15:26:04.839Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "35": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Rafi, Mim, Anik]\nSize: 3\nFirst: Rafi\n",
+      "segments": [
+       [
+        45,
+        "[Rafi, Mim, Anik]\n",
+        0
+       ],
+       [
+        46,
+        "Size: 3\n",
+        0
+       ],
+       [
+        47,
+        "First: Rafi\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/35.jar",
+    "status": "ok"
+   },
+   "67": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Mango, Cherry]\ntrue\n1\n-1\nfalse\n",
+      "segments": [
+       [
+        79,
+        "[Mango, Cherry]\n",
+        0
+       ],
+       [
+        80,
+        "true\n",
+        0
+       ],
+       [
+        81,
+        "1\n",
+        0
+       ],
+       [
+        82,
+        "-1\n",
+        0
+       ],
+       [
+        83,
+        "false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/67.jar",
+    "status": "ok"
+   },
+   "94": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Mark 0: 72\nMark 1: 95\nMark 2: 60\nAverage: 75.66666666666667\n",
+      "segments": [
+       [
+        104,
+        "Mark 0: 72\nMark 1: 95\nMark 2: 60\n",
+        0
+       ],
+       [
+        111,
+        "Average: 75.66666666666667\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/94.jar",
+    "status": "ok"
+   },
+   "124": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:5: error: unexpected type\n        ArrayList<int> numbers = new ArrayList<>();\n                  ^\n  required: reference\n  found:    int\n1 error"
+   },
+   "140": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Rafi (91), Mim (67), Anik (45)]\nRafi passed\nMim passed\n",
+      "segments": [
+       [
+        164,
+        "[Rafi (91), Mim (67), Anik (45)]\n",
+        0
+       ],
+       [
+        168,
+        "Rafi passed\nMim passed\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/140.jar",
+    "status": "ok"
+   },
+   "183": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Exception in thread \"main\" java.util.ConcurrentModificationException\n\tat Main.main(Main.java:11)\n",
+      "segments": [
+       [
+        193,
+        "Exception in thread \"main\" java.util.ConcurrentModificationException\n\tat Main.main(Main.java:11)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "jar": "classes/Collections_and_Sorting/35_arraylist/183.jar",
+    "status": "runtime-error"
+   },
+   "205": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[1, 3, 5]\n",
+      "segments": [
+       [
+        215,
+        "[1, 3, 5]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/205.jar",
+    "status": "ok"
+   },
+   "226": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[10, 1]\n[10]\n",
+      "segments": [
+       [
+        236,
+        "[10, 1]\n",
+        0
+       ],
+       [
+        239,
+        "[10]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/226.jar",
+    "status": "ok"
+   },
+   "246": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1\n\tat Main.main(Main.java:7)\n",
+      "segments": [
+       [
+        252,
+        "Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1\n\tat Main.main(Main.java:7)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "jar": "classes/Collections_and_Sorting/35_arraylist/246.jar",
+    "status": "runtime-error"
+   },
+   "268": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[60, 72, 88, 95]\n[95, 88, 72, 60]\nHighest: 95\nLowest: 60\n",
+      "segments": [
+       [
+        280,
+        "[60, 72, 88, 95]\n",
+        0
+       ],
+       [
+        283,
+        "[95, 88, 72, 60]\n",
+        0
+       ],
+       [
+        285,
+        "Highest: 95\n",
+        0
+       ],
+       [
+        286,
+        "Lowest: 60\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/35_arraylist/268.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Collections_and_Sorting/36_hashmap_hashset.java": {
+  "capturedAt": "2026-11-05T15:26:07.410Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "28": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "true\ntrue\nfalse\n2\ntrue\nfalse\n",
+      "segments": [
+       [
+        34,
+        "true\n",
+        0
+       ],
+       [
+        35,
+        "true\n",
+        0
+       ],
+       [
+        36,
+        "false\n",
+        0
+       ],
+       [
+        38,
+        "2\n",
+        0
+       ],
+       [
+        39,
+        "true\n",
+        0
+       ],
+       [
+        40,
+        "false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/28.jar",
+    "status": "ok"
+   },
+   "46": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "6 numbers, 3 different\n[1, 2, 3]\n",
+      "segments": [
+       [
+        55,
+        "6 numbers, 3 different\n",
+        0
+       ],
+       [
+        56,
+        "[1, 2, 3]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/46.jar",
+    "status": "ok"
+   },
+   "79": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "67\nnull\n0\ntrue\n3\n70\n2\n",
+      "segments": [
+       [
+        89,
+        "67\n",
+        0
+       ],
+       [
+        90,
+        "null\n",
+        0
+       ],
+       [
+        91,
+        "0\n",
+        0
+       ],
+       [
+        92,
+        "true\n",
+        0
+       ],
+       [
+        93,
+        "3\n",
+        0
+       ],
+       [
+        98,
+        "70\n",
+        0
+       ],
+       [
+        99,
+        "2\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/79.jar",
+    "status": "ok"
+   },
+   "110": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Anik has 45\nMim has 67\nRafi has 91\nAnik -> 45\nMim -> 67\nRafi -> 91\nTotal: 203\n",
+      "segments": [
+       [
+        121,
+        "Anik has 45\nMim has 67\nRafi has 91\n",
+        0
+       ],
+       [
+        125,
+        "Anik -> 45\nMim -> 67\nRafi -> 91\n",
+        0
+       ],
+       [
+        132,
+        "Total: 203\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/110.jar",
+    "status": "ok"
+   },
+   "146": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "{zebra=1, apple=2, mango=3}\n[apple, mango, zebra]\n",
+      "segments": [
+       [
+        155,
+        "{zebra=1, apple=2, mango=3}\n",
+        0
+       ],
+       [
+        161,
+        "[apple, mango, zebra]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/146.jar",
+    "status": "ok"
+   },
+   "169": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "{and=2, bird=1, cat=1, dog=1, the=3}\n",
+      "segments": [
+       [
+        181,
+        "{and=2, bird=1, cat=1, dog=1, the=3}\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/169.jar",
+    "status": "ok"
+   },
+   "193": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "2\n",
+      "segments": [
+       [
+        209,
+        "2\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/36_hashmap_hashset/193.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Collections_and_Sorting/37_generics.java": {
+  "capturedAt": "2026-11-05T15:26:09.691Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "18": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Exception in thread \"main\" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')\n\tat Main.main(Main.java:10)\n",
+      "segments": [
+       [
+        27,
+        "Exception in thread \"main\" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')\n\tat Main.main(Main.java:10)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "jar": "classes/Collections_and_Sorting/37_generics/18.jar",
+    "status": "runtime-error"
+   },
+   "43": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: incompatible types: int cannot be converted to String\n        names.add(42);\n                  ^\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n1 error"
+   },
+   "64": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "HELLO\n43\n",
+      "segments": [
+       [
+        88,
+        "HELLO\n",
+        0
+       ],
+       [
+        89,
+        "43\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/37_generics/64.jar",
+    "status": "ok"
+   },
+   "97": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:16: error: incompatible types: String cannot be converted to Integer\n        Integer n = word.get();\n                            ^\n1 error"
+   },
+   "120": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "(Rafi, 91)\n(2.5, 4.0)\nRafi scored 91\n",
+      "segments": [
+       [
+        148,
+        "(Rafi, 91)\n",
+        0
+       ],
+       [
+        149,
+        "(2.5, 4.0)\n",
+        0
+       ],
+       [
+        150,
+        "Rafi scored 91\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/37_generics/120.jar",
+    "status": "ok"
+   },
+   "158": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi Mim Anik \n10 20 30 \nRafi\n10\n",
+      "segments": [
+       [
+        174,
+        "Rafi Mim Anik \n",
+        0
+       ],
+       [
+        175,
+        "10 20 30 \n",
+        0
+       ],
+       [
+        176,
+        "Rafi\n",
+        0
+       ],
+       [
+        177,
+        "10\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/37_generics/158.jar",
+    "status": "ok"
+   },
+   "189": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "9\nbanana\n2.5\n",
+      "segments": [
+       [
+        195,
+        "9\n",
+        0
+       ],
+       [
+        196,
+        "banana\n",
+        0
+       ],
+       [
+        197,
+        "2.5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/37_generics/189.jar",
+    "status": "ok"
+   },
+   "210": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "a b \n1 2 3 \n",
+      "segments": [
+       [
+        225,
+        "a b \n",
+        0
+       ],
+       [
+        226,
+        "1 2 3 \n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/37_generics/210.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Collections_and_Sorting/38_comparable_comparator.java": {
+  "capturedAt": "2026-11-05T15:26:11.919Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "18": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:19: error: no suitable method found for sort(ArrayList<Student>)\n        Collections.sort(list);\n                   ^\n    method Collections.<T#1>sort(List<T#1>) is not applicable\n      (inference variable T#1 has incompatible bounds\n        equality constraints: Student\n        upper bounds: Comparable<? super T#1>)\n    method Collections.<T#2>sort(List<T#2>,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Comparable<? super T#1> declared in method <T#1>sort(List<T#1>)\n    T#2 extends Object declared in method <T#2>sort(List<T#2>,Comparator<? super T#2>)\n1 error"
+   },
+   "60": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Anik (45), Mim (67), Dee (80), Rafi (91)]\n",
+      "segments": [
+       [
+        92,
+        "[Anik (45), Mim (67), Dee (80), Rafi (91)]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/38_comparable_comparator/60.jar",
+    "status": "ok"
+   },
+   "105": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Anik, Mim, Rafi, dee]\n-1\n1\n0\n",
+      "segments": [
+       [
+        111,
+        "[Anik, Mim, Rafi, dee]\n",
+        0
+       ],
+       [
+        113,
+        "-1\n",
+        0
+       ],
+       [
+        114,
+        "1\n",
+        0
+       ],
+       [
+        115,
+        "0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/38_comparable_comparator/105.jar",
+    "status": "ok"
+   },
+   "129": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Anik (45), Mim (67), Rafi (91)]\n",
+      "segments": [
+       [
+        163,
+        "[Anik (45), Mim (67), Rafi (91)]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/38_comparable_comparator/129.jar",
+    "status": "ok"
+   },
+   "170": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Anik (45), Mim (67), Rafi (91)]\n[Rafi (91), Mim (67), Anik (45)]\n[Anik (45), Mim (67), Rafi (91)]\n",
+      "segments": [
+       [
+        196,
+        "[Anik (45), Mim (67), Rafi (91)]\n",
+        0
+       ],
+       [
+        199,
+        "[Rafi (91), Mim (67), Anik (45)]\n",
+        0
+       ],
+       [
+        202,
+        "[Anik (45), Mim (67), Rafi (91)]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/38_comparable_comparator/170.jar",
+    "status": "ok"
+   },
+   "213": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[Anik (95), Mim (80), Rafi (80), Dee (60)]\n",
+      "segments": [
+       [
+        243,
+        "[Anik (95), Mim (80), Rafi (80), Dee (60)]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/38_comparable_comparator/213.jar",
+    "status": "ok"
+   },
+   "265": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "[fig, kiwi, apple, banana]\n",
+      "segments": [
+       [
+        276,
+        "[fig, kiwi, apple, banana]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Collections_and_Sorting/38_comparable_comparator/265.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Threads_and_GUI/39_threads.java": {
+  "capturedAt": "2026-11-05T15:30:16.885Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "35": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Running in the thread called: main\n",
+      "segments": [
+       [
+        38,
+        "Running in the thread called: main\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/35.jar",
+    "status": "ok"
+   },
+   "46": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "main goes on without waiting\nHello from worker-1\n",
+      "segments": [
+       [
+        59,
+        "main goes on without waiting\n",
+        0
+       ],
+       [
+        49,
+        "Hello from worker-1\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/46.jar",
+    "status": "ok"
+   },
+   "71": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "A step 1\nA step 2\nA step 3\nB step 1\nB step 2\nB step 3\nboth finished\n",
+      "segments": [
+       [
+        81,
+        "A step 1\nA step 2\nA step 3\nB step 1\nB step 2\nB step 3\n",
+        0
+       ],
+       [
+        96,
+        "both finished\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/71.jar",
+    "status": "ok"
+   },
+   "103": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "running in my-thread\nback in main\n",
+      "segments": [
+       [
+        106,
+        "running in my-thread\n",
+        0
+       ],
+       [
+        111,
+        "back in main\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/103.jar",
+    "status": "ok"
+   },
+   "120": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "job running in: main\njob running in: worker\n",
+      "segments": [
+       [
+        126,
+        "job running in: main\n",
+        0
+       ],
+       [
+        122,
+        "job running in: worker\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/120.jar",
+    "status": "ok"
+   },
+   "134": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "hi\nException in thread \"main\" java.lang.IllegalThreadStateException\n\tat Main.main(Main.java:5)\n",
+      "segments": [
+       [
+        136,
+        "hi\n",
+        0
+       ],
+       [
+        138,
+        "Exception in thread \"main\" java.lang.IllegalThreadStateException\n\tat Main.main(Main.java:5)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "jar": "classes/Threads_and_GUI/39_threads/134.jar",
+    "status": "runtime-error"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "ping 1\npong 1\nping 2\npong 2\nping 3\npong 3\ngame over\n",
+      "segments": [
+       [
+        155,
+        "ping 1\n",
+        0
+       ],
+       [
+        167,
+        "pong 1\n",
+        0
+       ],
+       [
+        155,
+        "ping 2\n",
+        0
+       ],
+       [
+        167,
+        "pong 2\n",
+        0
+       ],
+       [
+        155,
+        "ping 3\n",
+        0
+       ],
+       [
+        167,
+        "pong 3\n",
+        0
+       ],
+       [
+        179,
+        "game over\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/150.jar",
+    "status": "ok"
+   },
+   "190": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "main: started the slow job\nslow job done\nmain: the job has finished\n",
+      "segments": [
+       [
+        200,
+        "main: started the slow job\n",
+        0
+       ],
+       [
+        196,
+        "slow job done\n",
+        0
+       ],
+       [
+        202,
+        "main: the job has finished\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/190.jar",
+    "status": "ok"
+   },
+   "216": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "NEW\nTIMED_WAITING\nTERMINATED\n",
+      "segments": [
+       [
+        224,
+        "NEW\n",
+        0
+       ],
+       [
+        227,
+        "TIMED_WAITING\n",
+        0
+       ],
+       [
+        229,
+        "TERMINATED\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/39_threads/216.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Threads_and_GUI/40_synchronization.java": {
+  "capturedAt": "2026-11-05T15:28:48.985Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "29": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "",
+      "segments": [],
+      "launchError": "exit code 1"
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/40_synchronization/29.jar",
+    "status": "launch-error"
+   },
+   "59": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Expected 2000000, got 2000000\n",
+      "segments": [
+       [
+        80,
+        "Expected 2000000, got 2000000\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/40_synchronization/59.jar",
+    "status": "ok"
+   },
+   "94": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1500000\n",
+      "segments": [
+       [
+        113,
+        "1500000\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/40_synchronization/94.jar",
+    "status": "ok"
+   },
+   "124": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "",
+      "segments": [],
+      "launchError": "exit code 1"
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/40_synchronization/124.jar",
+    "status": "launch-error"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "",
+      "segments": [],
+      "launchError": "exit code 1"
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/40_synchronization/150.jar",
+    "status": "launch-error"
+   },
+   "186": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "",
+      "segments": [],
+      "launchError": "exit code 1"
+     }
+    ],
+    "jar": "classes/Threads_and_GUI/40_synchronization/186.jar",
+    "status": "launch-error"
+   }
+  }
+ },
+ "Threads_and_GUI/41_gui_swing_basics.java": {
+  "capturedAt": "2026-11-05T15:28:50.699Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "34": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "58": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "99": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "133": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "159": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "187": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "219": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   }
+  }
+ },
+ "Threads_and_GUI/42_event_handling.java": {
+  "capturedAt": "2026-11-05T15:28:52.216Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "37": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "71": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "109": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "143": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "209": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "248": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
    }
   }
  }
