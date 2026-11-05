@@ -1,8 +1,8 @@
 name: Deploy Pages
 
-# Manual for now: run it from the Actions tab (or switch `workflow_dispatch` back to a push trigger)
-# once GitHub Pages is switched on (Settings, Pages, Source: GitHub Actions) and the site is ready.
 on:
+  push:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
