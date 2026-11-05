@@ -2590,5 +2590,2596 @@
     "status": "ok"
    }
   }
+ },
+ "Java_Basics/01_what_is_java.java": {
+  "capturedAt": "2026-11-05T13:57:52.398Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "75": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, World!\n",
+      "segments": [
+       [
+        77,
+        "Hello, World!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/02_first_program.java": {
+  "capturedAt": "2026-11-05T13:57:53.785Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "18": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello, World!\n",
+      "segments": [
+       [
+        20,
+        "Hello, World!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "58": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "My name is Rafi.\nI am learning Java.\nIt is fun!\n",
+      "segments": [
+       [
+        60,
+        "My name is Rafi.\n",
+        0
+       ],
+       [
+        61,
+        "I am learning Java.\n",
+        0
+       ],
+       [
+        62,
+        "It is fun!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "72": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "One Two Three\nFour\n",
+      "segments": [
+       [
+        74,
+        "One ",
+        0
+       ],
+       [
+        75,
+        "Two ",
+        0
+       ],
+       [
+        76,
+        "Three\n",
+        0
+       ],
+       [
+        77,
+        "Four\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "88": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "5\n2 + 3\n",
+      "segments": [
+       [
+        90,
+        "5\n",
+        0
+       ],
+       [
+        91,
+        "2 + 3\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "108": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name:\tRafi\nShe said, \"Hello!\"\nLine one\nLine two\nC:\\Users\\Rafi\n",
+      "segments": [
+       [
+        110,
+        "Name:\tRafi\n",
+        0
+       ],
+       [
+        111,
+        "She said, \"Hello!\"\n",
+        0
+       ],
+       [
+        112,
+        "Line one\nLine two\n",
+        0
+       ],
+       [
+        113,
+        "C:\\Users\\Rafi\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "128": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Comments are ignored.\nDone.\n",
+      "segments": [
+       [
+        131,
+        "Comments are ignored.\n",
+        0
+       ],
+       [
+        136,
+        "Done.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "151": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:3: error: ';' expected\n        System.out.println(\"Hello\")\n                                   ^\n1 error"
+   },
+   "170": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:3: error: package system does not exist\n        system.out.println(\"Hello\");\n              ^\n1 error"
+   },
+   "181": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:3: error: unclosed string literal\n        System.out.println(\"Hello);\n                           ^\n1 error"
+   }
+  }
+ },
+ "Java_Basics/03_variables.java": {
+  "capturedAt": "2026-11-05T13:57:55.240Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "32": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "20\n21\n22\n",
+      "segments": [
+       [
+        35,
+        "20\n",
+        0
+       ],
+       [
+        38,
+        "21\n",
+        0
+       ],
+       [
+        41,
+        "22\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "62": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Noman\nAge: 20\nT/F: true\n",
+      "segments": [
+       [
+        70,
+        "Name: Noman\n",
+        0
+       ],
+       [
+        71,
+        "Age: 20\n",
+        0
+       ],
+       [
+        72,
+        "T/F: true\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "94": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Rafi\nAge: 20 years\nRafi is 5.9 feet tall.\nSection B, enrolled: true\n",
+      "segments": [
+       [
+        102,
+        "Name: Rafi\n",
+        0
+       ],
+       [
+        103,
+        "Age: 20 years\n",
+        0
+       ],
+       [
+        104,
+        "Rafi is 5.9 feet tall.\n",
+        0
+       ],
+       [
+        105,
+        "Section B, enrolled: true\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "133": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Area: 78.53975\n",
+      "segments": [
+       [
+        138,
+        "Area: 78.53975\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "144": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:4: error: cannot assign a value to final variable DAYS_IN_WEEK\n        DAYS_IN_WEEK = 8;\n        ^\n1 error"
+   },
+   "160": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:3: error: incompatible types: possible lossy conversion from double to int\n        int count = 3.7;\n                    ^\n1 error"
+   },
+   "184": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "9\n7.0\n65\nB\n",
+      "segments": [
+       [
+        188,
+        "9\n",
+        0
+       ],
+       [
+        192,
+        "7.0\n",
+        0
+       ],
+       [
+        196,
+        "65\n",
+        0
+       ],
+       [
+        197,
+        "B\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "212": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "2147483647\n-2147483648\n2147483648\n",
+      "segments": [
+       [
+        215,
+        "2147483647\n",
+        0
+       ],
+       [
+        216,
+        "-2147483648\n",
+        0
+       ],
+       [
+        219,
+        "2147483648\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "226": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "0.30000000000000004\nfalse\n",
+      "segments": [
+       [
+        228,
+        "0.30000000000000004\n",
+        0
+       ],
+       [
+        229,
+        "false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/04_scanner_input.java": {
+  "capturedAt": "2026-11-05T13:57:56.540Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "28": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "Noman",
+       "35"
+      ],
+      "stdout": "Enter your name: Noman\nEnter your age: 35\nHello Noman, you are 35 years old.\n",
+      "segments": [
+       [
+        34,
+        "Enter your name: ",
+        0
+       ],
+       [
+        35,
+        "Noman\n",
+        0
+       ],
+       [
+        37,
+        "Enter your age: ",
+        0
+       ],
+       [
+        38,
+        "35\n",
+        0
+       ],
+       [
+        40,
+        "Hello Noman, you are 35 years old.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "77": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:3: error: cannot find symbol\n        Scanner scan = new Scanner(System.in);\n        ^\n  symbol:   class Scanner\n  location: class Main\n\\Main.java:3: error: cannot find symbol\n        Scanner scan = new Scanner(System.in);\n                           ^\n  symbol:   class Scanner\n  location: class Main\n2 errors"
+   },
+   "118": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "10",
+       "20"
+      ],
+      "stdout": "First number: 10\nSecond number: 20\nSum = 30\n",
+      "segments": [
+       [
+        124,
+        "First number: ",
+        0
+       ],
+       [
+        125,
+        "10\n",
+        0
+       ],
+       [
+        126,
+        "Second number: ",
+        0
+       ],
+       [
+        127,
+        "20\n",
+        0
+       ],
+       [
+        129,
+        "Sum = 30\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "140": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "2.5"
+      ],
+      "stdout": "Enter radius: 2.5\nArea = 19.6349375\n",
+      "segments": [
+       [
+        146,
+        "Enter radius: ",
+        0
+       ],
+       [
+        147,
+        "2.5\n",
+        0
+       ],
+       [
+        150,
+        "Area = 19.6349375\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "164": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "25",
+       "Rafi"
+      ],
+      "stdout": "Enter your age: 25\nEnter your name: Name = [], age = 25\n",
+      "segments": [
+       [
+        170,
+        "Enter your age: ",
+        0
+       ],
+       [
+        171,
+        "25\n",
+        0
+       ],
+       [
+        173,
+        "Enter your name: ",
+        0
+       ],
+       [
+        176,
+        "Name = [], age = 25\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "186": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "25",
+       "Rafi"
+      ],
+      "stdout": "Enter your age: 25\nEnter your name: Rafi\nName = [Rafi], age = 25\n",
+      "segments": [
+       [
+        192,
+        "Enter your age: ",
+        0
+       ],
+       [
+        193,
+        "25\n",
+        0
+       ],
+       [
+        196,
+        "Enter your name: ",
+        0
+       ],
+       [
+        197,
+        "Rafi\n",
+        0
+       ],
+       [
+        199,
+        "Name = [Rafi], age = 25\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "213": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "abc"
+      ],
+      "stdout": "Enter a number: abc\nException in thread \"main\" java.util.InputMismatchException\n\tat Main.main(Main.java:8)\n",
+      "segments": [
+       [
+        219,
+        "Enter a number: ",
+        0
+       ],
+       [
+        220,
+        "abc\n",
+        0
+       ],
+       [
+        220,
+        "Exception in thread \"main\" java.util.InputMismatchException\n\tat Main.main(Main.java:8)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "status": "runtime-error"
+   }
+  }
+ },
+ "Java_Basics/05_operators.java": {
+  "capturedAt": "2026-11-05T13:57:58.172Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "30": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "a + b = 22\na - b = 12\na * b = 85\na / b = 3\na % b = 2\n",
+      "segments": [
+       [
+        35,
+        "a + b = 22\n",
+        0
+       ],
+       [
+        36,
+        "a - b = 12\n",
+        0
+       ],
+       [
+        37,
+        "a * b = 85\n",
+        0
+       ],
+       [
+        38,
+        "a / b = 3\n",
+        0
+       ],
+       [
+        39,
+        "a % b = 2\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "54": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "3\n3.4\n3.4\n3\n3.4\n3.0\n",
+      "segments": [
+       [
+        56,
+        "3\n",
+        0
+       ],
+       [
+        57,
+        "3.4\n",
+        0
+       ],
+       [
+        58,
+        "3.4\n",
+        0
+       ],
+       [
+        61,
+        "3\n",
+        0
+       ],
+       [
+        62,
+        "3.4\n",
+        0
+       ],
+       [
+        63,
+        "3.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "74": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Infinity\nException in thread \"main\" java.lang.ArithmeticException: / by zero\n\tat Main.main(Main.java:4)\n",
+      "segments": [
+       [
+        76,
+        "Infinity\n",
+        0
+       ],
+       [
+        77,
+        "Exception in thread \"main\" java.lang.ArithmeticException: / by zero\n\tat Main.main(Main.java:4)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "status": "runtime-error"
+   },
+   "90": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Last digit: 7\nWithout it: 482\nIs 4827 even? false\n10 hours after 7 o'clock: 5\n",
+      "segments": [
+       [
+        93,
+        "Last digit: 7\n",
+        0
+       ],
+       [
+        94,
+        "Without it: 482\n",
+        0
+       ],
+       [
+        95,
+        "Is 4827 even? false\n",
+        0
+       ],
+       [
+        96,
+        "10 hours after 7 o'clock: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "110": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "15\n30\n31\n29\n",
+      "segments": [
+       [
+        115,
+        "15\n",
+        0
+       ],
+       [
+        118,
+        "30\n",
+        0
+       ],
+       [
+        121,
+        "31\n",
+        0
+       ],
+       [
+        125,
+        "29\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "135": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "x = 6, y = 5\np = 6, q = 6\n",
+      "segments": [
+       [
+        139,
+        "x = 6, y = 5\n",
+        0
+       ],
+       [
+        143,
+        "p = 6, q = 6\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "157": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "true\nfalse\nfalse\ntrue\nfalse\n",
+      "segments": [
+       [
+        161,
+        "true\n",
+        0
+       ],
+       [
+        162,
+        "false\n",
+        0
+       ],
+       [
+        163,
+        "false\n",
+        0
+       ],
+       [
+        164,
+        "true\n",
+        0
+       ],
+       [
+        165,
+        "false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "183": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "true\ntrue\nfalse\nfalse\n",
+      "segments": [
+       [
+        188,
+        "true\n",
+        0
+       ],
+       [
+        189,
+        "true\n",
+        0
+       ],
+       [
+        190,
+        "false\n",
+        0
+       ],
+       [
+        191,
+        "false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "203": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "14\n20\n5\n",
+      "segments": [
+       [
+        205,
+        "14\n",
+        0
+       ],
+       [
+        206,
+        "20\n",
+        0
+       ],
+       [
+        207,
+        "5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "216": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Sum: 12\nSum: 3\n3 is the sum\n",
+      "segments": [
+       [
+        218,
+        "Sum: 12\n",
+        0
+       ],
+       [
+        219,
+        "Sum: 3\n",
+        0
+       ],
+       [
+        220,
+        "3 is the sum\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/06_if_else.java": {
+  "capturedAt": "2026-11-05T13:57:59.607Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "30": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "It is hot today.\nThis line always runs.\n",
+      "segments": [
+       [
+        35,
+        "It is hot today.\n",
+        0
+       ],
+       [
+        37,
+        "This line always runs.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "52": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Positive number\n",
+      "segments": [
+       [
+        57,
+        "Positive number\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "77": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "Input 1",
+      "inputs": [
+       "92"
+      ],
+      "stdout": "Enter your marks: 92\nGrade: A+\n",
+      "segments": [
+       [
+        83,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        84,
+        "92\n",
+        0
+       ],
+       [
+        88,
+        "Grade: A+\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 2",
+      "inputs": [
+       "75"
+      ],
+      "stdout": "Enter your marks: 75\nGrade: A\n",
+      "segments": [
+       [
+        83,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        84,
+        "75\n",
+        0
+       ],
+       [
+        90,
+        "Grade: A\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 3",
+      "inputs": [
+       "50"
+      ],
+      "stdout": "Enter your marks: 50\nGrade: B\n",
+      "segments": [
+       [
+        83,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        84,
+        "50\n",
+        0
+       ],
+       [
+        94,
+        "Grade: B\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 4",
+      "inputs": [
+       "30"
+      ],
+      "stdout": "Enter your marks: 30\nFail\n",
+      "segments": [
+       [
+        83,
+        "Enter your marks: ",
+        0
+       ],
+       [
+        84,
+        "30\n",
+        0
+       ],
+       [
+        96,
+        "Fail\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "118": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "You may drive.\nnot a vowel\n",
+      "segments": [
+       [
+        124,
+        "You may drive.\n",
+        0
+       ],
+       [
+        135,
+        "not a vowel\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "146": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:4: error: incompatible types: int cannot be converted to boolean\n        if (x = 10) {\n              ^\n1 error"
+   },
+   "163": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "You passed!\n",
+      "segments": [
+       [
+        168,
+        "You passed!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "179": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Drink water.\n",
+      "segments": [
+       [
+        184,
+        "Drink water.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "199": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Pass\nBigger: 12\n",
+      "segments": [
+       [
+        203,
+        "Pass\n",
+        0
+       ],
+       [
+        207,
+        "Bigger: 12\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/07_switch.java": {
+  "capturedAt": "2026-11-05T13:58:00.470Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "26": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "Input 1",
+      "inputs": [
+       "2"
+      ],
+      "stdout": "Enter a number between 1 and 3: 2\nYou chose Two\n",
+      "segments": [
+       [
+        32,
+        "Enter a number between 1 and 3: ",
+        0
+       ],
+       [
+        33,
+        "2\n",
+        0
+       ],
+       [
+        40,
+        "You chose Two\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Input 2",
+      "inputs": [
+       "7"
+      ],
+      "stdout": "Enter a number between 1 and 3: 7\nInvalid choice\n",
+      "segments": [
+       [
+        32,
+        "Enter a number between 1 and 3: ",
+        0
+       ],
+       [
+        33,
+        "7\n",
+        0
+       ],
+       [
+        46,
+        "Invalid choice\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "62": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Two\nThree\nOther\n",
+      "segments": [
+       [
+        70,
+        "Two\n",
+        0
+       ],
+       [
+        72,
+        "Three\n",
+        0
+       ],
+       [
+        74,
+        "Other\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "84": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Spring\n",
+      "segments": [
+       [
+        97,
+        "Spring\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "109": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Weekend\n",
+      "segments": [
+       [
+        116,
+        "Weekend\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "131": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Wednesday\n",
+      "segments": [
+       [
+        143,
+        "Wednesday\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/08_loops.java": {
+  "capturedAt": "2026-11-05T13:58:02.600Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "36": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "For loop: 1\nFor loop: 2\nFor loop: 3\nFor loop: 4\nFor loop: 5\n",
+      "segments": [
+       [
+        40,
+        "For loop: 1\nFor loop: 2\nFor loop: 3\nFor loop: 4\nFor loop: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "62": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "While loop: 1\nWhile loop: 2\nWhile loop: 3\nWhile loop: 4\nWhile loop: 5\n",
+      "segments": [
+       [
+        67,
+        "While loop: 1\nWhile loop: 2\nWhile loop: 3\nWhile loop: 4\nWhile loop: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "79": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Still looping, round 0\nStill looping, round 1\nStill looping, round 2\nOut of the loop.\n",
+      "segments": [
+       [
+        83,
+        "Still looping, round 0\nStill looping, round 1\nStill looping, round 2\n",
+        0
+       ],
+       [
+        89,
+        "Out of the loop.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "101": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Do-while loop: 1\nDo-while loop: 2\nDo-while loop: 3\nDo-while loop: 4\nDo-while loop: 5\n",
+      "segments": [
+       [
+        106,
+        "Do-while loop: 1\nDo-while loop: 2\nDo-while loop: 3\nDo-while loop: 4\nDo-while loop: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "117": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "do-while body: runs once\n",
+      "segments": [
+       [
+        126,
+        "do-while body: runs once\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "136": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Mark: 85\nMark: 90\nMark: 78\n",
+      "segments": [
+       [
+        142,
+        "Mark: 85\nMark: 90\nMark: 78\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1 2 3 ",
+      "segments": [
+       [
+        159,
+        "1 2 3 ",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "180": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1\n2\n",
+      "segments": [
+       [
+        186,
+        "1\n2\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "193": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1\n2\n4\n5\n",
+      "segments": [
+       [
+        199,
+        "1\n2\n4\n5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "211": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "* * * * \n* * * * \n* * * * \n",
+      "segments": [
+       [
+        215,
+        "* * * * ",
+        0
+       ],
+       [
+        217,
+        "\n",
+        0
+       ],
+       [
+        215,
+        "* * * * ",
+        0
+       ],
+       [
+        217,
+        "\n",
+        0
+       ],
+       [
+        215,
+        "* * * * ",
+        0
+       ],
+       [
+        217,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "227": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1 \n2 2 \n3 3 3 \n4 4 4 4 \n",
+      "segments": [
+       [
+        231,
+        "1 ",
+        0
+       ],
+       [
+        233,
+        "\n",
+        0
+       ],
+       [
+        231,
+        "2 2 ",
+        0
+       ],
+       [
+        233,
+        "\n",
+        0
+       ],
+       [
+        231,
+        "3 3 3 ",
+        0
+       ],
+       [
+        233,
+        "\n",
+        0
+       ],
+       [
+        231,
+        "4 4 4 4 ",
+        0
+       ],
+       [
+        233,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "242": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1 2 3 4 \n0 1 2 3 4 5 ",
+      "segments": [
+       [
+        246,
+        "1 2 3 4 ",
+        0
+       ],
+       [
+        248,
+        "\n",
+        0
+       ],
+       [
+        252,
+        "0 1 2 3 4 5 ",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/09_arrays.java": {
+  "capturedAt": "2026-11-05T13:58:04.197Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "37": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Element at index 0: 10\nElement at index 1: 20\nElement at index 2: 30\nElement at index 3: 40\nElement at index 4: 50\n",
+      "segments": [
+       [
+        42,
+        "Element at index 0: 10\nElement at index 1: 20\nElement at index 2: 30\nElement at index 3: 40\nElement at index 4: 50\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "59": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Apple\nOrange\nCount: 3\n",
+      "segments": [
+       [
+        63,
+        "Apple\n",
+        0
+       ],
+       [
+        65,
+        "Orange\n",
+        0
+       ],
+       [
+        66,
+        "Count: 3\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "74": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "0\nnull\n70 0 0 95\n",
+      "segments": [
+       [
+        79,
+        "0\n",
+        0
+       ],
+       [
+        80,
+        "null\n",
+        0
+       ],
+       [
+        84,
+        "70 0 0 95\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "92": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "85",
+       "90",
+       "78"
+      ],
+      "stdout": "Enter number 1: 85\nEnter number 2: 90\nEnter number 3: 78\nN :\n85\n90\n78\n",
+      "segments": [
+       [
+        100,
+        "Enter number 1: ",
+        0
+       ],
+       [
+        101,
+        "85\n",
+        0
+       ],
+       [
+        100,
+        "Enter number 2: ",
+        0
+       ],
+       [
+        101,
+        "90\n",
+        0
+       ],
+       [
+        100,
+        "Enter number 3: ",
+        0
+       ],
+       [
+        101,
+        "78\n",
+        0
+       ],
+       [
+        104,
+        "N :\n",
+        0
+       ],
+       [
+        107,
+        "85\n90\n78\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "119": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Total: 315\nAverage: 78.75\nHighest: 95\n",
+      "segments": [
+       [
+        132,
+        "Total: 315\n",
+        0
+       ],
+       [
+        133,
+        "Average: 78.75\n",
+        0
+       ],
+       [
+        134,
+        "Highest: 95\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "142": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "10\nException in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3\n\tat Main.main(Main.java:5)\n",
+      "segments": [
+       [
+        145,
+        "10\n",
+        0
+       ],
+       [
+        146,
+        "Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3\n\tat Main.main(Main.java:5)\n",
+        1
+       ]
+      ]
+     }
+    ],
+    "expectError": true,
+    "status": "runtime-error"
+   },
+   "164": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1 2 3 \n4 5 6 \n7 8 9 \n",
+      "segments": [
+       [
+        174,
+        "1 2 3 ",
+        0
+       ],
+       [
+        176,
+        "\n",
+        0
+       ],
+       [
+        174,
+        "4 5 6 ",
+        0
+       ],
+       [
+        176,
+        "\n",
+        0
+       ],
+       [
+        174,
+        "7 8 9 ",
+        0
+       ],
+       [
+        176,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "188": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ],
+      "stdout": "matrix[1][1]: 1\nmatrix[1][2]: 2\nmatrix[1][3]: 3\nmatrix[2][1]: 4\nmatrix[2][2]: 5\nmatrix[2][3]: 6\nmatrix[3][1]: 7\nmatrix[3][2]: 8\nmatrix[3][3]: 9\nMatrix: \n1 2 3 \n4 5 6 \n7 8 9 \n",
+      "segments": [
+       [
+        197,
+        "matrix[1][1]: ",
+        0
+       ],
+       [
+        198,
+        "1\n",
+        0
+       ],
+       [
+        197,
+        "matrix[1][2]: ",
+        0
+       ],
+       [
+        198,
+        "2\n",
+        0
+       ],
+       [
+        197,
+        "matrix[1][3]: ",
+        0
+       ],
+       [
+        198,
+        "3\n",
+        0
+       ],
+       [
+        197,
+        "matrix[2][1]: ",
+        0
+       ],
+       [
+        198,
+        "4\n",
+        0
+       ],
+       [
+        197,
+        "matrix[2][2]: ",
+        0
+       ],
+       [
+        198,
+        "5\n",
+        0
+       ],
+       [
+        197,
+        "matrix[2][3]: ",
+        0
+       ],
+       [
+        198,
+        "6\n",
+        0
+       ],
+       [
+        197,
+        "matrix[3][1]: ",
+        0
+       ],
+       [
+        198,
+        "7\n",
+        0
+       ],
+       [
+        197,
+        "matrix[3][2]: ",
+        0
+       ],
+       [
+        198,
+        "8\n",
+        0
+       ],
+       [
+        197,
+        "matrix[3][3]: ",
+        0
+       ],
+       [
+        198,
+        "9\n",
+        0
+       ],
+       [
+        202,
+        "Matrix: \n",
+        0
+       ],
+       [
+        206,
+        "1 2 3 ",
+        0
+       ],
+       [
+        208,
+        "\n",
+        0
+       ],
+       [
+        206,
+        "4 5 6 ",
+        0
+       ],
+       [
+        208,
+        "\n",
+        0
+       ],
+       [
+        206,
+        "7 8 9 ",
+        0
+       ],
+       [
+        208,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "222": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "2",
+       "2",
+       "1",
+       "2",
+       "3",
+       "3",
+       "4",
+       "5"
+      ],
+      "stdout": "Number of rows : 2\nNumber of columns for row 1 : 2\nEnter element a[1][1] : 1\nEnter element a[1][2] : 2\nNumber of columns for row 2 : 3\nEnter element a[2][1] : 3\nEnter element a[2][2] : 4\nEnter element a[2][3] : 5\n1 2 \n3 4 5 \n",
+      "segments": [
+       [
+        228,
+        "Number of rows : ",
+        0
+       ],
+       [
+        229,
+        "2\n",
+        0
+       ],
+       [
+        234,
+        "Number of columns for row 1 : ",
+        0
+       ],
+       [
+        235,
+        "2\n",
+        0
+       ],
+       [
+        238,
+        "Enter element a[1][1] : ",
+        0
+       ],
+       [
+        239,
+        "1\n",
+        0
+       ],
+       [
+        238,
+        "Enter element a[1][2] : ",
+        0
+       ],
+       [
+        239,
+        "2\n",
+        0
+       ],
+       [
+        234,
+        "Number of columns for row 2 : ",
+        0
+       ],
+       [
+        235,
+        "3\n",
+        0
+       ],
+       [
+        238,
+        "Enter element a[2][1] : ",
+        0
+       ],
+       [
+        239,
+        "3\n",
+        0
+       ],
+       [
+        238,
+        "Enter element a[2][2] : ",
+        0
+       ],
+       [
+        239,
+        "4\n",
+        0
+       ],
+       [
+        238,
+        "Enter element a[2][3] : ",
+        0
+       ],
+       [
+        239,
+        "5\n",
+        0
+       ],
+       [
+        245,
+        "1 2 ",
+        0
+       ],
+       [
+        247,
+        "\n",
+        0
+       ],
+       [
+        245,
+        "3 4 5 ",
+        0
+       ],
+       [
+        247,
+        "\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/10_methods.java": {
+  "capturedAt": "2026-11-05T13:58:05.805Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "31": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello from a method!\n",
+      "segments": [
+       [
+        37,
+        "Hello from a method!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "62": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Sum: 12\n",
+      "segments": [
+       [
+        69,
+        "Sum: 12\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "81": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "36\n13\ntrue\n8.5\n8 is even\n",
+      "segments": [
+       [
+        95,
+        "36\n",
+        0
+       ],
+       [
+        96,
+        "13\n",
+        0
+       ],
+       [
+        97,
+        "true\n",
+        0
+       ],
+       [
+        98,
+        "8.5\n",
+        0
+       ],
+       [
+        101,
+        "8 is even\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "116": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Inside: 100\nOutside: 5\n",
+      "segments": [
+       [
+        124,
+        "Inside: 100\n",
+        0
+       ],
+       [
+        125,
+        "Outside: 5\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "135": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:8: error: cannot find symbol\n        System.out.println(secret);\n                           ^\n  symbol:   variable secret\n  location: class Main\n1 error"
+   },
+   "154": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:8: error: missing return statement\n    }\n    ^\n1 error"
+   },
+   "174": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: method add in class Main cannot be applied to given types;\n        System.out.println(add(5));\n                           ^\n  required: int,int\n  found:    int\n  reason: actual and formal argument lists differ in length\n\\Main.java:8: error: incompatible types: String cannot be converted to int\n        System.out.println(add(\"5\", \"7\"));\n                               ^\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n2 errors"
+   },
+   "191": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: non-static method hello() cannot be referenced from a static context\n        hello();\n        ^\n1 error"
+   },
+   "215": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "24\n120\n",
+      "segments": [
+       [
+        224,
+        "24\n",
+        0
+       ],
+       [
+        225,
+        "120\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
+ },
+ "Java_Basics/11_strings.java": {
+  "capturedAt": "2026-11-05T13:58:07.591Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "21": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Ada Lovelace\n12\n",
+      "segments": [
+       [
+        27,
+        "Ada Lovelace\n",
+        0
+       ],
+       [
+        28,
+        "12\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "46": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "H\nJava\nJava!\n7\n-1\ntrue\nfalse\n",
+      "segments": [
+       [
+        50,
+        "H\n",
+        0
+       ],
+       [
+        51,
+        "Java\n",
+        0
+       ],
+       [
+        52,
+        "Java!\n",
+        0
+       ],
+       [
+        53,
+        "7\n",
+        0
+       ],
+       [
+        54,
+        "-1\n",
+        0
+       ],
+       [
+        55,
+        "true\n",
+        0
+       ],
+       [
+        56,
+        "false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "67": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "  HELLO JAVA  \n  hello java  \n[Hello Java]\n  Hello World  \n  Hello Java  \n",
+      "segments": [
+       [
+        71,
+        "  HELLO JAVA  \n",
+        0
+       ],
+       [
+        72,
+        "  hello java  \n",
+        0
+       ],
+       [
+        73,
+        "[Hello Java]\n",
+        0
+       ],
+       [
+        74,
+        "  Hello World  \n",
+        0
+       ],
+       [
+        76,
+        "  Hello Java  \n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "99": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "false\ntrue\ntrue\n",
+      "segments": [
+       [
+        105,
+        "false\n",
+        0
+       ],
+       [
+        106,
+        "true\n",
+        0
+       ],
+       [
+        107,
+        "true\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "118": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "false\ntrue\n-1\n0\n",
+      "segments": [
+       [
+        123,
+        "false\n",
+        0
+       ],
+       [
+        124,
+        "true\n",
+        0
+       ],
+       [
+        125,
+        "-1\n",
+        0
+       ],
+       [
+        126,
+        "0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "134": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "3\nRafi\n20\nCSE\n21\n",
+      "segments": [
+       [
+        139,
+        "3\n",
+        0
+       ],
+       [
+        141,
+        "Rafi\n20\nCSE\n",
+        0
+       ],
+       [
+        145,
+        "21\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "155": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Vowels: 3\n",
+      "segments": [
+       [
+        166,
+        "Vowels: 3\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "175": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Numbers: 1 2 3 4 5 \n19\ndesserts\n",
+      "segments": [
+       [
+        184,
+        "Numbers: 1 2 3 4 5 \n",
+        0
+       ],
+       [
+        185,
+        "19\n",
+        0
+       ],
+       [
+        186,
+        "desserts\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   },
+   "201": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Rafi, Age: 20\nGPA: 3.76\nAnn     |    7|\n",
+      "segments": [
+       [
+        207,
+        "Name: Rafi, Age: 20\n",
+        0
+       ],
+       [
+        208,
+        "GPA: 3.76\n",
+        0
+       ],
+       [
+        209,
+        "Ann     |    7|\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "status": "ok"
+   }
+  }
  }
 }

@@ -108,7 +108,7 @@ const GUI = /\bjavax\.swing\b|\bjava\.awt\b|\bJFrame\b|\bJOptionPane\b|\bjavafx\
 async function captureBlock(lessonKey, index, block) {
   const dir = join(work, `${lessonKey.replace(/[^a-z0-9]+/gi, '_')}_${index}`)
   mkdirSync(dir, { recursive: true })
-  const entry = { mainClass: block.mainClass ?? null, scenarios: [] }
+  const entry = { mainClass: block.mainClass ?? null, scenarios: [], expectError: block.expectError || undefined }
   if (!block.mainClass) return { ...entry, status: 'no-main' }
   if (GUI.test(block.code)) return { ...entry, status: 'gui' }
 
@@ -174,7 +174,8 @@ for (const dir of contentDirs) {
     blocks.forEach((block, i) => {
       byLine[block.line] = results[i]
       counts[results[i].status] = (counts[results[i].status] ?? 0) + 1
-      if (results[i].status === 'compile-error') problems.push(`${relPath}:${block.line}  compile error\n${results[i].compile.split('\n').slice(0, 4).join('\n')}`)
+      if (results[i].status === 'compile-error' && !block.expectError) problems.push(`${relPath}:${block.line}  compile error\n${results[i].compile.split('\n').slice(0, 4).join('\n')}`)
+      if (block.expectError && !['compile-error', 'runtime-error'].includes(results[i].status)) problems.push(`${relPath}:${block.line}  was marked @error but ran fine`)
       if (results[i].status === 'timeout') problems.push(`${relPath}:${block.line}  timed out`)
       if (results[i].status === 'launch-error') problems.push(`${relPath}:${block.line}  did not run: ${results[i].scenarios.map((x) => x.launchError).filter(Boolean)[0]}`)
     })

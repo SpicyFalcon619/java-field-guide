@@ -22,6 +22,8 @@ export interface BlockRun {
   status: BlockStatus
   mainClass: string | null
   compile?: string
+  /** The lesson shows this block failing on purpose, to explain the error. */
+  expectError?: boolean
   scenarios: Scenario[]
 }
 

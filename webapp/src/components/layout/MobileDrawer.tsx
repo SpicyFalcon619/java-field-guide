@@ -80,6 +80,7 @@ export function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => 
               <Link to="/" onClick={onClose} className="transition-colors hover:text-[var(--color-ink)]">Home</Link>
               <Link to="/explore" onClick={onClose} className="transition-colors hover:text-[var(--color-ink)]">Explore</Link>
               <Link to="/me" onClick={onClose} className="transition-colors hover:text-[var(--color-ink)]">Progress</Link>
+              <Link to="/glossary" onClick={onClose} className="transition-colors hover:text-[var(--color-ink)]">Glossary</Link>
             </nav>
             <div className="h-full pt-10">
               <Sidebar onNavigate={onClose} />

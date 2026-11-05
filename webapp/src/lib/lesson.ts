@@ -51,7 +51,7 @@ export interface PreparedFile {
 
 const BANNER_RULE = /^#\s*={10,}\s*$/
 const TOPIC_RULE = /^#{2,}\s*(.+?)\s*#{2,}$/
-const CALLOUT_RULE = /^(NOTE|WARNING|TIP|IMPORTANT|Debugging tip|Rule of thumb)\b:?\s*/
+const CALLOUT_RULE = /^(NOTE|WARNING|TIP|IMPORTANT|WHY|MISTAKE|ANALOGY|JARGON|REMEMBER|TRY IT|Debugging tip|Rule of thumb)\b:?\s*/
 const LIST_MARKER = /^(\s*)(-|\d+\.)\s+(.*)$/
 const ALIGNED = /\S {3,}\S/
 
@@ -197,6 +197,7 @@ export function skipModuleDocstring(lines: string[]): number {
   return j + 1
 }
 
+const ERROR_RULE = /^\/\/\/\s*@error\b/
 const FILE_RULE = /^\/\/\/\s*@file\s+([^:]+):\s*(.*)$/
 const INPUT_RULE = /^\/\/\/\s*@input(?:\(([^)]*)\))?:?\s*(.*)$/
 
@@ -217,6 +218,7 @@ function fromJava(source: string): { lines: string[]; directives: Directive[] } 
   const lines = source.split('\n').map((raw, index) => {
     const line = raw.replace(/\r$/, '')
     if (!line.startsWith('///')) return line
+    if (ERROR_RULE.test(line)) return '#'
     const file = line.match(FILE_RULE)
     if (file) {
       directives.push({ index, file: { name: file[1].trim(), content: file[2].split(' | ').join('\n') + '\n' } })

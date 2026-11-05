@@ -6,6 +6,8 @@
 
 // A file that exists before the block runs:  /// @file example.txt: first line | second line
 const FILE_DIRECTIVE = /^\/\/\/\s*@file\s+([^:]+):\s*(.*)$/
+// This block is MEANT to fail (to show an error message):  /// @error
+const ERROR_DIRECTIVE = /^\/\/\/\s*@error\b/
 const INPUT_DIRECTIVE = /^\/\/\/\s*@input(?:\(([^)]*)\))?:?\s*(.*)$/
 
 /** The title comment at the top of a lesson: /* ... *\/ . Returns the index of the line after it. */
@@ -33,8 +35,9 @@ function scanCode(code, onChar) {
       i = end === -1 ? code.length : end + 3
     } else if (ch === '"' || ch === "'") {
       i++
-      while (i < code.length && code[i] !== ch) i += code[i] === '\\' ? 2 : 1
-      i++
+      // A string or character literal cannot span lines, so an unclosed one ends at the line break.
+      while (i < code.length && code[i] !== ch && code[i] !== '\n') i += code[i] === '\\' ? 2 : 1
+      if (code[i] === ch) i++
     } else {
       onChar(ch, i)
       i++
@@ -79,7 +82,7 @@ export function splitBlocks(source) {
     while (code.length && !code[0].text.trim()) code.shift()
     if (code.length) {
       const text = code.map((c) => c.text).join('\n')
-      blocks.push({ line: code[0].idx + 1, code: text, inputs: [], files: [], ...describeBlock(text) })
+      blocks.push({ line: code[0].idx + 1, code: text, inputs: [], files: [], expectError: false, ...describeBlock(text) })
     }
     code = []
   }
@@ -87,6 +90,12 @@ export function splitBlocks(source) {
     const line = lines[i]
     if (!line.startsWith('///')) {
       code.push({ idx: i, text: line })
+      continue
+    }
+    if (ERROR_DIRECTIVE.test(line)) {
+      flush()
+      const lastBlock = blocks[blocks.length - 1]
+      if (lastBlock) lastBlock.expectError = true
       continue
     }
     const fileDirective = line.match(FILE_DIRECTIVE)
