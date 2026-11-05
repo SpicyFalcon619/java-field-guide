@@ -117,7 +117,7 @@ async function captureBlock(lessonKey, index, block) {
   for (const file of block.files) writeFileSync(join(dir, file.name), file.content)
   const classes = join(dir, 'classes')
   mkdirSync(classes)
-  const compiled = await run('javac', ['-J-Xmx256m', '-J-XX:+UseSerialGC', '-J-XX:TieredStopAtLevel=1', '-encoding', 'UTF-8', '-Xlint:none', '-cp', runtimeDir, '-d', classes, join(dir, fileName)], { cwd: dir })
+  const compiled = await run('javac', ['-J-Xmx256m', '-J-XX:+UseSerialGC', '-J-XX:TieredStopAtLevel=1', '-g', '-encoding', 'UTF-8', '-Xlint:none', '-cp', runtimeDir, '-d', classes, join(dir, fileName)], { cwd: dir })
   if (compiled.status !== 0) {
     const message = (compiled.stderr || compiled.stdout).replaceAll(dir, '').replace(/\r/g, '').trim()
     return { ...entry, status: 'compile-error', compile: message }
@@ -187,6 +187,8 @@ for (const dir of contentDirs) {
 // A partial run (a filter) updates only those lessons.
 let existing = {}
 if (filter && existsSync(outputPath)) existing = JSON.parse(readFileSync(outputPath, 'utf8'))
+// Drop lessons that no longer exist, so a deleted or renamed lesson does not leave stale output behind.
+for (const key of Object.keys(existing)) if (!existsSync(join(repoRoot, key))) delete existing[key]
 writeFileSync(outputPath, JSON.stringify({ ...existing, ...cache }, null, 1) + '\n')
 rmSync(work, { recursive: true, force: true })
 
