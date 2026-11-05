@@ -8,6 +8,7 @@ import type { BannerSection, LessonBlock, ProseNode } from '@/lib/lesson'
 import type { BlockRun, CapturedOutput } from '@/lib/outputs'
 import type { Topic } from '@/types'
 import { useTheme } from '@/hooks/useTheme'
+import { Dropdown } from '@/components/ui/Dropdown'
 import { CopyButton } from '@/components/code/CopyButton'
 import { FontSizeControl } from '@/components/code/FontSizeControl'
 import { CaptureDialogButton } from '@/components/code/CaptureDialog'
@@ -303,20 +304,23 @@ function PartRun({
             <Play className="h-3 w-3" aria-hidden /> {open ? (broken ? 'Hide the error' : 'Hide output') : broken ? 'Show the error' : 'Run'}
           </button>
           {open && run.scenarios.length > 1 && (
-            <label className="flex items-center gap-2 text-xs text-[var(--color-code-ink-faint)]">
-              Typed input
-              <select
-                value={Math.min(scenario, run.scenarios.length - 1)}
-                onChange={(event) => onScenario(Number(event.target.value))}
-                className="min-h-6 max-w-[16rem] cursor-pointer rounded-md border border-[var(--color-code-border)] bg-[var(--color-code-surface)] px-1.5 text-[13px] text-[var(--color-code-ink)]"
-              >
-                {run.scenarios.map((s, index) => (
-                  <option key={index} value={index}>
-                    {s.label || `Input ${index + 1}`}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="flex items-center gap-2 text-xs text-[var(--color-code-ink-faint)]">
+              <span>Typed input</span>
+              <div className="min-w-[8.5rem]">
+                <Dropdown
+                  tone="code"
+                  compact
+                  ariaLabel="Typed input"
+                  value={Math.min(scenario, run.scenarios.length - 1)}
+                  onChange={onScenario}
+                  options={run.scenarios.map((s, index) => ({
+                    value: index,
+                    label: s.label || `Input ${index + 1}`,
+                    description: s.inputs.length ? `Types: ${s.inputs.join(', ')}` : undefined,
+                  }))}
+                />
+              </div>
+            </div>
           )}
         </div>
         {run.status !== 'no-main' && (
