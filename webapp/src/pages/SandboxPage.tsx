@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
+import { RotateCcw } from 'lucide-react'
 import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 import { javaRunner } from '@/lib/javaRunner'
 import { cn } from '@/lib/cn'
@@ -141,6 +142,8 @@ export function SandboxPage() {
   const [code, setCode] = useState(() => stored() ?? EXAMPLES[0].code)
   // Picking an example replaces the editor, so it is given a new identity to start fresh.
   const [version, setVersion] = useState(0)
+  // The example the editor started from, so Reset can bring it back.
+  const [current, setCurrent] = useState(EXAMPLES[0])
 
   // Someone on this page is here to run code, so start Java and warm the compiler now, while they read and type.
   useEffect(() => {
@@ -158,6 +161,7 @@ export function SandboxPage() {
   }
 
   const pick = (example: (typeof EXAMPLES)[number]) => {
+    setCurrent(example)
     remember(example.code)
     setVersion((v) => v + 1)
   }
@@ -187,6 +191,18 @@ export function SandboxPage() {
             {example.label}
           </button>
         ))}
+        <button
+          type="button"
+          onClick={() => pick(current)}
+          title={`Bring back the "${current.label}" example and clear the output`}
+          className={cn(
+            'ml-auto flex min-h-6 cursor-pointer items-center gap-1.5 rounded-md border border-[var(--color-border)] px-2.5 py-0.5 text-sm text-[var(--color-ink-dim)] transition-colors',
+            'hover:border-[var(--color-border-strong)] hover:text-[var(--color-ink)]',
+          )}
+        >
+          <RotateCcw className="h-3.5 w-3.5" aria-hidden />
+          Reset
+        </button>
       </div>
 
       <div className="guide-code code-font">
