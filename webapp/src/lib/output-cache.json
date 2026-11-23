@@ -8433,5 +8433,2574 @@
     "status": "ok"
    }
   }
+ },
+ "Practice_Problems/01_classes_and_objects.java": {
+  "capturedAt": "2026-11-23T12:25:00.344Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi deposited 1500.0, balance is now 6500.0\nRafi withdrew 2000.0, balance is now 4500.0\nWithdrawal failed: Rafi only has 4500.0\nMim withdrew 500.25, balance is now 11500.25\nDeposit failed: the amount must be positive\n",
+      "segments": [
+       [
+        59,
+        "Rafi deposited 1500.0, balance is now 6500.0\n",
+        0
+       ],
+       [
+        60,
+        "Rafi withdrew 2000.0, balance is now 4500.0\n",
+        0
+       ],
+       [
+        61,
+        "Withdrawal failed: Rafi only has 4500.0\n",
+        0
+       ],
+       [
+        62,
+        "Mim withdrew 500.25, balance is now 11500.25\n",
+        0
+       ],
+       [
+        63,
+        "Deposit failed: the amount must be positive\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/20.jar",
+    "status": "ok"
+   },
+   "75": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi (R-01): total 319.0, average 79.75\nMim (R-02): total 351.5, average 87.88\n",
+      "segments": [
+       [
+        110,
+        "Rafi (R-01): total 319.0, average 79.75\nMim (R-02): total 351.5, average 87.88\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/75.jar",
+    "status": "ok"
+   },
+   "121": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Desk: area 1.125, perimeter 4.5\nField: area 6000.0, perimeter 320.0\n",
+      "segments": [
+       [
+        144,
+        "Desk: area 1.125, perimeter 4.5\n",
+        0
+       ],
+       [
+        145,
+        "Field: area 6000.0, perimeter 320.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/121.jar",
+    "status": "ok"
+   },
+   "153": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Bolt is a red Toyota Axio, engine off\nBolt: engine started\nBolt: the engine is already running\nBolt is a red Toyota Axio, engine on\nBolt: engine stopped\nPearl is a white Honda Civic, engine off\n",
+      "segments": [
+       [
+        193,
+        "Bolt is a red Toyota Axio, engine off\n",
+        0
+       ],
+       [
+        194,
+        "Bolt: engine started\n",
+        0
+       ],
+       [
+        195,
+        "Bolt: the engine is already running\n",
+        0
+       ],
+       [
+        196,
+        "Bolt is a red Toyota Axio, engine on\n",
+        0
+       ],
+       [
+        197,
+        "Bolt: engine stopped\n",
+        0
+       ],
+       [
+        199,
+        "Pearl is a white Honda Civic, engine off\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/153.jar",
+    "status": "ok"
+   },
+   "209": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Anik got a 10.0% raise of 4000.0, new salary 44000.0\nDee got a 5.0% raise of 2750.0, new salary 57750.0\nAnik got a 2.5% raise of 1100.0, new salary 45100.0\n",
+      "segments": [
+       [
+        232,
+        "Anik got a 10.0% raise of 4000.0, new salary 44000.0\n",
+        0
+       ],
+       [
+        233,
+        "Dee got a 5.0% raise of 2750.0, new salary 57750.0\n",
+        0
+       ],
+       [
+        234,
+        "Anik got a 2.5% raise of 1100.0, new salary 45100.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/209.jar",
+    "status": "ok"
+   },
+   "244": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "You borrowed \"Clean Code\" by Robert C. Martin\nSorry, \"Clean Code\" is already borrowed\nThank you for returning \"Clean Code\"\n\"Clean Code\" was not borrowed, so there is nothing to return\nYou borrowed \"Clean Code\" by Robert C. Martin\n",
+      "segments": [
+       [
+        277,
+        "You borrowed \"Clean Code\" by Robert C. Martin\n",
+        0
+       ],
+       [
+        278,
+        "Sorry, \"Clean Code\" is already borrowed\n",
+        0
+       ],
+       [
+        279,
+        "Thank you for returning \"Clean Code\"\n",
+        0
+       ],
+       [
+        280,
+        "\"Clean Code\" was not borrowed, so there is nothing to return\n",
+        0
+       ],
+       [
+        281,
+        "You borrowed \"Clean Code\" by Robert C. Martin\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/244.jar",
+    "status": "ok"
+   },
+   "289": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "r = 3.0: circumference 18.85, area 28.27\nr = 7.5: circumference 47.12, area 176.71\n",
+      "segments": [
+       [
+        310,
+        "r = 3.0: circumference 18.85, area 28.27\n",
+        0
+       ],
+       [
+        311,
+        "r = 7.5: circumference 47.12, area 176.71\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/289.jar",
+    "status": "ok"
+   },
+   "322": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rizvy, 34 years old, lives in Borishal\nMim, 21 years old, lives in Dhaka\nRizvy moved from Borishal to Chittagong\nRizvy, 34 years old, lives in Chittagong\n",
+      "segments": [
+       [
+        348,
+        "Rizvy, 34 years old, lives in Borishal\n",
+        0
+       ],
+       [
+        349,
+        "Mim, 21 years old, lives in Dhaka\n",
+        0
+       ],
+       [
+        351,
+        "Rizvy moved from Borishal to Chittagong\n",
+        0
+       ],
+       [
+        352,
+        "Rizvy, 34 years old, lives in Chittagong\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/01_classes_and_objects/322.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/02_inheritance.java": {
+  "capturedAt": "2026-11-23T12:24:04.283Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "21": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Bark\n",
+      "segments": [
+       [
+        37,
+        "Bark\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/21.jar",
+    "status": "ok"
+   },
+   "48": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Name: Mim\nRoll no: 42\n",
+      "segments": [
+       [
+        68,
+        "Name: Mim\n",
+        0
+       ],
+       [
+        69,
+        "Roll no: 42\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/48.jar",
+    "status": "ok"
+   },
+   "80": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Vehicle is moving.\nCar is moving fast.\n",
+      "segments": [
+       [
+        98,
+        "Vehicle is moving.\n",
+        0
+       ],
+       [
+        99,
+        "Car is moving fast.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/80.jar",
+    "status": "ok"
+   },
+   "107": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This is the parent class.\nThis is the child class.\n",
+      "segments": [
+       [
+        123,
+        "This is the parent class.\nThis is the child class.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/107.jar",
+    "status": "ok"
+   },
+   "133": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Employee name: Rafi\n",
+      "segments": [
+       [
+        151,
+        "Employee name: Rafi\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/133.jar",
+    "status": "ok"
+   },
+   "163": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The appliance is on\nWashing started\nThe appliance is on\nWashing started\nAutomatic cycle running\n",
+      "segments": [
+       [
+        186,
+        "The appliance is on\n",
+        0
+       ],
+       [
+        187,
+        "Washing started\n",
+        0
+       ],
+       [
+        188,
+        "The appliance is on\nWashing started\nAutomatic cycle running\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/163.jar",
+    "status": "ok"
+   },
+   "199": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Vehicle constructor: maxSpeed = 180\nCar constructor: brand = Toyota\nToyota tops out at 180 km/h\n",
+      "segments": [
+       [
+        220,
+        "Vehicle constructor: maxSpeed = 180\nCar constructor: brand = Toyota\n",
+        0
+       ],
+       [
+        221,
+        "Toyota tops out at 180 km/h\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/199.jar",
+    "status": "ok"
+   },
+   "231": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Drawing a circle\nDrawing a square\n",
+      "segments": [
+       [
+        253,
+        "Drawing a circle\n",
+        0
+       ],
+       [
+        254,
+        "Drawing a square\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/231.jar",
+    "status": "ok"
+   },
+   "264": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The animal eats\nThe cat purrs\n",
+      "segments": [
+       [
+        279,
+        "The animal eats\n",
+        0
+       ],
+       [
+        284,
+        "The cat purrs\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/264.jar",
+    "status": "ok"
+   },
+   "296": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The manager plans the project\nThe developer writes code\nThe employee works\n",
+      "segments": [
+       [
+        321,
+        "The manager plans the project\nThe developer writes code\nThe employee works\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/296.jar",
+    "status": "ok"
+   },
+   "330": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi earns 60000.0\nMim earns 28000.0\n",
+      "segments": [
+       [
+        378,
+        "Rafi earns 60000.0\nMim earns 28000.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/330.jar",
+    "status": "ok"
+   },
+   "391": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rizvy\nMim (employee ID 2041)\n",
+      "segments": [
+       [
+        422,
+        "Rizvy\n",
+        0
+       ],
+       [
+        423,
+        "Mim (employee ID 2041)\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/391.jar",
+    "status": "ok"
+   },
+   "433": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:9: error: start() in Car cannot override start() in Vehicle\n    void start() {                     // error: a final method cannot be overridden\n         ^\n  overridden method is final\n1 error"
+   },
+   "457": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:7: error: cannot inherit from final Vehicle\nclass Car extends Vehicle {            // error: cannot inherit from a final class\n                  ^\n1 error"
+   },
+   "476": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Vehicle started\nBeep\n",
+      "segments": [
+       [
+        491,
+        "Vehicle started\n",
+        0
+       ],
+       [
+        492,
+        "Beep\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/476.jar",
+    "status": "ok"
+   },
+   "503": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The professor teaches a class and then writes a paper\nThe professor teaches a class and then writes a paper\nThe professor teaches a class and then writes a paper\n",
+      "segments": [
+       [
+        521,
+        "The professor teaches a class and then writes a paper\n",
+        0
+       ],
+       [
+        525,
+        "The professor teaches a class and then writes a paper\n",
+        0
+       ],
+       [
+        526,
+        "The professor teaches a class and then writes a paper\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/503.jar",
+    "status": "ok"
+   },
+   "536": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "C displays for both A and B\nC displays for both A and B\nC displays for both A and B\n",
+      "segments": [
+       [
+        554,
+        "C displays for both A and B\n",
+        0
+       ],
+       [
+        558,
+        "C displays for both A and B\n",
+        0
+       ],
+       [
+        559,
+        "C displays for both A and B\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/02_inheritance/536.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/03_polymorphism.java": {
+  "capturedAt": "2026-11-23T12:24:07.621Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Bark\nMeow\n",
+      "segments": [
+       [
+        45,
+        "Bark\n",
+        0
+       ],
+       [
+        46,
+        "Meow\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/20.jar",
+    "status": "ok"
+   },
+   "54": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Drawing a circle\nDrawing a square\n",
+      "segments": [
+       [
+        79,
+        "Drawing a circle\n",
+        0
+       ],
+       [
+        82,
+        "Drawing a square\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/54.jar",
+    "status": "ok"
+   },
+   "93": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The car drives on the road\n",
+      "segments": [
+       [
+        111,
+        "The car drives on the road\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/93.jar",
+    "status": "ok"
+   },
+   "119": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The manager runs a meeting\nThe developer fixes a bug\nThe developer fixes a bug\n",
+      "segments": [
+       [
+        147,
+        "The manager runs a meeting\nThe developer fixes a bug\nThe developer fixes a bug\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/119.jar",
+    "status": "ok"
+   },
+   "159": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Strumming the guitar\nPlaying the piano keys\n",
+      "segments": [
+       [
+        182,
+        "Strumming the guitar\n",
+        0
+       ],
+       [
+        183,
+        "Playing the piano keys\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/159.jar",
+    "status": "ok"
+   },
+   "191": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "add(2, 3) = 5\nadd(0.1, 0.2) plain      = 0.30000000000000004\nadd(0.1, 0.2) scientific = 0.3\n",
+      "segments": [
+       [
+        213,
+        "add(2, 3) = 5\n",
+        0
+       ],
+       [
+        214,
+        "add(0.1, 0.2) plain      = 0.30000000000000004\n",
+        0
+       ],
+       [
+        215,
+        "add(0.1, 0.2) scientific = 0.3\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/191.jar",
+    "status": "ok"
+   },
+   "226": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The lion eats meat\nThe elephant eats leaves and grass\n",
+      "segments": [
+       [
+        249,
+        "The lion eats meat\n",
+        0
+       ],
+       [
+        250,
+        "The elephant eats leaves and grass\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/226.jar",
+    "status": "ok"
+   },
+   "258": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Teacher: Mr. Karim, teaches Mathematics\nStudent: Mim, grade 9\n",
+      "segments": [
+       [
+        301,
+        "Teacher: Mr. Karim, teaches Mathematics\n",
+        0
+       ],
+       [
+        304,
+        "Student: Mim, grade 9\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/258.jar",
+    "status": "ok"
+   },
+   "312": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Device: power on\n---\nPhone: ringing is ready\n---\nPhone: ringing is ready\nSmartPhone: apps are loading\n---\n",
+      "segments": [
+       [
+        338,
+        "Device: power on\n",
+        0
+       ],
+       [
+        339,
+        "---\n",
+        0
+       ],
+       [
+        338,
+        "Phone: ringing is ready\n",
+        0
+       ],
+       [
+        339,
+        "---\n",
+        0
+       ],
+       [
+        338,
+        "Phone: ringing is ready\nSmartPhone: apps are loading\n",
+        0
+       ],
+       [
+        339,
+        "---\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/312.jar",
+    "status": "ok"
+   },
+   "351": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Laser printer: fast, sharp black text\nInkjet printer: slower, good for colour photos\nLaser printer: fast, sharp black text\n",
+      "segments": [
+       [
+        374,
+        "Laser printer: fast, sharp black text\nInkjet printer: slower, good for colour photos\nLaser printer: fast, sharp black text\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/351.jar",
+    "status": "ok"
+   },
+   "384": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Area: 12.00\nArea: 12.57\nDrawing a 4.0 x 3.0 rectangle\nDrawing a circle of radius 2.0\n",
+      "segments": [
+       [
+        434,
+        "Area: 12.00\nArea: 12.57\n",
+        0
+       ],
+       [
+        439,
+        "Drawing a 4.0 x 3.0 rectangle\nDrawing a circle of radius 2.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/384.jar",
+    "status": "ok"
+   },
+   "452": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Person(String) called for Unknown\nPerson() called\nEmployee() called\nUnknown is a Trainee\n\nPerson(String) called for Rafi\nEmployee(String) called\nRafi is a Staff\n",
+      "segments": [
+       [
+        484,
+        "Person(String) called for Unknown\nPerson() called\nEmployee() called\n",
+        0
+       ],
+       [
+        485,
+        "Unknown is a Trainee\n",
+        0
+       ],
+       [
+        486,
+        "\n",
+        0
+       ],
+       [
+        488,
+        "Person(String) called for Rafi\nEmployee(String) called\n",
+        0
+       ],
+       [
+        489,
+        "Rafi is a Staff\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/452.jar",
+    "status": "ok"
+   },
+   "501": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Charging the credit card\nRedirecting to PayPal\n",
+      "segments": [
+       [
+        524,
+        "Charging the credit card\n",
+        0
+       ],
+       [
+        527,
+        "Redirecting to PayPal\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/03_polymorphism/501.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/04_abstract_classes.java": {
+  "capturedAt": "2026-11-23T12:24:10.773Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Dog says Woof\nCat says Meow\n",
+      "segments": [
+       [
+        43,
+        "Dog says Woof\n",
+        0
+       ],
+       [
+        44,
+        "Cat says Meow\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/20.jar",
+    "status": "ok"
+   },
+   "54": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This is a shape\nArea = 28.27\nThis is a shape\nArea = 20.00\n",
+      "segments": [
+       [
+        95,
+        "This is a shape\n",
+        0
+       ],
+       [
+        96,
+        "Area = 28.27\n",
+        0
+       ],
+       [
+        95,
+        "This is a shape\n",
+        0
+       ],
+       [
+        96,
+        "Area = 20.00\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/54.jar",
+    "status": "ok"
+   },
+   "107": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Vehicle constructor: this is a car\nVehicle constructor: this is a bike\ncar uses petrol or diesel\nbike uses petrol\n",
+      "segments": [
+       [
+        142,
+        "Vehicle constructor: this is a car\n",
+        0
+       ],
+       [
+        143,
+        "Vehicle constructor: this is a bike\n",
+        0
+       ],
+       [
+        145,
+        "car uses petrol or diesel\n",
+        0
+       ],
+       [
+        146,
+        "bike uses petrol\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/107.jar",
+    "status": "ok"
+   },
+   "158": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi: 55000.0\nMim: 24000.0\n",
+      "segments": [
+       [
+        203,
+        "Rafi: 55000.0\n",
+        0
+       ],
+       [
+        204,
+        "Mim: 24000.0\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/158.jar",
+    "status": "ok"
+   },
+   "213": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Piano: plink plonk\nGuitar: strum strum\n",
+      "segments": [
+       [
+        236,
+        "Piano: plink plonk\nGuitar: strum strum\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/213.jar",
+    "status": "ok"
+   },
+   "246": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The washing machine fills with water\nThis appliance uses electricity.\nThe microwave starts heating\nThis appliance uses electricity.\n",
+      "segments": [
+       [
+        273,
+        "The washing machine fills with water\n",
+        0
+       ],
+       [
+        274,
+        "This appliance uses electricity.\n",
+        0
+       ],
+       [
+        273,
+        "The microwave starts heating\n",
+        0
+       ],
+       [
+        274,
+        "This appliance uses electricity.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/246.jar",
+    "status": "ok"
+   },
+   "284": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Teacher Karim\nGood morning, class!\nStudent Mim\nGood morning, sir!\n",
+      "segments": [
+       [
+        335,
+        "Teacher Karim\n",
+        0
+       ],
+       [
+        336,
+        "Good morning, class!\n",
+        0
+       ],
+       [
+        335,
+        "Student Mim\n",
+        0
+       ],
+       [
+        336,
+        "Good morning, sir!\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/284.jar",
+    "status": "ok"
+   },
+   "348": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Drawing a circle with radius 2.5\nArea = 19.63\n",
+      "segments": [
+       [
+        378,
+        "Drawing a circle with radius 2.5\n",
+        0
+       ],
+       [
+        379,
+        "Area = 19.63\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/348.jar",
+    "status": "ok"
+   },
+   "389": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Machine constructor: id 101\nComputer constructor\nComputer 101 is booting\n\nMachine constructor: id 202\nPrinter constructor\nPrinter 202 is warming up\n",
+      "segments": [
+       [
+        426,
+        "Machine constructor: id 101\nComputer constructor\n",
+        0
+       ],
+       [
+        427,
+        "Computer 101 is booting\n",
+        0
+       ],
+       [
+        428,
+        "\n",
+        0
+       ],
+       [
+        430,
+        "Machine constructor: id 202\nPrinter constructor\n",
+        0
+       ],
+       [
+        431,
+        "Printer 202 is warming up\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/389.jar",
+    "status": "ok"
+   },
+   "440": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "This is a device.\nA phone makes calls and sends messages\nThis is a device.\nA tablet is for reading and drawing\n",
+      "segments": [
+       [
+        467,
+        "This is a device.\n",
+        0
+       ],
+       [
+        468,
+        "A phone makes calls and sends messages\n",
+        0
+       ],
+       [
+        467,
+        "This is a device.\n",
+        0
+       ],
+       [
+        468,
+        "A tablet is for reading and drawing\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/440.jar",
+    "status": "ok"
+   },
+   "481": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The bird breathes through its lungs\nThe bird flies\nThe bird breathes through its lungs\n",
+      "segments": [
+       [
+        504,
+        "The bird breathes through its lungs\n",
+        0
+       ],
+       [
+        505,
+        "The bird flies\n",
+        0
+       ],
+       [
+        508,
+        "The bird breathes through its lungs\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/481.jar",
+    "status": "ok"
+   },
+   "520": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Rafi earns 4000.0 in interest\nMim earns 500.0 in interest\n",
+      "segments": [
+       [
+        562,
+        "Rafi earns 4000.0 in interest\nMim earns 500.0 in interest\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/04_abstract_classes/520.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/05_interfaces.java": {
+  "capturedAt": "2026-11-23T12:24:14.128Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Woof\nMeow\n",
+      "segments": [
+       [
+        43,
+        "Woof\n",
+        0
+       ],
+       [
+        44,
+        "Meow\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/20.jar",
+    "status": "ok"
+   },
+   "55": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Drawing a circle\nDrawing a rectangle\n",
+      "segments": [
+       [
+        78,
+        "Drawing a circle\nDrawing a rectangle\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/55.jar",
+    "status": "ok"
+   },
+   "87": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Area of the circle: 314.0\nPI from the interface: 3.14\n",
+      "segments": [
+       [
+        106,
+        "Area of the circle: 314.0\n",
+        0
+       ],
+       [
+        107,
+        "PI from the interface: 3.14\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/87.jar",
+    "status": "ok"
+   },
+   "120": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Printer connected\nThe laser printer prints a page\n",
+      "segments": [
+       [
+        139,
+        "Printer connected\n",
+        0
+       ],
+       [
+        140,
+        "The laser printer prints a page\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/120.jar",
+    "status": "ok"
+   },
+   "151": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The car starts\nService required\n",
+      "segments": [
+       [
+        169,
+        "The car starts\n",
+        0
+       ],
+       [
+        170,
+        "Service required\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/151.jar",
+    "status": "ok"
+   },
+   "178": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Recording started\nPlaying the recording\nPlaying the recording\n",
+      "segments": [
+       [
+        201,
+        "Recording started\n",
+        0
+       ],
+       [
+        202,
+        "Playing the recording\n",
+        0
+       ],
+       [
+        205,
+        "Playing the recording\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/178.jar",
+    "status": "ok"
+   },
+   "213": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The dog eats its food\nThe dog plays fetch\nThe dog eats its food\n",
+      "segments": [
+       [
+        236,
+        "The dog eats its food\n",
+        0
+       ],
+       [
+        237,
+        "The dog plays fetch\n",
+        0
+       ],
+       [
+        240,
+        "The dog eats its food\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/213.jar",
+    "status": "ok"
+   },
+   "250": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "12 + 30 = 42\n",
+      "segments": [
+       [
+        259,
+        "12 + 30 = 42\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/250.jar",
+    "status": "ok"
+   },
+   "270": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Paid by credit card\nPaid through PayPal\n",
+      "segments": [
+       [
+        291,
+        "Paid by credit card\n",
+        0
+       ],
+       [
+        294,
+        "Paid through PayPal\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/270.jar",
+    "status": "ok"
+   },
+   "304": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The all-in-one device is connected as a printer and as a scanner\nThe all-in-one device is connected as a printer and as a scanner\nThe all-in-one device is connected as a printer and as a scanner\n",
+      "segments": [
+       [
+        322,
+        "The all-in-one device is connected as a printer and as a scanner\n",
+        0
+       ],
+       [
+        326,
+        "The all-in-one device is connected as a printer and as a scanner\n",
+        0
+       ],
+       [
+        327,
+        "The all-in-one device is connected as a printer and as a scanner\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/304.jar",
+    "status": "ok"
+   },
+   "338": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "expectError": true,
+    "status": "compile-error",
+    "compile": "\\Main.java:13: error: types InterfaceA and InterfaceB are incompatible;\nclass ClassC implements InterfaceA, InterfaceB {\n^\n  class ClassC inherits unrelated defaults for show() from types InterfaceA and InterfaceB\n1 error"
+   },
+   "364": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "show() from InterfaceA\nshow() from InterfaceB\nshow() from ClassC settles the conflict\n",
+      "segments": [
+       [
+        387,
+        "show() from InterfaceA\nshow() from InterfaceB\nshow() from ClassC settles the conflict\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/364.jar",
+    "status": "ok"
+   },
+   "397": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Operating an appliance...\nThe washing machine starts the wash cycle\nOperating an appliance...\nThe air conditioner starts cooling the room\n",
+      "segments": [
+       [
+        422,
+        "Operating an appliance...\nThe washing machine starts the wash cycle\n",
+        0
+       ],
+       [
+        423,
+        "Operating an appliance...\nThe air conditioner starts cooling the room\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/05_interfaces/397.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/06_exceptions.java": {
+  "capturedAt": "2026-11-23T12:24:16.128Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "23": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Error: the person was never created, so there is no age to print.\nThe program carries on normally\n",
+      "segments": [
+       [
+        39,
+        "Error: the person was never created, so there is no age to print.\n",
+        0
+       ],
+       [
+        42,
+        "The program carries on normally\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/23.jar",
+    "status": "ok"
+   },
+   "55": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "A valid age",
+      "inputs": [
+       "25"
+      ],
+      "stdout": "Enter your age: 25\nAge 25 is valid\n",
+      "segments": [
+       [
+        74,
+        "Enter your age: ",
+        0
+       ],
+       [
+        77,
+        "25\n",
+        0
+       ],
+       [
+        78,
+        "Age 25 is valid\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Too old",
+      "inputs": [
+       "150"
+      ],
+      "stdout": "Enter your age: 150\nError: Invalid age 150: it must be between 0 and 120\n",
+      "segments": [
+       [
+        74,
+        "Enter your age: ",
+        0
+       ],
+       [
+        77,
+        "150\n",
+        0
+       ],
+       [
+        80,
+        "Error: Invalid age 150: it must be between 0 and 120\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Negative",
+      "inputs": [
+       "-4"
+      ],
+      "stdout": "Enter your age: -4\nError: Invalid age -4: it must be between 0 and 120\n",
+      "segments": [
+       [
+        74,
+        "Enter your age: ",
+        0
+       ],
+       [
+        77,
+        "-4\n",
+        0
+       ],
+       [
+        80,
+        "Error: Invalid age -4: it must be between 0 and 120\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Not a number",
+      "inputs": [
+       "abc"
+      ],
+      "stdout": "Enter your age: abc\nError: that was not a whole number\n",
+      "segments": [
+       [
+        74,
+        "Enter your age: ",
+        0
+       ],
+       [
+        77,
+        "abc\n",
+        0
+       ],
+       [
+        82,
+        "Error: that was not a whole number\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/55.jar",
+    "status": "ok"
+   },
+   "99": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "Enough money",
+      "inputs": [
+       "1800"
+      ],
+      "stdout": "Balance is 5000.0. Amount to withdraw: 1800\nWithdrew 1800.0, new balance 3200.0\n",
+      "segments": [
+       [
+        131,
+        "Balance is 5000.0. Amount to withdraw: ",
+        0
+       ],
+       [
+        132,
+        "1800\n",
+        0
+       ],
+       [
+        135,
+        "Withdrew 1800.0, new balance 3200.0\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Too much",
+      "inputs": [
+       "9000"
+      ],
+      "stdout": "Balance is 5000.0. Amount to withdraw: 9000\nError: Cannot withdraw 9000.0: the balance is only 5000.0 (short by 4000.0)\n",
+      "segments": [
+       [
+        131,
+        "Balance is 5000.0. Amount to withdraw: ",
+        0
+       ],
+       [
+        132,
+        "9000\n",
+        0
+       ],
+       [
+        137,
+        "Error: Cannot withdraw 9000.0: the balance is only 5000.0 (short by 4000.0)\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/99.jar",
+    "status": "ok"
+   },
+   "149": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "Valid",
+      "inputs": [
+       "mim@uiu.ac.bd"
+      ],
+      "stdout": "Enter your email address: mim@uiu.ac.bd\nmim@uiu.ac.bd is a valid email address\n",
+      "segments": [
+       [
+        180,
+        "Enter your email address: ",
+        0
+       ],
+       [
+        181,
+        "mim@uiu.ac.bd\n",
+        0
+       ],
+       [
+        185,
+        "mim@uiu.ac.bd is a valid email address\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "No dot in the domain",
+      "inputs": [
+       "rafi@gmailcom"
+      ],
+      "stdout": "Enter your email address: rafi@gmailcom\nInvalid email: the part after '@' must contain a '.'\n",
+      "segments": [
+       [
+        180,
+        "Enter your email address: ",
+        0
+       ],
+       [
+        181,
+        "rafi@gmailcom\n",
+        0
+       ],
+       [
+        187,
+        "Invalid email: the part after '@' must contain a '.'\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "Two @ signs",
+      "inputs": [
+       "a@@b.com"
+      ],
+      "stdout": "Enter your email address: a@@b.com\nInvalid email: it must contain exactly one '@'\n",
+      "segments": [
+       [
+        180,
+        "Enter your email address: ",
+        0
+       ],
+       [
+        181,
+        "a@@b.com\n",
+        0
+       ],
+       [
+        187,
+        "Invalid email: it must contain exactly one '@'\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "A space",
+      "inputs": [
+       "mim khan@gmail.com"
+      ],
+      "stdout": "Enter your email address: mim khan@gmail.com\nInvalid email: an email address cannot contain spaces\n",
+      "segments": [
+       [
+        180,
+        "Enter your email address: ",
+        0
+       ],
+       [
+        181,
+        "mim khan@gmail.com\n",
+        0
+       ],
+       [
+        187,
+        "Invalid email: an email address cannot contain spaces\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/149.jar",
+    "status": "ok"
+   },
+   "207": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Bought \"Effective Java\", copies left: 1\nBought \"Effective Java\", copies left: 0\n[BookOutOfStockException] The value of numberOfAvailableCopies is 0.\n",
+      "segments": [
+       [
+        239,
+        "Bought \"Effective Java\", copies left: 1\nBought \"Effective Java\", copies left: 0\n",
+        0
+       ],
+       [
+        241,
+        "[BookOutOfStockException] The value of numberOfAvailableCopies is 0.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/207.jar",
+    "status": "ok"
+   },
+   "265": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Cannot divide: / by zero\nComplete\n",
+      "segments": [
+       [
+        280,
+        "Cannot divide: / by zero\n",
+        0
+       ],
+       [
+        282,
+        "Complete\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/265.jar",
+    "status": "ok"
+   },
+   "291": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "4\nCaught: The denominator can not be zero!\nComplete\n",
+      "segments": [
+       [
+        311,
+        "4\n",
+        0
+       ],
+       [
+        314,
+        "Caught: The denominator can not be zero!\n",
+        0
+       ],
+       [
+        316,
+        "Complete\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/06_exceptions/291.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/07_gui.java": {
+  "capturedAt": "2026-11-23T12:24:17.141Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "25": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "91": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "122": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "161": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "210": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   },
+   "251": {
+    "mainClass": "Main",
+    "scenarios": [],
+    "status": "gui"
+   }
+  }
+ },
+ "Practice_Problems/08_java_io.java": {
+  "capturedAt": "2026-11-23T12:24:18.451Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "28": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [
+       "input1.txt",
+       "input2.txt",
+       "output.txt"
+      ],
+      "stdout": "First input file: input1.txt\nSecond input file: input2.txt\nOutput file: output.txt\nDone. output.txt now holds both files.\n--- output.txt ---\nJava is a programming language.\nIt runs on the JVM.\nFiles hold data.\nStreams move it.\nAlways close them.\n",
+      "segments": [
+       [
+        45,
+        "First input file: ",
+        0
+       ],
+       [
+        46,
+        "input1.txt\n",
+        0
+       ],
+       [
+        47,
+        "Second input file: ",
+        0
+       ],
+       [
+        48,
+        "input2.txt\n",
+        0
+       ],
+       [
+        49,
+        "Output file: ",
+        0
+       ],
+       [
+        50,
+        "output.txt\n",
+        0
+       ],
+       [
+        55,
+        "Done. output.txt now holds both files.\n",
+        0
+       ],
+       [
+        64,
+        "--- output.txt ---\n",
+        0
+       ],
+       [
+        68,
+        "Java is a programming language.\nIt runs on the JVM.\nFiles hold data.\nStreams move it.\nAlways close them.\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/08_java_io/28.jar",
+    "status": "ok"
+   },
+   "93": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Size of src.mp4: 20 bytes\nFile copied 5.00%\nFile copied 10.00%\nFile copied 15.00%\nFile copied 20.00%\nFile copied 25.00%\nFile copied 30.00%\nFile copied 35.00%\nFile copied 40.00%\nFile copied 45.00%\nFile copied 50.00%\nFile copied 55.00%\nFile copied 60.00%\nFile copied 65.00%\nFile copied 70.00%\nFile copied 75.00%\nFile copied 80.00%\nFile copied 85.00%\nFile copied 90.00%\nFile copied 95.00%\nFile copied 100.00%\nCopy finished: 20 bytes written to copy.mp4\n",
+      "segments": [
+       [
+        120,
+        "Size of src.mp4: 20 bytes\n",
+        0
+       ],
+       [
+        132,
+        "File copied 5.00%\nFile copied 10.00%\nFile copied 15.00%\nFile copied 20.00%\nFile copied 25.00%\nFile copied 30.00%\nFile copied 35.00%\nFile copied 40.00%\nFile copied 45.00%\nFile copied 50.00%\nFile copied 55.00%\nFile copied 60.00%\nFile copied 65.00%\nFile copied 70.00%\nFile copied 75.00%\nFile copied 80.00%\nFile copied 85.00%\nFile copied 90.00%\nFile copied 95.00%\nFile copied 100.00%\n",
+        0
+       ],
+       [
+        134,
+        "Copy finished: 20 bytes written to copy.mp4\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/08_java_io/93.jar",
+    "status": "ok"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Size of src.mp4: 50000 bytes\nFile copied 16.38%\nFile copied 24.58%\nFile copied 32.77%\nFile copied 40.96%\nFile copied 57.34%\nFile copied 65.54%\nFile copied 73.73%\nFile copied 81.92%\nFile copied 90.11%\nFile copied 100.00%\nCopy finished\n",
+      "segments": [
+       [
+        173,
+        "Size of src.mp4: 50000 bytes\n",
+        0
+       ],
+       [
+        180,
+        "File copied 16.38%\nFile copied 24.58%\nFile copied 32.77%\nFile copied 40.96%\nFile copied 57.34%\nFile copied 65.54%\nFile copied 73.73%\nFile copied 81.92%\nFile copied 90.11%\nFile copied 100.00%\n",
+        0
+       ],
+       [
+        184,
+        "Copy finished\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/08_java_io/150.jar",
+    "status": "ok"
+   },
+   "196": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "A real file",
+      "inputs": [
+       "story.txt"
+      ],
+      "stdout": "File to analyse: story.txt\n23 characters in story.txt\n\\n (new line) : 2\nspace : 2\na : 2\nd : 1\ne : 2\nh : 2\nj : 1\nl : 5\no : 3\nr : 1\nv : 1\nw : 1\n",
+      "segments": [
+       [
+        211,
+        "File to analyse: ",
+        0
+       ],
+       [
+        212,
+        "story.txt\n",
+        0
+       ],
+       [
+        238,
+        "23 characters in story.txt\n",
+        0
+       ],
+       [
+        241,
+        "\\n (new line) : 2\nspace : 2\na : 2\nd : 1\ne : 2\nh : 2\nj : 1\nl : 5\no : 3\nr : 1\nv : 1\nw : 1\n",
+        0
+       ]
+      ]
+     },
+     {
+      "label": "A missing file",
+      "inputs": [
+       "nofile.txt"
+      ],
+      "stdout": "File to analyse: nofile.txt\nError: the file \"nofile.txt\" was not found\n",
+      "segments": [
+       [
+        211,
+        "File to analyse: ",
+        0
+       ],
+       [
+        212,
+        "nofile.txt\n",
+        0
+       ],
+       [
+        226,
+        "Error: the file \"nofile.txt\" was not found\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/08_java_io/196.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/09_arraylist.java": {
+  "capturedAt": "2026-11-23T12:24:21.202Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "20": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "0: Rafi\n1: Mim\n2: Anik\n3: Dee\n4: Sara\n",
+      "segments": [
+       [
+        32,
+        "0: Rafi\n1: Mim\n2: Anik\n3: Dee\n4: Sara\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/20.jar",
+    "status": "ok"
+   },
+   "43": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Size: 10\nThird element: 3\n",
+      "segments": [
+       [
+        52,
+        "Size: 10\n",
+        0
+       ],
+       [
+        53,
+        "Third element: 3\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/43.jar",
+    "status": "ok"
+   },
+   "62": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Before: [Dhaka, Chittagong, Khulna, Sylhet, Rajshahi]\nRemoved: Khulna\nAfter: [Dhaka, Chittagong, Sylhet, Rajshahi]\n",
+      "segments": [
+       [
+        73,
+        "Before: [Dhaka, Chittagong, Khulna, Sylhet, Rajshahi]\n",
+        0
+       ],
+       [
+        75,
+        "Removed: Khulna\n",
+        0
+       ],
+       [
+        76,
+        "After: [Dhaka, Chittagong, Sylhet, Rajshahi]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/62.jar",
+    "status": "ok"
+   },
+   "85": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "The list contains 3\nContains 9? false\n",
+      "segments": [
+       [
+        95,
+        "The list contains 3\n",
+        0
+       ],
+       [
+        100,
+        "Contains 9? false\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/85.jar",
+    "status": "ok"
+   },
+   "107": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "12.5\n99.99\n3.14\n250.0\n0.75\n",
+      "segments": [
+       [
+        119,
+        "12.5\n99.99\n3.14\n250.0\n0.75\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/107.jar",
+    "status": "ok"
+   },
+   "129": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Before: [Mango, Banana, Orange, Apple, Guava]\nSorted: [Apple, Banana, Guava, Mango, Orange]\n",
+      "segments": [
+       [
+        141,
+        "Before: [Mango, Banana, Orange, Apple, Guava]\n",
+        0
+       ],
+       [
+        143,
+        "Sorted: [Apple, Banana, Guava, Mango, Orange]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/129.jar",
+    "status": "ok"
+   },
+   "150": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Reversed: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]\n",
+      "segments": [
+       [
+        161,
+        "Reversed: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/150.jar",
+    "status": "ok"
+   },
+   "169": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "With duplicates: [Rafi, Mim, Rafi, Anik, Mim, Rafi]\nUnique:          [Rafi, Mim, Anik]\n",
+      "segments": [
+       [
+        192,
+        "With duplicates: [Rafi, Mim, Rafi, Anik, Mim, Rafi]\n",
+        0
+       ],
+       [
+        193,
+        "Unique:          [Rafi, Mim, Anik]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/169.jar",
+    "status": "ok"
+   },
+   "206": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Merged (10 items): [Bangladesh, Japan, Brazil, Kenya, Norway, Dhaka, Tokyo, Rio, Nairobi, Oslo]\n",
+      "segments": [
+       [
+        227,
+        "Merged (10 items): [Bangladesh, Japan, Brazil, Kenya, Norway, Dhaka, Tokyo, Rio, Nairobi, Oslo]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/206.jar",
+    "status": "ok"
+   },
+   "235": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Clean Code by Robert C. Martin\nEffective Java by Joshua Bloch\nHead First Java by Kathy Sierra\nRefactoring by Martin Fowler\nThe Pragmatic Programmer by Andrew Hunt\n",
+      "segments": [
+       [
+        257,
+        "Clean Code by Robert C. Martin\nEffective Java by Joshua Bloch\nHead First Java by Kathy Sierra\nRefactoring by Martin Fowler\nThe Pragmatic Programmer by Andrew Hunt\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/235.jar",
+    "status": "ok"
+   },
+   "272": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Before: [5, 1, 5, 5, 7, 5, 9]\nAfter:  [1, 7, 9]\n",
+      "segments": [
+       [
+        291,
+        "Before: [5, 1, 5, 5, 7, 5, 9]\n",
+        0
+       ],
+       [
+        293,
+        "After:  [1, 7, 9]\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/09_arraylist/272.jar",
+    "status": "ok"
+   }
+  }
+ },
+ "Practice_Problems/10_threads.java": {
+  "capturedAt": "2026-11-23T12:24:22.390Z",
+  "java": "openjdk version \"25.0.3\" 2026-04-21 LTS\r",
+  "blocks": {
+   "23": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "Hello from thread 1\nHello from thread 2\nmain is terminating\n",
+      "segments": [
+       [
+        30,
+        "Hello from thread 1\nHello from thread 2\n",
+        0
+       ],
+       [
+        45,
+        "main is terminating\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/10_threads/23.jar",
+    "status": "ok"
+   },
+   "62": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "sum: 20\n",
+      "segments": [
+       [
+        87,
+        "sum: 20\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/10_threads/62.jar",
+    "status": "ok"
+   },
+   "103": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "first half:  12\nsecond half: 14\nsum: 26\n",
+      "segments": [
+       [
+        137,
+        "first half:  12\n",
+        0
+       ],
+       [
+        138,
+        "second half: 14\n",
+        0
+       ],
+       [
+        139,
+        "sum: 26\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/10_threads/103.jar",
+    "status": "ok"
+   },
+   "155": {
+    "mainClass": "Main",
+    "scenarios": [
+     {
+      "label": "",
+      "inputs": [],
+      "stdout": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nCount completed\n",
+      "segments": [
+       [
+        175,
+        "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n",
+        0
+       ],
+       [
+        188,
+        "Count completed\n",
+        0
+       ]
+      ]
+     }
+    ],
+    "jar": "classes/Practice_Problems/10_threads/155.jar",
+    "status": "ok"
+   }
+  }
  }
 }

@@ -37,6 +37,7 @@ export const trackBlurb: Record<string, string> = {
   'exceptions-and-files': 'try/catch, reading and writing',
   'collections-and-sorting': 'Lists, maps, generics, sorting',
   'threads-and-gui': 'Threads, Swing, events',
+  'practice-problems': 'Problem sets with solutions',
   'beyond-the-course': 'Enums, lambdas, streams, records',
   lab: 'Practice for the lab course',
 }

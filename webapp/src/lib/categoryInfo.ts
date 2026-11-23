@@ -21,6 +21,8 @@ export const CATEGORY_INFO: Record<string, string> = {
     'ArrayList, HashMap and HashSet, generics, and sorting your own objects with Comparable and Comparator.',
   'threads-and-gui':
     'Doing several things at once with threads, keeping shared data safe, and building windows with Swing that react to clicks and keys.',
+  'practice-problems':
+    'Eighty-nine practice problems from the course, in ten sets from classes and objects to threads. Each is stated, then solved with a program you can run.',
   'beyond-the-course':
     'Enums, inner classes, lambdas, streams, records and the other tools that modern Java code uses every day.',
   lab: 'The twelve labs of the lab course, each a set of tasks to try yourself with a worked solution.',

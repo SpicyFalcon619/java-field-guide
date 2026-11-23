@@ -56,7 +56,23 @@ A field guide to Java and object oriented programming, built around the two cour
 
 ---
 
-## BASECAMP 2: Beyond the course, how Java is really written
+## BASECAMP 2: Practice problems, solve them yourself
+*The practice problem sets of the course, one lesson per topic. Each problem is stated first, then solved with a complete program you can run, so try it on your own and then compare.*
+
+- [x] **Classes and objects (8 problems)**
+- [x] **Inheritance (15 problems)**
+- [x] **Polymorphism (13 problems)**
+- [x] **Abstract classes (12 problems)**
+- [x] **Interfaces (12 problems)**
+- [x] **Exception handling (6 problems)**
+- [x] **GUI and event handling (5 problems)**
+- [x] **Java I/O (3 problems)**
+- [x] **ArrayList (11 problems)**
+- [x] **Threads (4 exercises)**
+
+---
+
+## BASECAMP 3: Beyond the course, how Java is really written
 *Not in the course outline, but in almost every real Java project: enums, inner classes, lambdas, streams, records and the modern language features. Written for the same beginner audience.*
 
 - [ ] **Enums**

@@ -12,7 +12,8 @@ It is one of three guides built on the same app. The others are the [AI Engineer
 |---|---|---|
 | 0. Theory | The 24 classes of CSE 1115, from the first program to threads: Java basics, classes and objects, inheritance and polymorphism, encapsulation, abstraction and interfaces, exceptions and files, collections, threads and GUI | Written |
 | 1. Lab | The twelve labs of CSE 1116: tasks to try yourself, each with a worked solution you can run | In progress |
-| 2. Beyond the course | What real Java projects use but the course skips: enums, inner classes, lambdas, streams, records, dates and times | In progress |
+| 2. Practice problems | The 89 practice problems of the course in ten sets (classes and objects, inheritance, polymorphism, abstract classes, interfaces, exceptions, GUI, I/O, ArrayList, threads), each stated and then solved with a program you can run | Written |
+| 3. Beyond the course | What real Java projects use but the course skips: enums, inner classes, lambdas, streams, records, dates and times | In progress |
 
 The checklist is [ROADMAP.md](ROADMAP.md); the site reads it for its progress view.
 
@@ -30,6 +31,7 @@ The checklist is [ROADMAP.md](ROADMAP.md); the site reads it for its progress vi
 |---|---|
 | `Java_Basics`, `Classes_and_Objects`, `Inheritance_and_Polymorphism`, ... | The theory track: one folder per section, one `.java` file per lesson |
 | `Lab` | The lab course |
+| `Practice_Problems` | The practice problem sets: each problem stated, then a complete worked solution |
 | `Beyond_the_Course` | Modern and practical Java outside the course outline |
 | `webapp/` | The website, and the scripts that capture real output |
 | `tools/` | One-off tools, such as the converter that built the first lessons from Notion |

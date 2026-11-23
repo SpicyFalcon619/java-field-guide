@@ -31,7 +31,8 @@ const BASECAMP_CATEGORY_MAP: Record<string, string[]> = {
     'threads-and-gui',
   ],
   'basecamp-1': ['lab'],
-  'basecamp-2': ['beyond-the-course'],
+  'basecamp-2': ['practice-problems'],
+  'basecamp-3': ['beyond-the-course'],
 }
 
 function countChecklist(items: ChecklistItem[]): { done: number; total: number } {
