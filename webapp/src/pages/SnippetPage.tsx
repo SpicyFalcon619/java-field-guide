@@ -20,7 +20,7 @@ import { Outline } from '@/components/snippet/Outline'
 import { TickRail } from '@/components/snippet/TickRail'
 import { lineColor, trackIndexOf } from '@/lib/journey'
 import { allLessons } from '@/lib/progress'
-import { PrevNext } from '@/components/snippet/PrevNext'
+import { LessonArrows, PrevNext } from '@/components/snippet/PrevNext'
 import { Badge } from '@/components/ui/Badge'
 
 type LessonView = 'guided' | 'code' | 'bare'
@@ -122,8 +122,9 @@ export function SnippetPage() {
       style={{ ['--stop' as string]: lineColor(trackIndexOf(snippet.categorySlug)) }}
     >
       <div className="min-w-0">
-      <div className="mb-5">
-        <TickRail currentId={snippet.id} />
+      <div className="mb-5 flex items-center gap-3">
+        <TickRail currentId={snippet.id} className="min-w-0 flex-1" />
+        <LessonArrows prev={prev} next={next} />
       </div>
 
       {/* Stacked on phones: the title and the buttons side by side are wider than the screen. */}
