@@ -810,7 +810,9 @@ samp,
    --------------------------------------------------------------------------- */
 .guide-toolbar {
   position: sticky;
-  top: 0;
+  /* Under the navbar while it is shown (set by useNavbarReveal), at the top of the screen when it is hidden. */
+  top: var(--navbar-offset, 0px);
+  transition: top 0.2s ease;
   z-index: 10;
   display: flex;
   flex-wrap: wrap;

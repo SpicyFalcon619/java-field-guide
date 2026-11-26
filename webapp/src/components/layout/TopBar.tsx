@@ -1,4 +1,6 @@
+import { useRef } from 'react'
 import type { SVGProps } from 'react'
+import { useNavbarReveal } from '@/hooks/useNavbarReveal'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { ArrowUpRight, Menu, PanelLeftClose, PanelLeftOpen, Search } from 'lucide-react'
 import { ThemeToggle } from './ThemeToggle'
@@ -34,16 +36,20 @@ export function TopBar({
   onToggleSidebar: () => void
 }) {
   const location = useLocation()
-  // On lesson pages the code block's own header is the sticky control (Run, Copy),
-  // so this bar scrolls away there instead of competing with it.
+  // On lesson pages the code block's own header is the sticky control (Run, Copy), so this bar does not stay on screen
+  // there: it slides away when you scroll down, and comes back as soon as you scroll up a little.
   const isSnippetPage = location.pathname.startsWith('/s/')
+  const headerRef = useRef<HTMLElement>(null)
+  const hidden = useNavbarReveal(isSnippetPage, headerRef)
   const linkBase = 'rounded-md px-2.5 py-1.5 text-sm transition-colors'
 
   return (
     <header
+      ref={headerRef}
       className={cn(
         'z-30 flex items-center gap-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-2.5 backdrop-blur-md sm:gap-3 sm:px-8',
-        isSnippetPage ? 'relative' : 'sticky top-0',
+        'sticky top-0 transition-transform duration-200 motion-reduce:transition-none',
+        isSnippetPage && hidden && '-translate-y-full',
       )}
     >
       {/* On a wide screen the lesson path is a sidebar, and its toggle sits first in the bar, where most sites keep it. */}
